@@ -1,0 +1,2078 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+
+  <title>Validitron - House Style</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet" type="text/css">
+  <!-- <link href="dist/validitron.css" rel="stylesheet" type="text/css"> -->
+
+  <!-- scripts -->
+  <script src="bootstrap/dist/umd/popper.min.js"></script>
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/custom-js.js"></script>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="overflow-y:scroll;">
+  <header>
+    <div id="header-div" class="container">
+      <div class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom align-items-center">
+        <div class="hamburger-menu-container">
+          <a onclick="showMenu()" href="/" id="show-menu" class="hamburder-menu">
+            <img src="images/hamburger-menu.svg" alt="validitron" class="">
+          </a>
+          <a onclick="hideMenu()" href="/" id="hide-menu" class="back-menu">
+            <img src="images/hamburger-menu - Copy.svg" alt="validitron" class="">
+          </a>
+        </div>
+        <div class="logo-sec d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <a href="#" class="logo">
+            <img src="images/validitron-logo.svg" alt="validitron" class="img-fluid">
+            <span>Product Title</span>
+          </a>
+
+        </div>
+
+        <div id="navigation-div" class="nav-sec">
+          <div class="login-nav d-flex flex-wrap justify-content-end mb-2">
+            <a href="#" class="secondary text-decoration-none px-3">Login</a>
+            <a href="#" class="secondary text-decoration-none px-3">Register</a>
+          </div>
+          <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav-link">NAV ITEM 1</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">NAV ITEM 2</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">NAV ITEM 3</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">NAV ITEM 4</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="container clearfix mb-5">
+      <button onclick="copyText('#header-div')" class="btn btn-secondary copyToClipboard">Copy header</button>
+    </div>
+  </header>
+
+  <!---main section-->
+  <main>
+    <div class="container">
+      <section class="typography-styles my-5">
+        <div class="row">
+          <div class="col-6">
+            <h2>Typography Styles</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#typographyStylesTable')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="typographyStylesTable">
+          <div class="table-responsive">
+            <table class="table mt-5 table-borderless">
+              <thead>
+                <tr>
+                  <th width="200px">Title</th>
+                  <th width="200px">Headings</th>
+                  <th>Paragraph</th>
+                  <th>Hyperlinks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <h1 class="h1">Main title</h1>
+                  </td>
+                  <td>
+                    <span class="h2">Heading 2</span>
+                  </td>
+                  <td>
+                    <p>Normal text. Nem qui omnis nam ne eiciistem fugit volupt- umet eostrum ercient iusaeruptas qui
+                      ute
+                      non porerro tem
+                      fugit rem aliquam nes.
+                    </p>
+                  </td>
+                  <td><a href="#" class="link-default">Default</a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <h1 class="h1"></h1>
+                  </td>
+                  <td>
+                    <span class="h3 hover-color">Heading 3</span>
+                  </td>
+                  <td>
+                    <p class="card-text hover-color">Dialog/card text. Nem qui omnis nam ne eiciistem fugit vo-
+                      luptumet eostrum ercient iusaeruptas qui ute non porerro
+                      tem fugit rem aliquam nes.</p>
+                  </td>
+                  <td><a href="#" class="link-hover hover-color">Hover</a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <h1 class="h1"></h1>
+                  </td>
+                  <td>
+                    <span class="h4 focused-color">Heading 4</span>
+                  </td>
+                  <td>
+                    <p class="focused-color">Emphasis text. Nem qui omnis nam ne eiciistem fugit
+                      voluptumet eostrum ercient iusaeruptas qui ute non
+                      porerro tem fugit rem aliquam nes.
+                    </p>
+                  </td>
+                  <td><a href="#" class="link-focused focused-color">Focused</a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <h1 class="h1"></h1>
+                  </td>
+                  <td>
+                    <strong><span class="table-heading">TABLE HEADING</span> </strong>
+                  </td>
+                  <td>
+                    <p class="text-muted">Muted text. Nem qui omnis nam ne eiciistem fugit volupt-
+                      umet eostrum ercient iusaeruptas qui ute non porerro tem
+                      fugit rem aliquam nes.
+                    </p>
+                  </td>
+                  <td><a href="#" class="link-selected">Selected/mousedown</a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <h1 class="h1"></h1>
+                  </td>
+                  <td>
+                    <span class="h2"></span>
+                  </td>
+                  <td>
+                    <p class="caption">Caption text. Nem qui omnis nam ne eiciistem fugit volupt-
+                      umet eostrum ercient iusaeruptas qui ute non porerro tem
+                      fugit rem aliquam nes.
+                    </p>
+                  </td>
+                  <td><a href="#" class="link-visited">Visited</a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <h1 class="h1"></h1>
+                  </td>
+                  <td>
+                    <span class="h2"></span>
+                  </td>
+                  <td>
+                    <p>
+                    </p>
+                  </td>
+                  <td><a href="#" class="link-disabled disable">Disabled</a></td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- <div class="bd-clipboard"><button type="button" class="btn btn-clipboard" onclick="copyText('#heading')" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div id="heading" class="code-block" data-copy="true">
+                          <pre><code data-lang="html">
+&lt;h1&gt; heading 1 &lt;/h1&gt;
+&lt;h2&gt; heading 2 &lt;/h2&gt;
+&lt;h3&gt; heading 3 &lt;/h3&gt;
+&lt;h4&gt; heading 4 &lt;/h4&gt;
+&lt;h5&gt; heading 5 &lt;/h5&gt;
+&lt;h6&gt; heading 6 &lt;/h6&gt;
+                            </code></pre>
+                    </div> -->
+      </section>
+      <!--table-->
+      <section class="table-typography">
+
+        <div class="">
+
+          <div class=" text-table mb-5">
+            <h2 class="table-heading">Table Typography</h2>
+            <div class="row">
+              <div class="col-6">
+                <h5 class="mb-4">Text Table</h5>
+              </div>
+              <div class="col-6">
+                <button onclick="copyText('#table1')" class="btn btn-secondary copyToClipboard">Copy</button>
+              </div>
+            </div>
+            <h4 class="table-heading">TABLE HEADING</h4>
+            <div id="table1">
+              <div class="table-responsive">
+                <table class="table color-border">
+                  <thead>
+                    <tr>
+                      <th scope="col">Heading 1</th>
+                      <th scope="col">Heading 2</th>
+                      <th scope="col">Heading 3</th>
+                      <th scope="col">Heading 4</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Text.</td>
+                      <td>Text.</td>
+                      <td>Text.</td>
+                      <th>Highlighted Text</th>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!--control table-->
+          <div class="">
+            <div class="row">
+              <div class="col-6">
+                <h5 class="mb-4">Control Table</h5>
+              </div>
+              <div class="col-6">
+                <button onclick="copyText('#control-table')" class="btn btn-secondary copyToClipboard">Copy</button>
+              </div>
+            </div>
+            <div id="control-table" class="text-table mb-5">
+              <div class="table-responsive">
+                <table class="table table-borderless control-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Heading 1</th>
+                      <th scope="col">Heading 2</th>
+                      <th scope="col">Heading 3</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="icon round-100 me-3"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-signpost-fill" viewBox="0 0 16 16">
+                            <path
+                              d="M7.293.707A1 1 0 0 0 7 1.414V4H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h5v6h2v-6h3.532a1 1 0 0 0 .768-.36l1.933-2.32a.5.5 0 0 0 0-.64L13.3 4.36a1 1 0 0 0-.768-.36H9V1.414A1 1 0 0 0 7.293.707z" />
+                          </svg></span> Lorem ipsum</td>
+                      <td><input class="form-control" type="text" placeholder="Lorem ipsum" aria-label="Lorem ipsum">
+                      </td>
+                      <td>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Choice 1</option>
+                          <option value="1">Choice 1</option>
+                          <option value="2">Choice 2</option>
+                          <option value="3">Choice 3</option>
+                        </select>
+                      </td>
+                      <td>
+                        <div class="btn-group dropdown">
+                          <button type="button" class="btn btn-primary btn-text">Let's Go</button>
+                          <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                              </svg></span>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Menu Item 1</a></li>
+                            <li><a class="dropdown-item" href="#">Menu Item 2</a></li>
+                            <li><a class="dropdown-item" href="#">Menu Item 3</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item disabled" href="#">Menu Item 4</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="icon round-100 me-3"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-signpost-fill" viewBox="0 0 16 16">
+                            <path
+                              d="M7.293.707A1 1 0 0 0 7 1.414V4H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h5v6h2v-6h3.532a1 1 0 0 0 .768-.36l1.933-2.32a.5.5 0 0 0 0-.64L13.3 4.36a1 1 0 0 0-.768-.36H9V1.414A1 1 0 0 0 7.293.707z" />
+                          </svg></span> Lorem ipsum</td>
+                      <td><input class="form-control" type="text" placeholder="Lorem ipsum" aria-label="Lorem ipsum">
+                      </td>
+                      <td>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Choice 1</option>
+                          <option value="1">Choice 1</option>
+                          <option value="2">Choice 2</option>
+                          <option value="3">Choice 3</option>
+                        </select>
+                      </td>
+                      <td>
+                        <div class="btn-group dropdown">
+                          <button type="button" class="btn btn-primary btn-text">Let's Go</button>
+                          <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                              </svg></span>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Menu Item 1</a></li>
+                            <li><a class="dropdown-item" href="#">Menu Item 2</a></li>
+                            <li><a class="dropdown-item" href="#">Menu Item 3</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item disabled" href="#">Menu Item 4</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="icon round-100 me-3"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-signpost-fill" viewBox="0 0 16 16">
+                            <path
+                              d="M7.293.707A1 1 0 0 0 7 1.414V4H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h5v6h2v-6h3.532a1 1 0 0 0 .768-.36l1.933-2.32a.5.5 0 0 0 0-.64L13.3 4.36a1 1 0 0 0-.768-.36H9V1.414A1 1 0 0 0 7.293.707z" />
+                          </svg></span> Lorem ipsum</td>
+                      <td><input class="form-control" type="text" placeholder="Lorem ipsum" aria-label="Lorem ipsum">
+                      </td>
+                      <td>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Choice 1</option>
+                          <option value="1">Choice 1</option>
+                          <option value="2">Choice 2</option>
+                          <option value="3">Choice 3</option>
+                        </select>
+                      </td>
+                      <td>
+                        <div class="btn-group dropdown">
+                          <button type="button" class="btn btn-primary btn-text">Let's Go</button>
+                          <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                              </svg></span>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Menu Item 1</a></li>
+                            <li><a class="dropdown-item" href="#">Menu Item 2</a></li>
+                            <li><a class="dropdown-item" href="#">Menu Item 3</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item disabled" href="#">Menu Item 4</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="icon round-100 me-3"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-signpost-fill" viewBox="0 0 16 16">
+                            <path
+                              d="M7.293.707A1 1 0 0 0 7 1.414V4H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h5v6h2v-6h3.532a1 1 0 0 0 .768-.36l1.933-2.32a.5.5 0 0 0 0-.64L13.3 4.36a1 1 0 0 0-.768-.36H9V1.414A1 1 0 0 0 7.293.707z" />
+                          </svg></span> Lorem ipsum</td>
+                      <td><input class="form-control" type="text" placeholder="Lorem ipsum" aria-label="Lorem ipsum">
+                      </td>
+                      <td>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Choice 1</option>
+                          <option value="1">Choice 1</option>
+                          <option value="2">Choice 2</option>
+                          <option value="3">Choice 3</option>
+                        </select>
+                      </td>
+                      <td>
+                        <div class="btn-group dropdown">
+                          <button type="button" class="btn btn-primary btn-text">Let's Go</button>
+                          <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                              </svg></span>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Menu Item 1</a></li>
+                            <li><a class="dropdown-item" href="#">Menu Item 2</a></li>
+                            <li><a class="dropdown-item" href="#">Menu Item 3</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item disabled" href="#">Menu Item 4</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="icon round-100 me-3"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-signpost-fill" viewBox="0 0 16 16">
+                            <path
+                              d="M7.293.707A1 1 0 0 0 7 1.414V4H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h5v6h2v-6h3.532a1 1 0 0 0 .768-.36l1.933-2.32a.5.5 0 0 0 0-.64L13.3 4.36a1 1 0 0 0-.768-.36H9V1.414A1 1 0 0 0 7.293.707z" />
+                          </svg></span> Lorem ipsum</td>
+                      <td><input class="form-control" type="text" placeholder="Lorem ipsum" aria-label="Lorem ipsum">
+                      </td>
+                      <td>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Choice 1</option>
+                          <option value="1">Choice 1</option>
+                          <option value="2">Choice 2</option>
+                          <option value="3">Choice 3</option>
+                        </select>
+                      </td>
+                      <td>
+                        <div class="btn-group dropdown">
+                          <button type="button" class="btn btn-primary btn-text">Let's Go</button>
+                          <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                              </svg></span>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Menu Item 1</a></li>
+                            <li><a class="dropdown-item" href="#">Menu Item 2</a></li>
+                            <li><a class="dropdown-item" href="#">Menu Item 3</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item disabled" href="#">Menu Item 4</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+      <!-- breadcrumbs -->
+      <section class="breadcrumbs">
+        <div class="row">
+          <div class="col-6">
+            <h2>Breadcrumbs</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#breadcrumbs')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="breadcrumbs" class="mb-5">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="">Home</a></li>
+              <li class="breadcrumb-item"><a href="">Level 1</a></li>
+              <li class="breadcrumb-item"><a href="">Level 2</a></li>
+              <li class="breadcrumb-item" aria-current="page">This Page</li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+      <!-- tabs -->
+      <section class="tab-bar">
+        <div class="row mb-2">
+          <div class="col-6">
+            <h2>Tab Bar</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#tabbar')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="tabbar" class="mb-5">
+
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Tab item 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tab item 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tab item 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tab item 4</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Tab item 5</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- sidenavs -->
+      <section class="side-bar">
+        <div class="row">
+          <div class="col-12 col-md-3 mb-4">
+            <div class="mb-2 row">
+              <div class="col-6">
+                <h5>Text only</h5>
+              </div>
+              <div class="col-6">
+                <button onclick="copyText('#sidebar')" class="btn btn-secondary copyToClipboard">Copy</button>
+              </div>
+            </div>
+            <div id="sidebar">
+              <ul class="sidenav nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Nav Item 1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nav Item 2</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nav Item 3</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nav Item 4</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Nav Item 5</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mb-4"></div>
+          <div class="col-12 col-md-3 mb-4">
+            <div class="mb-2 row">
+              <div class="col-6">
+                <h5>With icons</h5>
+              </div>
+              <div class="col-6">
+                <button onclick="copyText('#icnSidebar')" class="btn btn-secondary copyToClipboard">Copy</button>
+              </div>
+            </div>
+            <div id="icnSidebar">
+              <ul class="sidenav nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-bandcamp"></i>
+                    Nav Item 1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-bandcamp"></i>Nav Item 2</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-bandcamp"></i>Nav Item 3</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-bandcamp"></i>Nav Item 4</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><i
+                      class="fa fa-bandcamp"></i>Nav Item 5</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mb-4"></div>
+        </div>
+      </section>
+      <!-- Dialog -->
+      <section class="dialog-box">
+        <div class="row">
+          <div class="col-6">
+            <h2>Dialog</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#dialogbox')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="dialogbox" class="mb-5">
+
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <h5>Default</h5>
+
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Open Default Modal
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title" id="exampleModalLabel">Dialog Heading</h3>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Dialog/card text. Nem qui omnis nam ne eiciistem fugit voluptumet eostrum ercient
+                      iusaeruptas qui ute non porerro tem fugit rem aliquam nes
+                      <div class="body-input">
+                        <div class="form-group">
+                          <label for="" class="form-label">Title text goes here</label>
+                          <input class="form-control" type="text" placeholder="Lorem ipsum" aria-label="Lorem ipsum">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="modal-btn btn btn-primary">Let's Go</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-12 col-md-6">
+              <h5>Login</h5>
+
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLogin">
+                Open Login Modal
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade " id="exampleModalLogin" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content modal-dark">
+                    <div class="modal-header">
+                      <h3 class="modal-title" id="exampleModalLabel">Login</h3>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="body-input">
+                        <div class="form-group">
+                          <label for="" class="form-label">Username</label>
+                          <input class="form-control" type="text" placeholder="Lorem ipsum" aria-label="Lorem ipsum">
+                        </div>
+                        <div class="form-group">
+                          <label for="" class="form-label">Password</label>
+                          <input class="form-control" type="text" placeholder="Lorem ipsum" aria-label="Lorem ipsum">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="modal-btn btn btn-primary">Let's Go</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Cards -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Card</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#cards')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="cards" class="mb-5">
+
+          <div class="row">
+            <div class="col-12 col-md-3">
+              <h5>Default</h5>
+              <div class="card text-blue bg-default mb-3">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="card-body">
+                  <h3 class="card-title">Card Heading</h3>
+                  <p class="card-text">Dialog/card text. Nem qui omnis nam ne eiciistem
+                    fugit voluptumet eostrum ercient iusaeruptas qui
+                    ute non porerro tem fugit rem aliquam nes. Bor-
+                    itaquis mo ipiciaeped essimi, siti quosa sinctem
+                    voluptat.</p>
+                  <h6>Find out More</h6>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-12 col-md-3">
+              <h5>Colour</h5>
+              <div class="card text-white card-bg-blue mb-3">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="card-body">
+                  <h3 class="card-title">Card Heading</h3>
+                  <p class="card-text">Dialog/card text. Nem qui omnis nam ne eiciistem
+                    fugit voluptumet eostrum ercient iusaeruptas qui
+                    ute non porerro tem fugit rem aliquam nes. Bor-
+                    itaquis mo ipiciaeped essimi, siti quosa sinctem
+                    voluptat.</p>
+                  <h6>Find out More</h6>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-12 col-md-6">
+              <h5>With Image</h5>
+              <div class="card text-blue p-0 mb-3">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="row g-0">
+                  <div class="col-md-8">
+                    <div class="card-body p-4">
+                      <h3 class="card-title">Card Heading</h3>
+                      <p class="card-text">Dialog/card text. Nem qui omnis nam ne eiciistem
+                        fugit voluptumet eostrum ercient iusaeruptas qui
+                        ute non porerro tem fugit rem aliquam nes. Bor-
+                        itaquis mo ipiciaeped essimi, siti quosa sinctem
+                        voluptat.</p>
+                      <h6>Find out More</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="images/image_card.png" class="img-fluid card-image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- toast -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Toast</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#toasts')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="toasts" class="mb-5">
+
+          <div class="row">
+            <div class="col-md-2">
+              <h5>Default</h5>
+              <div class="alert alert-primary" role="alert">
+                Changes Saved.
+              </div>
+            </div>
+            <div class="col-md-2">
+              <h5>Success</h5>
+              <div class="alert alert-success" role="alert">
+                Changes Saved.
+              </div>
+            </div>
+            <div class="col-md-2">
+              <h5>Warning</h5>
+              <div class="alert alert-warning" role="alert">
+                Saving delayed.
+              </div>
+            </div>
+            <div class="col-md-2">
+              <h5>Danger</h5>
+              <div class="alert alert-danger" role="alert">
+                Could not save.
+              </div>
+            </div>
+            <div class="col-md-2">
+              <h5>Info</h5>
+              <div class="alert alert-secondary" role="alert">
+                Changes Saved.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Messages -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Message</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#messages')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="messages" class="mb-5">
+
+          <div class="row">
+            <div class="col-sm-2 mb-2">
+              <h5>Default</h5>
+
+              <button type="button" class="btn btn-primary" onclick="openToast('#defaultToast')">Default Toast</button>
+
+              <div class="toast-container bottom-0 end-0 p-3">
+                <div id="defaultToast" class="toast toast-primary" role="alert" aria-live="assertive"
+                  aria-atomic="true">
+                  <div class="toast-contents">
+                    <div class="toast-header">
+                      <h3>Message Heading</h3>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                      Dialog/card text. Nem qui omnis nam ne eiciistem fugit voluptumet eostrum ercient
+                      iusaeruptas qui ute non porerro tem fugit rem aliquam nes.
+                    </div>
+                  </div>
+                  <div class="toast-footer">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 mb-2">
+              <h5>Success</h5>
+
+              <button type="button" class="btn btn-primary" onclick="openToast('#successToast')">Success Toast</button>
+
+              <div class="toast-container bottom-0 end-0 p-3">
+                <div id="successToast" class="toast toast-success" role="alert" aria-live="assertive"
+                  aria-atomic="true">
+                  <div class="toast-contents">
+                    <div class="toast-header">
+                      <h3>Message Heading</h3>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                      Dialog/card text. Nem qui omnis nam ne eiciistem fugit voluptumet eostrum ercient
+                      iusaeruptas qui ute non porerro tem fugit rem aliquam nes.
+                    </div>
+                  </div>
+                  <div class="toast-footer">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 mb-2">
+              <h5>Warning</h5>
+
+              <button type="button" class="btn btn-primary" onclick="openToast('#warningToast')">Warning Toast</button>
+
+              <div class="toast-container bottom-0 end-0 p-3">
+                <div id="warningToast" class="toast toast-warning" role="alert" aria-live="assertive"
+                  aria-atomic="true">
+                  <div class="toast-contents">
+                    <div class="toast-header">
+                      <h3>Message Heading</h3>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                      Dialog/card text. Nem qui omnis nam ne eiciistem fugit voluptumet eostrum ercient
+                      iusaeruptas qui ute non porerro tem fugit rem aliquam nes.
+                    </div>
+                  </div>
+                  <div class="toast-footer">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 mb-2">
+              <h5>Danger</h5>
+
+              <button type="button" class="btn btn-primary" onclick="openToast('#dangerToast')">Danger Toast</button>
+
+              <div class="toast-container bottom-0 end-0 p-3">
+                <div id="dangerToast" class="toast toast-danger" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-contents">
+                    <div class="toast-header">
+                      <h3>Message Heading</h3>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                      Dialog/card text. Nem qui omnis nam ne eiciistem fugit voluptumet eostrum ercient
+                      iusaeruptas qui ute non porerro tem fugit rem aliquam nes.
+                    </div>
+                  </div>
+                  <div class="toast-footer">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 mb-2">
+              <h5>Info</h5>
+
+              <button type="button" class="btn btn-primary" onclick="openToast('#secondaryToast')">Info Toast</button>
+
+              <div class="toast-container bottom-0 end-0 p-3">
+                <div id="secondaryToast" class="toast toast-secondary" role="alert" aria-live="assertive"
+                  aria-atomic="true">
+                  <div class="toast-contents">
+                    <div class="toast-header">
+                      <h3>Message Heading</h3>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                      Dialog/card text. Nem qui omnis nam ne eiciistem fugit voluptumet eostrum ercient
+                      iusaeruptas qui ute non porerro tem fugit rem aliquam nes.
+                    </div>
+                  </div>
+                  <div class="toast-footer">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- button Primary -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Button - Primary</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#buttonPrimary')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="buttonPrimary" class="mb-5">
+
+          <div class="row">
+            <div class="col-md-2">
+              <h5>Default</h5>
+              <button type="button" class="btn btn-primary">Let's go</button>
+            </div>
+            <div class="col-md-2">
+              <h5>Disabled</h5>
+              <button type="button" disabled class="btn btn-primary">Let's go</button>
+            </div>
+          </div>
+      </section>
+      <!-- button Secondary -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Button - Secondary</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#buttonSecondary')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="buttonSecondary" class="mb-5">
+
+          <div class="row">
+            <div class="col-md-2">
+              <h5>Default</h5>
+              <button type="button" class="btn btn-secondary">Let's go</button>
+            </div>
+            <div class="col-md-2">
+              <h5>Disabled</h5>
+              <button type="button" disabled class="btn btn-secondary">Let's go</button>
+            </div>
+          </div>
+      </section>
+      <!-- button Success -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Button - Success</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#buttonSuccess')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="buttonSuccess" class="mb-5">
+
+          <div class="row">
+            <div class="col-md-2">
+              <h5>Default</h5>
+              <button type="button" class="btn btn-success">Let's go</button>
+            </div>
+            <div class="col-md-2">
+              <h5>Disabled</h5>
+              <button type="button" disabled class="btn btn-success">Let's go</button>
+            </div>
+          </div>
+      </section>
+      <!-- button Warning -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Button - Warning</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#buttonWarning')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="buttonWarning" class="mb-5">
+
+          <div class="row">
+            <div class="col-md-2">
+              <h5>Default</h5>
+              <button type="button" class="btn btn-warning">Let's go</button>
+            </div>
+            <div class="col-md-2">
+              <h5>Disabled</h5>
+              <button type="button" disabled class="btn btn-warning">Let's go</button>
+            </div>
+          </div>
+      </section>
+      <!-- button Danger -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Button - Danger</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#buttonDanger')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="buttonDanger" class="mb-5">
+
+          <div class="row">
+            <div class="col-md-2">
+              <h5>Default</h5>
+              <button type="button" class="btn btn-danger">Let's go</button>
+            </div>
+            <div class="col-md-2">
+              <h5>Disabled</h5>
+              <button type="button" disabled class="btn btn-danger">Let's go</button>
+            </div>
+          </div>
+      </section>
+      <!-- button Info -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Button - Info</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#buttonInfo')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="buttonInfo" class="mb-5">
+
+          <div class="row">
+            <div class="col-md-2">
+              <h5>Default</h5>
+              <button type="button" class="btn btn-info">Let's go</button>
+            </div>
+            <div class="col-md-2">
+              <h5>Disabled</h5>
+              <button type="button" disabled class="btn btn-info">Let's go</button>
+            </div>
+          </div>
+      </section>
+      <!-- button Light -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Button - Light</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#buttonLight')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="buttonLight" class="mb-5">
+
+          <div class="row">
+            <div class="col-md-2">
+              <h5>Default</h5>
+              <button type="button" class="btn btn-light-i">Let's go</button>
+            </div>
+            <div class="col-md-2">
+              <h5>Disabled</h5>
+              <button type="button" disabled class="btn btn-light-i">Let's go</button>
+            </div>
+          </div>
+      </section>
+      <!-- button dark -->
+      <section>
+        <div class="mb-2 row">
+          <div class="col-6">
+            <h2>Button - Dark</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#buttonDark')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="buttonDark" class="mb-5 dark-background">
+
+          <div class="row">
+            <div class="col-md-2">
+              <h5>Default</h5>
+              <button type="button" class="btn btn-dark-i">Let's go</button>
+            </div>
+            <div class="col-md-2">
+              <h5>Disabled</h5>
+              <button type="button" disabled class="btn btn-dark-i">Let's go</button>
+            </div>
+          </div>
+      </section>
+      <!-- Icon Button -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Icon Button</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#icnBtn')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="icnBtn" class="mb-5">
+
+          <div class="row">
+            <div class="col-md-2 mb-2">
+              <button type="button" class="btn btn-primary icon-btn"><i class="fa fa-male" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="col-md-2 mb-2">
+              <button type="button" disabled class="btn btn-primary icon-btn"><i class="fa fa-male"
+                  aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+      </section>
+      <!-- Button Close-->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Dialog close button</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#buttonClose')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="buttonClose" class="mb-5">
+
+          <div class="row">
+            <div class="col-md-2 mb-2">
+              <button type="button" class="btn btn-primary close-btn"><i class="fa fa-times" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="col-md-2 mb-2">
+              <button type="button" disabled class="btn btn-primary close-btn"><i class="fa fa-times"
+                  aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+      </section>
+      <!-- Drop Down Button-->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Button with dropdown menu</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#dropdownMenu')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="dropdownMenu" class="mb-5">
+
+          <div class="row">
+            <div class="col-md-2 mb-2">
+
+              <div class="btn-group dropdown">
+                <button type="button" class="btn btn-primary btn-text">Let's Go</button>
+                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Menu Item 1</a></li>
+                  <li><a class="dropdown-item" href="#">Menu Item 2</a></li>
+                  <li><a class="dropdown-item" href="#">Menu Item 3</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item disabled" href="#">Menu Item 4</a></li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="col-md-2 mb-2">
+
+              <div class="btn-group dropdown">
+                <button disabled type="button" class="btn btn-primary btn-text">Let's Go</button>
+                <button disabled type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+      </section>
+      <!-- action buttons -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Action Button</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#actionbutton')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="actionbutton" class="mb-5">
+
+          <div tabindex="0" class="action-btn btn btn-primary">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+          </div>
+        </div>
+      </section>
+      <!-- Toolbar buttons -->
+      <section>
+        <div class="row mb-3">
+          <div class="col-6">
+            <h2>Toolbar Button</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#toolbarButton')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="toolbarButton" class="mb-5">
+
+          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-primary"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="btn-group" role="group">
+              <button disabled type="button" class="btn btn-primary"><i class="fa fa-long-arrow-right"
+                  aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Pill -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Pill</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#pill')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="pill" class="mb-5">
+
+          <div class="row">
+            <div class="col-md-2">
+              <h5>Default</h5>
+              <span class="badge rounded-pill badge-primary">Validitron</span>
+            </div>
+            <div class="col-md-2">
+              <h5>Success</h5>
+              <span class="badge rounded-pill badge-success">Validitron</span>
+            </div>
+            <div class="col-md-2">
+              <h5>Warning</h5>
+              <span class="badge rounded-pill badge-warning">Validitron</span>
+            </div>
+            <div class="col-md-2">
+              <h5>Danger</h5>
+              <span class="badge rounded-pill badge-danger">Validitron</span>
+            </div>
+            <div class="col-md-2">
+              <h5>Info</h5>
+              <span class="badge rounded-pill badge-secondary">Validitron</span>
+            </div>
+            <div class="col-md-2">
+              <h5>Muted</h5>
+              <span class="badge rounded-pill badge-muted">Validitron</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Tags -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Tag</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#tag')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="tag" class="mb-5">
+
+          <div class="row">
+            <div class="col-md-4">
+              <h5>Default</h5>
+              <button type="button" class="btn tag-btn"><span><i class="fa fa-circle" aria-hidden="true"></i>
+                </span>Healthcare</button>
+            </div>
+            <div class="col-md-4">
+              <h5>Selected</h5>
+              <button type="button" class="btn tag-btn active"><span><i class="fa fa-circle" aria-hidden="true"></i>
+                </span>Healthcare</button>
+            </div>
+            <div class="col-md-4">
+              <h5>Disabled</h5>
+              <button disabled type="button" class="btn tag-btn"><span><i class="fa fa-circle" aria-hidden="true"></i>
+                </span>Healthcare</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Control Labelling -->
+      <section>
+        <div class="mb-5">
+          <h2>Control labelling, spacing and grouping</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <h5>Vertical/mobile</h5>
+              <form>
+                <div class="row">
+                  <div class="col-6 mb-3">
+                    <div class="form-group">
+                      <label for="input1" class="form-label">Label one</label>
+                      <input type="text" placeholder="Enter text here..." class="form-control" id="input1"
+                        aria-describedby="emailHelp">
+                    </div>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <div class="form-group">
+                      <label for="input2" class="form-label">Label two</label>
+                      <input type="text" placeholder="Enter text here..." class="form-control" id="input2">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 mb-3">
+                    <div class="form-group">
+                      <label for="input3" class="form-label">Label three</label>
+                      <input type="text" placeholder="Enter text here..." class="form-control" id="input3">
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <form>
+                <h3>Heading 3</h3>
+                <p>Normal text. Nem qui omnis nam ne eiciistem fugit voluptumet eo-
+                  strum ercient iusaeruptas qui ute non porerro tem fugit rem aliquam
+                  nes ient iusaeruptas qui ute. <a href="#" class="link-default">Inline hyperlink</a></p>
+                <div class="form-group">
+                  <label for="input4" class="form-label">Label three</label>
+                  <input type="text" placeholder="Enter text here..." class="form-control" id="input4">
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <h5>Horizontal</h5>
+              <form>
+                <div class="row">
+                  <div class="col-sm mb-3">
+                    <div class="form-group">
+                      <label for="input1" class="form-label">Label one</label>
+                      <input type="text" placeholder="Enter text here..." class="form-control" id="input1"
+                        aria-describedby="emailHelp">
+                    </div>
+                  </div>
+                  <div class="col-sm mb-3">
+                    <div class="form-group">
+                      <label for="input2" class="form-label">Label two</label>
+                      <input type="text" placeholder="Enter text here..." class="form-control" id="input2">
+                    </div>
+                  </div>
+                  <div class="col-sm mb-3">
+                    <div class="form-group">
+                      <label for="input3" class="form-label">Label three</label>
+                      <input type="text" placeholder="Enter text here..." class="form-control" id="input3">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg mb-3">
+                    <div class="form-group">
+                      <label for="input4" class="form-label">Long Label</label>
+                      <input type="text" placeholder="Enter text here..." class="form-control" id="input4">
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <h5>With validation error</h5>
+              <form target="#" class="needs-validation" novalidate>
+                <div class="row">
+                  <div class="col-6 mb-3">
+                    <div class="form-group">
+                      <label for="emailInput1" class="form-label">Email address</label>
+                      <input type="email" placeholder="Enter text here..." class="form-control" id="emailInput1">
+                      <div class="invalid-feedback">
+                        Please type a valid email address.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <div class="form-group">
+                      <label for="emailInput2" class="form-label">Postcode</label>
+                      <input type="text" placeholder="Enter text here..." class="form-control" id="emailInput2">
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit form</button>
+              </form>
+              <form target="#" class="needs-validation" novalidate>
+                <div class="form-group row">
+                  <label for="emailInput1" class="col-sm-3 col-form-label">Email address</label>
+                  <div class="col-sm-9">
+                    <input type="email" placeholder="Enter text here..." class="form-control" id="emailInput1">
+                    <div class="invalid-feedback">
+                      Please type a valid email address.
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="input11" class="col-sm-3 col-form-label">Label two</label>
+                  <div class="col-sm-9">
+                    <input type="type" class="form-control" id="input11" placeholder="Enter text here...">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="input9" class="col-sm-3 col-form-label">Label three</label>
+                  <div class="col-sm-9">
+                    <input type="type" class="form-control" id="input9" placeholder="Enter text here...">
+                  </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit form</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Textbox -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Textbox</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#textBox')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="textBox" class="mb-5">
+
+          <div class="row">
+            <div class="col-md-4">
+              <h5>Default</h5>
+              <input class="form-control" type="text" placeholder="Lorem ipsum" aria-label="Lorem ipsum">
+            </div>
+            <div class="col-md-4">
+              <h5>Disabled</h5>
+              <input disabled class="form-control" type="text" placeholder="Lorem ipsum" aria-label="Lorem ipsum">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Textbox with Addon -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Textbox with addon</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#buttonAddon')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="buttonAddon" class="mb-5">
+
+          <div class="row">
+            <div class="col-md-4">
+              <h5>Default</h5>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control text-btn-addon" placeholder="Lorem Ipsum"
+                  aria-describedby="button-addon2">
+                <button class="btn btn-primary" type="button" id="button-addon2">@gmail.com</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Text with button -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Text with button</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#textButton')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="textButton" class="mb-5">
+          <div class="row">
+            <div class="col-md-4">
+              <h5>Default</h5>
+              <div class="form-group input-with-btn">
+                <input class="form-control" type="text" placeholder="Lorem ipsum" aria-label="Lorem ipsum">
+                <button type="button" class="btn btn-primary"><i class="fa fa-long-arrow-right"
+                    aria-hidden="true"></i></button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h5>Disabled</h5>
+              <div class="form-group input-with-btn disabled">
+                <input disabled class="form-control" type="text" placeholder="Lorem ipsum" aria-label="Lorem ipsum">
+                <button disabled type="button" class="btn btn-primary"><i class="fa fa-long-arrow-right"
+                    aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Select -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Select/combo</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#select')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="select" class="mb-5">
+
+          <div class="row">
+            <div class="col-md-2">
+              <h5>Default</h5>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Choice 1</option>
+                <option value="1">Choice 1</option>
+                <option value="2">Choice 2</option>
+                <option value="3">Choice 3</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <h5>Disabled</h5>
+              <select disabled class="form-select" aria-label="Default select example">
+                <option selected>Choice 1</option>
+                <option value="1">Choice 1</option>
+                <option value="2">Choice 2</option>
+                <option value="3">Choice 3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- radio Buttons -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Radio</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#radioButtons')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="radioButtons" class="mb-5">
+          <div class="row">
+            <div class="col-md-3">
+              <h5>Default</h5>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadiosbtn1" id="exampleRadiosbtn1"
+                  value="option1" checked>
+                <label class="form-check-label" for="exampleRadiosbtn1">
+                  Option Label
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h5>Default + Selected</h5>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadiosbtn1" id="exampleRadiosbtn2"
+                  value="option1" checked>
+                <label class="form-check-label" for="exampleRadiosbtn2">
+                  Option Label
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h5>Disabled</h5>
+              <div class="form-check">
+                <input disabled class="form-check-input" type="radio" name="disabledunchecked2" id="disabledRadios2"
+                  value="option1">
+                <label class="form-check-label" for="disabledunchecked2">
+                  Option Label
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h5>Disabled + Selected</h5>
+              <div class="form-check">
+                <input disabled class="form-check-input" type="radio" name="disabledchecked1" id="disabledRadios1"
+                  value="option1" checked>
+                <label class="form-check-label" for="disabledchecked1">
+                  Option Label
+                </label>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- likert-->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Likert</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#likert')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="likert">
+          <div class="row">
+            <div class="col-md-3">
+              <h5>End anchored</h5>
+              <div class="likert-container">
+                <div class="radios">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="examplelikert1" value="option1">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="examplelikert1" value="option1">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="examplelikert1" value="option1">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="examplelikert1" value="option1">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="examplelikert1" value="option1">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="examplelikert1" value="option1">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="examplelikert1" value="option1">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="examplelikert1" value="option1">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="examplelikert1" value="option1">
+                </div>
+                <div class="likert-text">
+                  <span>Strongly disagree</span>
+                  <span>Strongly agree</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+              <h5>Labeled</h5>
+              <div class="likert-container">
+                <div class="radios">
+                  <div class="form-group">
+                    <label for="examplelikert1">1</label>
+                    <input class="form-check-input" type="radio" name="exampleRadios1" id="examplelikert1"
+                      value="option1">
+                    <label for="examplelikert1">Strongly <br> disagree</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="examplelikert2">2</label>
+                    <input class="form-check-input" type="radio" name="exampleRadios1" id="examplelikert2"
+                      value="option1">
+                    <label for="examplelikert2">Disagree</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="examplelikert3">3</label>
+                    <input class="form-check-input" type="radio" name="exampleRadios1" id="examplelikert3"
+                      value="option1">
+                    <label for="examplelikert3">Neutral</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="examplelikert4">4</label>
+                    <input class="form-check-input" type="radio" name="exampleRadios1" id="examplelikert4"
+                      value="option1">
+                    <label for="examplelikert4">Agree</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="examplelikert5">5</label>
+                    <input class="form-check-input" type="radio" name="exampleRadios1" id="examplelikert5"
+                      value="option1">
+                    <label for="examplelikert5">Strongly <br> agree</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+        </div>
+      </section>
+      <!-- checkbox -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Checkbox</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#checkbox')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="checkbox">
+          <div class="row mb-5">
+            <div class="col-md-4">
+              <h5>Default</h5>
+              <div class="form-check responsive-checkbox">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Yes
+                </label>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h5>Disabled</h5>
+              <div class="form-check  responsive-checkbox">
+                <input disabled class="form-check-input" type="checkbox" value="" id="disabledCheck1">
+                <label class="form-check-label" for="disabledCheck1">
+                  Checkbox label
+                </label>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h5>Disabled + Selected</h5>
+              <div class="form-check  responsive-checkbox">
+                <input disabled class="form-check-input" type="checkbox" value="" id="disabledCheck2" checked>
+                <label class="form-check-label" for="disabledCheck2">
+                  Checkbox label
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- hero checkbox -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Hero Checkbox</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#heroCheckbox')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="herocheckbox">
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <h5>Default</h5>
+              <div tabindex="0" onclick="setActive()" class="form-check hero-checkbox">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                <label class="form-check-label" for="defaultCheck3">
+                  I agree to these terms
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h5>Disabled</h5>
+              <div class="form-check hero-checkbox disabled">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                <label class="form-check-label" for="defaultCheck3">
+                  I agree to these terms
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h5>Selected + Disabled</h5>
+              <div class="form-check hero-checkbox disabled">
+                <input checked class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                <label class="form-check-label" for="defaultCheck3">
+                  I agree to these terms
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- selectable with Addon -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Selectable with Addon</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#selectable')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="selectable">
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <h5>Default</h5>
+              <div tabindex="0" class="selectable">
+                <div class="selectable-text">
+                  <span>Other</span>
+                </div>
+                <div class="selectable-input">
+                  <label for="">Please Specify:</label>
+                  <input type="text">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h5>Selected</h5>
+              <div class="selectable active">
+                <div class="selectable-text">
+                  <span>Other</span>
+                </div>
+                <div class="selectable-input">
+                  <label for="">Please Specify:</label>
+                  <input type="text">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h5>Disabled</h5>
+              <div class="selectable disabled">
+                <div class="selectable-text">
+                  <span>Other</span>
+                </div>
+                <div class="selectable-input">
+                  <label for="">Please Specify:</label>
+                  <input type="text">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h5>Selected + Disabled</h5>
+              <div class="selectable active disabled">
+                <div class="selectable-text">
+                  <span>Other</span>
+                </div>
+                <div class="selectable-input">
+                  <label for="">Please Specify:</label>
+                  <input type="text">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- selectable with Icon -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Selectable with Icon</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#selectableicon')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="selectableicon">
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <h5>Default</h5>
+              <a href="tel:123456789" class="selectable-text selectable-with-icon">
+                <span><i class="fa fa-phone" aria-hidden="true"></i>
+                  Yes</span>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <h5>Selected</h5>
+              <a class="selectable-text selectable-with-icon active">
+                <span><i class="fa fa-phone" aria-hidden="true"></i>
+                  Yes</span>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <h5>Disabled</h5>
+              <a class="selectable-text selectable-with-icon disabled">
+                <span><i class="fa fa-phone" aria-hidden="true"></i>
+                  Yes</span>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <h5>Selected + Disabled</h5>
+
+              <a class="selectable-text selectable-with-icon active disabled">
+                <span><i class="fa fa-phone" aria-hidden="true"></i>
+                  Yes</span>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- file upload -->
+      <section>
+        <div class="row mb-2">
+          <div class="col-6">
+            <h2>File Upload</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#fileupload')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="fileupload">
+          <div class="row mb-5">
+            <div class="col-md-6">
+              <div class="fileUpload mb-3">
+                <div id="uploaded-div" class="uploadedFile">
+                </div>
+                <input id="fileInput" onchange="checkFile()" class="form-control" type="file" id="formFileMultiple"
+                  multiple>
+                <div class="uploadText">
+                  <span><i class="fa fa-file-text" aria-hidden="true"></i></span>
+                  <p>Drag a file here or tap to pick a file.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Scroll -->
+      <section>
+        <h2>Scrollbar</h2>
+        <div class="row mb-5">
+          <div class="col-md-6">
+            <h5>Default</h5>
+            <div class="scroll-container">
+              <div class="scroll-big-div"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ProgressBar -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Progress bar</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#progressBar')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="progressBar">
+
+          <div class="row mb-5">
+            <div class="col-md-6">
+              <h5>Default</h5>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h5>Indeterminate</h5>
+              <div class="progress">
+                <div class="progress-bar progress-bar-indeterminate" role="progressbar" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Spinner -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Spinner</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#spinner')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="spinner">
+
+          <div class="row mb-5">
+            <div class="col-md-4">
+              <h5>Default</h5>
+              <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- wallpaper -->
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h2>Brand-aligned wallapaper</h2>
+          </div>
+          <div class="col-6">
+            <button onclick="copyText('#wallapapers')" class="btn btn-secondary copyToClipboard">Copy</button>
+          </div>
+        </div>
+        <div id="wallapapers">
+
+          <div class="row mb-5">
+            <div class="col-md-6">
+              <h5>Light</h5>
+              <div class="wallpaper-container" style="background-size:50%">
+                <div class="card text-blue bg-default col-md-10 mx-auto">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="card-body">
+                    <h3 class="card-title">Card Heading</h3>
+                    <p class="card-text">Dialog/card text. Nem qui omnis nam ne eiciistem
+                      fugit voluptumet eostrum ercient iusaeruptas qui
+                      ute non porerro tem fugit rem aliquam nes. Bor-
+                      itaquis mo ipiciaeped essimi, siti quosa sinctem
+                      voluptat.</p>
+                    <h6>Find out More</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h5>Dark</h5>
+              <div class="wallpaper-container wallpaper-dark" style="background-size:25%">
+                <div class="card text-blue bg-default col-md-10 mx-auto">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="card-body">
+                    <h3 class="card-title">Card Heading</h3>
+                    <p class="card-text">Dialog/card text. Nem qui omnis nam ne eiciistem
+                      fugit voluptumet eostrum ercient iusaeruptas qui
+                      ute non porerro tem fugit rem aliquam nes. Bor-
+                      itaquis mo ipiciaeped essimi, siti quosa sinctem
+                      voluptat.</p>
+                    <h6>Find out More</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- App Icon -->
+      <section>
+        <h2>App Icon</h2>
+        <div class="row mb-5">
+          <div class="col-md-4">
+            <img width="110em" height="110em" src="images/logo-validitron-app.svg" alt="">
+          </div>
+        </div>
+      </section>
+      <!-- Favicon -->
+      <section>
+        <h2>Favicon</h2>
+        <div class="row mb-5">
+          <div class="col-md-4">
+            <img width="25em" height="25em" src="images/logo-validitron-app.svg" alt="">
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!--footer-->
+  <footer class="bg-grey-light color-white py-3">
+    <div class="container">
+      <div class="foot-text d-flex justify-content-start align-items-center">
+        <span class="px-3"><strong>Validitron</strong></span>
+        <span class="px-3">Web and mobile elements</span>
+        <span class="px-3">Version 1</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <clipPath id="clip-logo-validitron-app">
+      <rect width="1080" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="logo-validitron-app" clip-path="url(#clip-logo-validitron-app)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="1080" height="1080" rx="195" fill="#444"/>
+    <g id="Validitron" transform="translate(115.069 -206.798)">
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="851" height="838" transform="translate(-0.069 327.798)" fill="none"/>
+      <g id="Group_1" data-name="Group 1" transform="translate(47.43 364.247)">
+        <path id="Path_10" data-name="Path 10" d="M791.175,403.761A317.89,317.89,0,0,1,836.523,567.68c0,176.236-143.472,319.765-319.784,319.765S197.031,743.992,197.031,567.68,340.484,247.9,516.8,247.9a318.59,318.59,0,0,1,214.231,82.641l14.914-23.688a347.2,347.2,0,0,0-576.5,260.83c0,191.794,155.486,347.3,347.3,347.3s347.337-155.5,347.337-347.3a345.765,345.765,0,0,0-56.528-189.842Z" transform="translate(-169.44 -149.735)" fill="#e6e5de"/>
+        <path id="Path_11" data-name="Path 11" d="M369.841,765.732,346.57,751.064,683.39,216.5,706.7,231.167Z" transform="translate(-10.906 -153.188)" fill="#e6e5de"/>
+        <rect id="Rectangle_4" data-name="Rectangle 4" width="27.516" height="307.94" transform="translate(171.518 351.963) rotate(-32.22)" fill="#e6e5de"/>
+        <path id="Path_12" data-name="Path 12" d="M228.81,398.348a70.643,70.643,0,1,1,0,.006" transform="translate(-116.303 -53.626)" fill="#44c3cf"/>
+        <path id="Path_13" data-name="Path 13" d="M315.44,535.808a69.98,69.98,0,1,0,0-.006" transform="translate(-38.768 69.402)" fill="#82ccb1"/>
+        <path id="Path_14" data-name="Path 14" d="M493.18,253.736a70.646,70.646,0,1,1,70.646,70.646,70.646,70.646,0,0,1-70.646-70.646" transform="translate(120.312 -183.09)" fill="#cfe297"/>
+      </g>
+    </g>
+  </g>
+</svg>
