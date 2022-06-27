@@ -1,0 +1,21 @@
+@mixin ft-calc($pixels) {
+  font-size: calc($pixels) + px;
+}
+
+@mixin superior-breakpoint($breakpoint) {
+
+  $mediaQuery: map-get($superior-breakpoints, $breakpoint);
+
+  @if ($mediaQuery != null) {
+
+      @media #{$mediaQuery} {
+          @content
+      }
+  } @else {
+
+      @media #{$breakpoint} {
+          @content
+      }
+  }
+}
+

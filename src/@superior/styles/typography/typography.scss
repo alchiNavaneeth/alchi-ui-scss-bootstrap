@@ -1,0 +1,13 @@
+@import '../utilities/utilities.scss';
+
+//headers
+.h1, h1, .display-1 { @include ft-calc($font-h1) }
+.h2, h2, .display-2 { @include ft-calc($font-h2)}
+
+.h1, h1, .h2, h2, .display-1, .display-2, p {
+  @extend .primary-ff;
+}
+
+.h1, h1, .h2, h2, .display-1, .display-2 {
+  font-weight: 500;
+}

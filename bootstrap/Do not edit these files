@@ -1,4 +1,0 @@
-The Bootstrap style repo is cloned here for reference purposes and to guarantee availability for compilation.
-
->>> INSTEAD <<<
-Edit sass/main.scss to modify the house style.

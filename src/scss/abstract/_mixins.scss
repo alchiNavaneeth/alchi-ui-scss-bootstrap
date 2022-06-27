@@ -1,0 +1,49 @@
+
+@import "variables";
+
+@mixin border-radius ($radius) {
+	-webkit-border-radius: $radius !important;
+	-moz-border-radius: $radius !important;
+	border-radius: $radius !important;
+}
+
+@mixin opacity ($value) {
+  opacity: $value;
+  -moz-opacity: $value;
+  -webkit-opacity: $value;
+}
+
+@mixin no-mp () {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+@mixin ft-calc($pixels) {
+  font-size: calc( $pixels / $ft-base ) + rem;
+}
+
+
+@mixin visual-breakpoint($breakpoint) {
+
+  $mediaQuery: map-get($visual-breakpoints, $breakpoint);
+
+  @if ($mediaQuery != null) {
+
+      @media #{$mediaQuery} {
+          @content
+      }
+  } @else {
+
+      @media #{$breakpoint} {
+          @content
+      }
+  }
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+

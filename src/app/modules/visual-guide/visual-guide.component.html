@@ -1,0 +1,74 @@
+<div class="visual-guide-wrapper">
+
+  <div class="visual-guide-header d-flex align-items-center d-md-none">
+
+    <button class="btn mt-sidebar-toggle d-md-none py-0 px-1 ms-3 order-3 collapsed ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mt-docs-nav" aria-controls="mt-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-expand" fill="currentColor" viewBox="0 0 16 16">
+        <title>Expand</title>
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z"></path>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-collapse" fill="currentColor" viewBox="0 0 16 16">
+        <title>Collapse</title>
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0zm-.5 11.707l-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793z"></path>
+      </svg>
+    </button>
+
+  </div>
+
+  <div class="container-xxl">
+    <div class="col-sm-12">
+      <div class="visual-content-block">
+        <aside class="mt-sidebar">
+          <nav class="mt-links collapse" id="mt-docs-nav" aria-label="Docs navigation">
+            <ul class="list-unstyled mb-0 py-3 pt-md-1">
+              <li class="mb-1">
+                <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#typography-collapse" aria-expanded="true" aria-current="true">Typography</button>
+                <div class="collapse show" id="typography-collapse">
+                  <ul class="list-unstyled fw-normal pb-1 small">
+                      <li><a href="javascript:void(0)" routerLink="typography/headers" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}" class="d-inline-flex align-items-center rounded" aria-current="page">H1, H2</a></li>
+                      <li><a href="javascript:void(0)" routerLink="typography/paragraph" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}" class="d-inline-flex align-items-center rounded">Paragraph</a></li>
+                      <li><a href="javascript:void(0)" routerLink="typography/fontsize" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}" class="d-inline-flex align-items-center rounded">Font-size</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="mb-1">
+                <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#colors-collapse" aria-expanded="false" aria-current="true">
+                  Colors
+                </button>
+                <div class="collapse" id="colors-collapse">
+                  <ul class="list-unstyled fw-normal pb-1 small">
+                      <li><a href="javascript:void(0)" routerLink="colors/brand" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}"  class="d-inline-flex align-items-center rounded" aria-current="page">Brand Colors</a></li>
+                      <li><a href="javascript:void(0)" routerLink="colors/state" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}"  class="d-inline-flex align-items-center rounded">State colors</a></li>
+                      <li><a href="javascript:void(0)" routerLink="colors/utility" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}"  class="d-inline-flex align-items-center rounded">Utility colors</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn no-sub d-inline-flex align-items-center rounded">
+                  Iconography
+                </button>
+              </li>
+              <li class="mb-1">
+                <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#layout-collapse" aria-expanded="false" aria-current="true">
+                  Layout
+                </button>
+                <div class="collapse" id="layout-collapse">
+                  <ul class="list-unstyled fw-normal pb-1 small">
+                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded" aria-current="page">Grid System</a></li>
+                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">Page layout options </a></li>
+                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">Navigation options</a></li>
+                  </ul>
+                </div>
+              </li>
+
+            </ul>
+          </nav>
+        </aside>
+        <div class="right-container">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
