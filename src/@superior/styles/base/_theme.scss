@@ -1,0 +1,26 @@
+
+@import './variables';
+@import './mixins';
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+//custom colors
+$custom-colors: (
+  "tertiary": $tertiary,
+  "primary-dark": $primary-dark,
+  "gray": #CFD4D9,
+  "gray-dark": #999999,
+  "gray-light": #EEEEEE
+) !default;
+
+//merging all colors
+$theme-colors: map-merge($custom-colors, $theme-colors);

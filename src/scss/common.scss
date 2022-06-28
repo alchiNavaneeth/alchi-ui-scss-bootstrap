@@ -1,5 +1,5 @@
 @import "~src/scss/abstract/abstract";
-@import "~src/@superior/styles/utilities/utilities";
+@import "~src/@superior/styles/base/base";
 
 html {
 	font-size: $ft-base + 6 + px;
@@ -168,6 +168,7 @@ a {
   cursor: pointer;
 }
 
+// importing custom theme to showcase
 .mt-showcase {
   @import '~src/@superior/styles/superior';
 }

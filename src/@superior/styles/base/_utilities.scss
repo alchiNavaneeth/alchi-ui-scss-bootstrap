@@ -1,0 +1,21 @@
+@import './variables';
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-weight": (
+      property: font-weight,
+      class: fw,
+      values: (
+        medium: $font-weight-medium
+      )
+    ),
+    "font-size": (
+      property: font-size,
+      class: fs,
+      values: (
+        7: $fs-7
+      )
+    )
+  )
+);
