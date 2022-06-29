@@ -11,12 +11,13 @@
       &:not(:last-child) {
         margin: 0 40px 32px 0;
       }
-      .color-btn {
+      .alert {
         width: 100px;
         height: 100px;
         @include border-radius(8px);
-        pointer-events: none;
-        cursor: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       h2 {
         color: $gray-600;

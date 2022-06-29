@@ -1,7 +1,4 @@
 
-@import './variables';
-@import './mixins';
-
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
@@ -17,10 +14,31 @@ $theme-colors: (
 $custom-colors: (
   "tertiary": $tertiary,
   "primary-dark": $primary-dark,
-  "gray": #CFD4D9,
-  "gray-dark": #999999,
-  "gray-light": #EEEEEE
+  "gray": $gray,
+  "gray-dark": $gray-dark,
+  "gray-light": $gray-light
 ) !default;
 
 //merging all colors
 $theme-colors: map-merge($custom-colors, $theme-colors);
+
+//alerts themes
+$alert-border-scale:-70%; // this variable comes from bootstrap. it works even without declaring
+
+//Info
+.alert-info {
+  @include alert-variant($info-light, shift-color($info, $alert-border-scale), $info);
+}
+//Success
+.alert-success {
+  @include alert-variant($success-light, shift-color($success, $alert-border-scale), $success);
+}
+//Danger
+.alert-danger {
+  @include alert-variant($danger-light, shift-color($danger, $alert-border-scale), $danger);
+}
+//Warning
+.alert-warning {
+  @include alert-variant($warning-light, shift-color($warning, $alert-border-scale), $warning);
+}
+

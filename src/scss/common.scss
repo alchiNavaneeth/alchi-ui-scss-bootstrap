@@ -16,16 +16,12 @@ a {
 
 .main-container {
   min-height: calc(100vh - 70px);
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 auto;
-  overflow: auto;
-  position: relative;
-  top: 70px;
-  @include visual-breakpoint('lt-md') {
-    position: static;
+  .content-wrapper {
+    padding:70px 0 20px 0;
+    @include visual-breakpoint('lt-md') {
+      padding-top: 0;
+    }
   }
-
   > router-outlet + * {
     position: relative;
     display: flex;

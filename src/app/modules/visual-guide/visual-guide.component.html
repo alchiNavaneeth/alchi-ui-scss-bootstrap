@@ -22,25 +22,25 @@
           <nav class="mt-links collapse" id="mt-docs-nav" aria-label="Docs navigation">
             <ul class="list-unstyled mb-0 py-3 pt-md-1">
               <li class="mb-1">
-                <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#typography-collapse" aria-expanded="true" aria-current="true">Typography</button>
-                <div class="collapse show" id="typography-collapse">
+                <button class="btn d-inline-flex align-items-center rounded" [routerLinkActive]="'active'" data-bs-toggle="collapse" data-bs-target="#typography-collapse" aria-expanded="false" aria-current="true">Typography</button>
+                <div class="collapse" id="typography-collapse">
                   <ul class="list-unstyled fw-normal pb-1 small">
-                      <li><a href="javascript:void(0)" routerLink="typography/headers" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}" class="d-inline-flex align-items-center rounded" aria-current="page">H1, H2</a></li>
-                      <li><a href="javascript:void(0)" routerLink="typography/paragraph" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}" class="d-inline-flex align-items-center rounded">Paragraph</a></li>
-                      <li><a href="javascript:void(0)" routerLink="typography/fontsize" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}" class="d-inline-flex align-items-center rounded">Font-size</a></li>
+                      <li><a href="javascript:void(0)" routerLink="/visual-guide/typography/headers" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}" class="d-inline-flex align-items-center rounded" aria-current="page">H1, H2</a></li>
+                      <li><a href="javascript:void(0)" routerLink="/visual-guide/typography/paragraph" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}" class="d-inline-flex align-items-center rounded">Paragraph</a></li>
+                      <li><a href="javascript:void(0)" routerLink="/visual-guide/typography/fontsize" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}" class="d-inline-flex align-items-center rounded">Font-size</a></li>
                   </ul>
                 </div>
               </li>
 
               <li class="mb-1">
-                <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#colors-collapse" aria-expanded="false" aria-current="true">
+                <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#colors-collapse" aria-expanded="false" aria-current="true">
                   Colors
                 </button>
                 <div class="collapse" id="colors-collapse">
                   <ul class="list-unstyled fw-normal pb-1 small">
-                      <li><a href="javascript:void(0)" routerLink="colors/brand" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}"  class="d-inline-flex align-items-center rounded" aria-current="page">Brand Colors</a></li>
-                      <li><a href="javascript:void(0)" routerLink="colors/state" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}"  class="d-inline-flex align-items-center rounded">State colors</a></li>
-                      <li><a href="javascript:void(0)" routerLink="colors/utility" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}"  class="d-inline-flex align-items-center rounded">Utility colors</a></li>
+                      <li><a href="javascript:void(0)" routerLink="/visual-guide/colors/brand" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}"  class="d-inline-flex align-items-center rounded" aria-current="page">Brand Colors</a></li>
+                      <li><a href="javascript:void(0)" routerLink="/visual-guide/colors/state" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}"  class="d-inline-flex align-items-center rounded">State colors</a></li>
+                      <li><a href="javascript:void(0)" routerLink="/visual-guide/colors/utility" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}"  class="d-inline-flex align-items-center rounded">Utility colors</a></li>
                   </ul>
                 </div>
               </li>
@@ -50,7 +50,7 @@
                 </button>
               </li>
               <li class="mb-1">
-                <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#layout-collapse" aria-expanded="false" aria-current="true">
+                <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#layout-collapse" aria-expanded="false" aria-current="true">
                   Layout
                 </button>
                 <div class="collapse" id="layout-collapse">
@@ -61,7 +61,36 @@
                   </ul>
                 </div>
               </li>
-
+              <li class="mb-1">
+                <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#ui-collapse" aria-expanded="false" aria-current="true">
+                  UI Components
+                </button>
+                <div class="collapse" id="ui-collapse">
+                  <ul class="list-unstyled fw-normal pb-1 small">
+                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded" aria-current="page">a. Accordion</a></li>
+                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">b. Alerts </a></li>
+                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">c. Badge</a></li>
+                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">d. Breadcrumb</a></li>
+                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">e. Buttons</a></li>
+                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">f. Button group</a></li>
+                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">g. Cards</a></li>
+                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">h. Calendar</a></li>
+                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">i. Images</a></li>
+                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">j. Avatar</a></li>
+                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">k. Dropdowns</a></li>
+                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">l. List Group</a></li>
+                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">m. Tables</a></li>
+                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">n. Modal</a></li>
+                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">o. Navs & Tabs</a></li>
+                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">p. Pagination</a></li>
+                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">q. Popover</a></li>
+                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">r. Progress bar</a></li>
+                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">s. Spinners</a></li>
+                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">t. Toasts</a></li>
+                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">u. Tooltips</a></li>
+                  </ul>
+                </div>
+              </li>
             </ul>
           </nav>
         </aside>

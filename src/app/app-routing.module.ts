@@ -4,7 +4,6 @@ import { VisualGuideComponent } from './modules/visual-guide/visual-guide.compon
 
 export const appRoutes: Routes = [
   { path: '', redirectTo: 'visual-guide', pathMatch: 'full' },
-  { path: 'home', loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule) },
   { path: 'visual-guide', component: VisualGuideComponent,
     children: [
       { path: '', redirectTo: 'typography', pathMatch: 'full' },

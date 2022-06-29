@@ -9741,6 +9741,42 @@ textarea.form-control-lg {
   font-family: "Quicksand", sans-serif;
 }
 
+.alert-info {
+  color: #0D6EFD;
+  background: #D3E0FC;
+  border-color: transparent;
+}
+.alert-info .alert-link {
+  color: #0a58ca;
+}
+
+.alert-success {
+  color: #265035;
+  background: #D6E6DF;
+  border-color: transparent;
+}
+.alert-success .alert-link {
+  color: #1e402a;
+}
+
+.alert-danger {
+  color: #7A282B;
+  background: #F3D8DB;
+  border-color: transparent;
+}
+.alert-danger .alert-link {
+  color: #622022;
+}
+
+.alert-warning {
+  color: #635019;
+  background: #FDF3D1;
+  border-color: transparent;
+}
+.alert-warning .alert-link {
+  color: #4f4014;
+}
+
 .h1, h1, .display-1 {
   font-size: 24px;
 }

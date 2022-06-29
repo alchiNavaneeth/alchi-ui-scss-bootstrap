@@ -11,12 +11,10 @@
       &:not(:last-child) {
         margin: 0 36px 32px 0;
       }
-      .color-btn {
+      .color-bg {
         width: 100px;
         height: 100px;
         @include border-radius(8px);
-        pointer-events: none;
-        cursor: auto;
         @include visual-breakpoint('lt-md') {
           width: 80px;
           height: 80px;
