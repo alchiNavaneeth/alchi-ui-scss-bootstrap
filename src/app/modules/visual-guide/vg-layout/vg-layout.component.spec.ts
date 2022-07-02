@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VgColorsUtilityComponent } from './vg-colors-utility.component';
+import { VgLayoutComponent } from './vg-layout.component';
 
-describe('VgColorsUtilityComponent', () => {
-  let component: VgColorsUtilityComponent;
-  let fixture: ComponentFixture<VgColorsUtilityComponent>;
+describe('VgLayoutComponent', () => {
+  let component: VgLayoutComponent;
+  let fixture: ComponentFixture<VgLayoutComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ VgColorsUtilityComponent ]
+      declarations: [ VgLayoutComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(VgColorsUtilityComponent);
+    fixture = TestBed.createComponent(VgLayoutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

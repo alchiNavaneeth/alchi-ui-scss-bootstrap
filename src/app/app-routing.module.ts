@@ -8,7 +8,9 @@ export const appRoutes: Routes = [
     children: [
       { path: '', redirectTo: 'typography', pathMatch: 'full' },
       { path: "typography", loadChildren: () => import('./modules/visual-guide/vg-typography/vg-typography.module').then(m => m.VgTypographyModule) },
-      { path: "colors", loadChildren: () => import('./modules/visual-guide/vg-colors/vg-colors.module').then(m => m.VgColorsModule) }
+      { path: "colors", loadChildren: () => import('./modules/visual-guide/vg-colors/vg-colors.module').then(m => m.VgColorsModule) },
+      { path: "iconography", loadChildren: () => import('./modules/visual-guide/vg-iconography/vg-iconography.module').then(m => m.VgIconographyModule) },
+      { path: "layout", loadChildren: () => import('./modules/visual-guide/vg-layout/vg-layout.module').then(m => m.VgLayoutModule) }
     ]
   },
   { path: '404-not-found', pathMatch: 'full', loadChildren: () => import('./modules/page-not-found/page-not-found.module').then(m => m.PageNotFoundModule) },

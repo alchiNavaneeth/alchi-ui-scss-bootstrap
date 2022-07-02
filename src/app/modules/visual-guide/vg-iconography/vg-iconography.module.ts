@@ -2,18 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from 'src/app/shared/shared.module'
 
-import { VgColorsRoutingModule } from './vg-colors-routing.module';
-import { VgColorsComponent } from './vg-colors.component';
+import { VgIconographyRoutingModule } from './vg-iconography-routing.module';
+import { VgIconographyComponent } from './vg-iconography.component';
 
 
 @NgModule({
   declarations: [
-    VgColorsComponent
+    VgIconographyComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
-    VgColorsRoutingModule
+    VgIconographyRoutingModule
   ]
 })
-export class VgColorsModule { }
+export class VgIconographyModule { }

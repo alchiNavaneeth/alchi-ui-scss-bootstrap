@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VgColorsBrandComponent } from './vg-colors-brand.component';
+import { VgIconographyComponent } from './vg-iconography.component';
 
-describe('VgColorsBrandComponent', () => {
-  let component: VgColorsBrandComponent;
-  let fixture: ComponentFixture<VgColorsBrandComponent>;
+describe('VgIconographyComponent', () => {
+  let component: VgIconographyComponent;
+  let fixture: ComponentFixture<VgIconographyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ VgColorsBrandComponent ]
+      declarations: [ VgIconographyComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(VgColorsBrandComponent);
+    fixture = TestBed.createComponent(VgIconographyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

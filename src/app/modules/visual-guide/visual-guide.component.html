@@ -33,21 +33,10 @@
               </li>
 
               <li class="mb-1">
-                <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#colors-collapse" aria-expanded="false" aria-current="true">
-                  Colors
-                </button>
-                <div class="collapse" id="colors-collapse">
-                  <ul class="list-unstyled fw-normal pb-1 small">
-                      <li><a href="javascript:void(0)" routerLink="/visual-guide/colors/brand" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}"  class="d-inline-flex align-items-center rounded" aria-current="page">Brand Colors</a></li>
-                      <li><a href="javascript:void(0)" routerLink="/visual-guide/colors/state" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}"  class="d-inline-flex align-items-center rounded">State colors</a></li>
-                      <li><a href="javascript:void(0)" routerLink="/visual-guide/colors/utility" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}"  class="d-inline-flex align-items-center rounded">Utility colors</a></li>
-                  </ul>
-                </div>
+                <a routerLink="/visual-guide/colors" [routerLinkActive]="'active'" class="btn no-sub d-inline-flex align-items-center rounded">Colors</a>
               </li>
               <li class="mb-1">
-                <button class="btn no-sub d-inline-flex align-items-center rounded">
-                  Iconography
-                </button>
+                <a routerLink="/visual-guide/iconography" [routerLinkActive]="'active'" class="btn no-sub d-inline-flex align-items-center rounded">Iconography</a>
               </li>
               <li class="mb-1">
                 <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#layout-collapse" aria-expanded="false" aria-current="true">
@@ -55,9 +44,7 @@
                 </button>
                 <div class="collapse" id="layout-collapse">
                   <ul class="list-unstyled fw-normal pb-1 small">
-                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded" aria-current="page">Grid System</a></li>
-                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">Page layout options </a></li>
-                      <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">Navigation options</a></li>
+                      <li><a href="javascript:void(0)" routerLink="/visual-guide/layout/grid" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}"  class="d-inline-flex align-items-center rounded" aria-current="page">Grid System</a></li>
                   </ul>
                 </div>
               </li>

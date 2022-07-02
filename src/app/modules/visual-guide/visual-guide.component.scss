@@ -76,7 +76,7 @@
               transform: rotate(90deg);
             }
           }
-          &:hover, &:focus {
+          &:hover, &:focus, &.active {
             background-color: rgba(#CFD4D9, 0.4);
           }
           &:focus {

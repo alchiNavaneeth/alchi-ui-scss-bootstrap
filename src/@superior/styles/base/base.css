@@ -11499,7 +11499,7 @@ fieldset:disabled .btn {
   }
 }
 
-.primary-ff, .h1, h1, .h2, h2, .display-1, .display-2, p {
+.primary-ff {
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -11542,16 +11542,4 @@ fieldset:disabled .btn {
 .alert-warning .alert-link {
   color: #4f4014;
 }
-
-.h1, h1, .h1, .display-1 {
-  font-size: calc($pixels)px;
-}
-
-.h2, h2, .h2, .display-2 {
-  font-size: calc($pixels)px;
-}
-
-.h1, h1, .h1, .h2, h2, .h2, .display-1, .display-2 {
-  font-weight: 500;
-}
-/*# sourceMappingURL=superior.css.map */
+/*# sourceMappingURL=base.css.map */

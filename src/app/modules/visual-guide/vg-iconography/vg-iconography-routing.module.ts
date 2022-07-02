@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { VgColorsComponent } from './vg-colors.component';
+import { VgIconographyComponent } from './vg-iconography.component';
 
 const routes: Routes = [
-  { path: "", component: VgColorsComponent }
+  { path: "", component: VgIconographyComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class VgColorsRoutingModule { }
+export class VgIconographyRoutingModule { }

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VgColorsStateComponent } from './vg-colors-state.component';
+import { VgLayoutGridComponent } from './vg-layout-grid.component';
 
-describe('VgColorsStateComponent', () => {
-  let component: VgColorsStateComponent;
-  let fixture: ComponentFixture<VgColorsStateComponent>;
+describe('VgLayoutGridComponent', () => {
+  let component: VgLayoutGridComponent;
+  let fixture: ComponentFixture<VgLayoutGridComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ VgColorsStateComponent ]
+      declarations: [ VgLayoutGridComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(VgColorsStateComponent);
+    fixture = TestBed.createComponent(VgLayoutGridComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
