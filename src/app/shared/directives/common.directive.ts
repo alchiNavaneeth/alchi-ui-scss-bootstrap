@@ -1,4 +1,5 @@
-import { Directive, HostListener, ElementRef, Renderer2, OnInit } from '@angular/core';
+import { Directive, Inject, Output, EventEmitter, HostListener, ElementRef, Renderer2, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 
 @Directive({
   selector: '[appCommon]'
@@ -56,6 +57,51 @@ export class ClipboardDirective {
     let htmlText = highLightEl.children[0].children[0].innerHTML;
     let text = htmlText.replace(/<\s*br[^>]?>/,'\n').replace(/(<([^>]+)>)/g, "").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
     navigator.clipboard.writeText(text);
+
+   }
+
+   ngOnInit() {
+
+
+   }
+
+}
+
+@Directive({
+  selector: '.fi-icon-box'
+})
+
+export class FiIconBoxDirective {
+
+
+  @Output() outsideClick: EventEmitter<MouseEvent> = new EventEmitter();
+
+
+  constructor(private element: ElementRef) {
+
+  }
+
+
+  @HostListener("click", ["$event"])
+   onClick(event:any) {
+
+    let elem =  document.querySelector('.fi-icon-details-toaster');
+    elem?.classList.add('show')
+    this.element.nativeElement.classList.add('active')
+
+   }
+
+   @HostListener('document:mouseup', ['$event'])
+    onDocumentClick(event:any) {
+
+
+      let parentElem =  document.querySelector('.fi-icon-details-toaster');
+      let childelem =  document.querySelector('.fi-toaster-container');
+
+      if (!childelem?.contains(event.target)) {
+        parentElem?.classList.remove('show')
+        this.element.nativeElement.classList.remove('active')
+      }
 
    }
 

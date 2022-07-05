@@ -4,7 +4,42 @@
   <h4 class="mb-2">Flat Icons (uicons)</h4>
   <h5 class="fw-normal">Rationale is to give a friendly treatment through smooth rounded corners inline with the font family <a href="https://www.flaticon.com/uicons" target="_blank">www.flaticon.com/uicons</a></h5>
 
+  <div class="fi-icons-wrapper">
+    <h5 class="title">Line Icons Rounded</h5>
+    <div class="icons-container">
+      <div class="fi-icon-box" *ngFor=" let item of iconlist; let i = index " (click)="showIconDetails(item, 'r')">
+        <img src="assets/fi-icons/fi-rr-{{item}}.svg" alt="">
+      </div>
+    </div>
+  </div>
 
-  <h5 class="fw-normal mt-5">Line Icons Rounded</h5>
+  <div class="fi-icons-wrapper">
+    <h5 class="title">Solid Icons Rounded</h5>
+    <div class="icons-container">
+      <div class="fi-icon-box" *ngFor=" let item of iconlist; let i = index " (click)="showIconDetails(item, 's')">
+        <img src="assets/fi-icons/fi-sr-{{item}}.svg" alt="">
+      </div>
+    </div>
+  </div>
 
+</div>
+
+<div class="fi-icon-details-toaster">
+  <div class="fi-toaster-container">
+    <h6 class="mb-3 text-white">{{selectedIcon.name}}</h6>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="code-box default mb-3">
+          <p class="text-uppercase">Web Component code - default</p>
+            <pre class="code"><span class="s">&lt;</span><span class="d">div</span><span class="c">&nbsp;class</span><span class="s">=</span><span class="n">"icon-fi-{{selectedIcon.type}}r-{{selectedIcon.name}}"</span><span class="s">&gt;</span><span class="s">&lt;/</span><span class="d">div</span><span class="s">&gt;</span></pre>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="code-box primary">
+          <p class="text-uppercase">Web Component code - primary</p>
+            <pre class="code"><span class="s">&lt;</span><span class="d">div</span><span class="c">&nbsp;class</span><span class="s">=</span><span class="n">"icon-fi-{{selectedIcon.type}}r-{{selectedIcon.name}} primary"</span><span class="s">&gt;</span><span class="s">&lt;/</span><span class="d">div</span><span class="s">&gt;</span></pre>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

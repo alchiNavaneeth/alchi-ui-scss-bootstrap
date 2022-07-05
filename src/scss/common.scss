@@ -166,6 +166,57 @@ a {
   }
 }
 
+//Flaticon toaster
+.fi-icon-details-toaster {
+position: fixed;
+left: 0;
+bottom: 20px;
+width: 100%;
+display: none;
+&.show {
+  display: block;
+}
+.fi-toaster-container {
+  max-width: calc(100% - 32px);
+  @include visual-breakpoint('gt-md') {
+    max-width: 1040px;
+  }
+  padding: 18px 24px;
+  background-color: $slate-800;
+  @include border-radius(10px);
+  margin: auto;
+  .code-box {
+    p {
+      color: $slate-300;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 0;
+      margin: 0 0 8px 0;
+    }
+    .code {
+      padding: 10px;
+      background-color: $slate-700;
+      @include border-radius(4px);
+      color: white;
+      margin: 0;
+      .d {
+        color: $red-300;
+      }
+      .s {
+        color: $slate-400;
+      }
+      .c {
+        color: $cyan-400;
+      }
+      .n {
+        color: $yellow-300;
+      }
+    }
+  }
+
+  }
+}
+
 /* common */
 .no-pointer {
   cursor: pointer;

@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "concurrently \"ng serve\" \"npm run sass\" ",
-    "sass": "sass --watch src/@superior/styles/superior.scss:src/@superior/styles/superior.css",
+    "sass": "sass --watch src/@superior/styles/superior.scss:src/@superior/mt-superior/superior.css",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

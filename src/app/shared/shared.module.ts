@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { CommonDirective } from './directives/common.directive';
 import { AnchorjsLinkDirective } from './directives/common.directive'
 import { ClipboardDirective } from './directives/common.directive'
+import { FiIconBoxDirective } from './directives/common.directive';
 
 @NgModule({
   declarations: [
     CommonDirective,
     AnchorjsLinkDirective,
-    ClipboardDirective
+    ClipboardDirective,
+    FiIconBoxDirective
   ],
   imports: [
     CommonModule
@@ -16,7 +18,8 @@ import { ClipboardDirective } from './directives/common.directive'
   exports: [
     CommonDirective,
     AnchorjsLinkDirective,
-    ClipboardDirective
+    ClipboardDirective,
+    FiIconBoxDirective
   ]
 })
 export class SharedModule { }
