@@ -42,3 +42,27 @@ $alert-border-scale:-70%; // this variable comes from bootstrap. it works even w
   @include alert-variant($warning-light, shift-color($warning, $alert-border-scale), $warning);
 }
 
+//input alerts
+.input-box .form-control.alert-success {
+  @include alert-variant($success-light, shift-color($success, $alert-border-scale), $success);
+  color: $success;
+  &:focus {
+    border: 1px solid $success !important;
+  }
+}
+
+.input-box .form-control.alert-warning {
+  @include alert-variant($warning-light, shift-color($warning, $alert-border-scale), $warning);
+  color: $warning;
+  &:focus {
+    border: 1px solid $warning !important;
+  }
+}
+
+.input-box .form-control.alert-danger {
+  @include alert-variant($danger-light, shift-color($danger, $alert-border-scale), $danger);
+  color: $danger;
+  &:focus {
+    border: 1px solid $danger !important;
+  }
+}

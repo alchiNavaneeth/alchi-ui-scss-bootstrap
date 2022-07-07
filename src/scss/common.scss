@@ -15,9 +15,9 @@ a {
 }
 
 .main-container {
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 90px);
   .content-wrapper {
-    padding:70px 0 20px 0;
+    padding:90px 0 20px 0;
     @include visual-breakpoint('lt-md') {
       padding-top: 0;
     }
@@ -230,3 +230,4 @@ display: none;
 .mt-showcase thead, .mt-showcase tbody, .mt-showcase tfoot, .mt-showcase tr, .mt-showcase td, .mt-showcase th {
   border-bottom-width: 1px;
 }
+

@@ -10,6 +10,7 @@ export const appRoutes: Routes = [
       { path: "typography", loadChildren: () => import('./modules/visual-guide/vg-typography/vg-typography.module').then(m => m.VgTypographyModule) },
       { path: "colors", loadChildren: () => import('./modules/visual-guide/vg-colors/vg-colors.module').then(m => m.VgColorsModule) },
       { path: "iconography", loadChildren: () => import('./modules/visual-guide/vg-iconography/vg-iconography.module').then(m => m.VgIconographyModule) },
+      { path: "forms", loadChildren: () => import('./modules/visual-guide/vg-forms/vg-forms.module').then(m => m.VgFormsModule) },
       { path: "layout", loadChildren: () => import('./modules/visual-guide/vg-layout/vg-layout.module').then(m => m.VgLayoutModule) }
     ]
   },

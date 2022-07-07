@@ -49,6 +49,20 @@
                 </div>
               </li>
               <li class="mb-1">
+                <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#forms-collapse" aria-expanded="false" aria-current="true">
+                  Forms
+                </button>
+                <div class="collapse" id="forms-collapse">
+                  <ul class="list-unstyled fw-normal pb-1 small">
+                      <li>
+                        <a href="javascript:void(0)" routerLink="/visual-guide/forms/controls" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}"  class="d-inline-flex align-items-center rounded" aria-current="page">Form Control</a>
+                      </li>
+                      <li><a href="javascript:void(0)" routerLink="/visual-guide/forms/layout" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}"  class="d-inline-flex align-items-center rounded" aria-current="page">Form Layout</a></li>
+                      <li><a href="javascript:void(0)" routerLink="/visual-guide/forms/validation" [routerLinkActive]="'active'" [routerLinkActiveOptions] = "{exact:true}"  class="d-inline-flex align-items-center rounded" aria-current="page">Form Validation</a></li>
+                  </ul>
+                </div>
+              </li>
+              <!-- <li class="mb-1">
                 <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#ui-collapse" aria-expanded="false" aria-current="true">
                   UI Components
                 </button>
@@ -77,7 +91,7 @@
                       <li><a href="javascript:void(0)" class="d-inline-flex align-items-center rounded">u. Tooltips</a></li>
                   </ul>
                 </div>
-              </li>
+              </li> -->
             </ul>
           </nav>
         </aside>

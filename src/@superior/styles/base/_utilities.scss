@@ -7,7 +7,8 @@ $utilities: map-merge(
       property: font-weight,
       class: fw,
       values: (
-        medium: $font-weight-medium
+        medium: $font-weight-medium,
+        semibold: $font-weight-semibold
       )
     ),
     "font-size": (

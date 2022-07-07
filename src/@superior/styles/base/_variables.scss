@@ -28,6 +28,46 @@ $warning-light:#FDF3D1;
 
 //font weight
 $font-weight-medium: 500;
+$font-weight-semibold: 600;
 
 //font size
 $fs-7: 0.75rem;
+
+//form
+
+//input padding
+
+//mobile default
+$input-padding-y-mob: 10px;
+$input-padding-x-mob: 10px;
+$input-font-size-mob: 12px;
+
+//web default
+$input-padding-y-web: 12px;
+$input-padding-x-web: 12px;
+$input-font-size-web: 16px;
+
+//mobile large
+$input-padding-y-mob-lg: 10px;
+$input-padding-x-mob-lg: 10px;
+$input-font-size-mob-lg: 16px;
+
+//web large
+$input-padding-y-web-lg: 20px;
+$input-padding-x-web-lg: 20px;
+$input-font-size-web-lg: 20px;
+
+
+//label
+
+//mobile default
+$form-label-margin-bottom-web: 8px;
+
+//web default
+$form-label-margin-bottom-mob: 8px;
+
+//mobile large
+$form-label-margin-bottom-mob-lg: 8px;
+
+//web large
+$form-label-margin-bottom-web-lg: 10px;

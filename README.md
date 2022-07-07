@@ -4,7 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `npm run start` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+# with complied css file
+
+Run `npm run start` for a dev server. Navigate to `http://localhost:4200/`. Every sass file will be watched and gets compiled to css file under @superior/mt-superior on run time
 
 ## Code scaffolding
 
@@ -17,6 +21,9 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 # framework scss files
 
 Path - @superior/styles
+
+# compiled css folder
+Path - @superior/mt-superior
 
 # Page scss files
 

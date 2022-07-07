@@ -1,5 +1,17 @@
 
+//for alert box
 @mixin alert-variant($background, $border, $color) {
+  color: $color;
+  background: $background;
+  //border-color: $border;
+  border-color: transparent;
+  .alert-link {
+    color: shade-color($color, 20%);
+  }
+}
+
+//for input alert box
+@mixin alert-input-variant($background, $border, $color) {
   color: $color;
   background: $background;
   //border-color: $border;
@@ -11,6 +23,13 @@
 
 @mixin ft-calc($pixels) {
   font-size: calc($pixels) + px;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
 }
 
 @mixin superior-breakpoint($breakpoint) {
@@ -29,5 +48,6 @@
       }
   }
 }
+
 
 

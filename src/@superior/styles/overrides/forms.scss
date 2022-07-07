@@ -1,0 +1,131 @@
+@import '../base/breakpoints';
+
+.input-box {
+
+  .form-control, .form-select, .form-label {
+    @extend .primary-ff;
+    color: $dark;
+    font-size: $input-font-size-web;
+    @include placeholder {
+      color: $gray-dark;
+    }
+    &:focus {
+      border: 1px solid $info !important;
+      box-shadow: none;
+    }
+    @include superior-breakpoint('lt-lg') {
+      font-size: $input-font-size-mob;
+    }
+  }
+  .form-control, .form-select {
+    border: 1px solid $gray;
+    padding: $input-padding-x-web $input-padding-y-web;
+    @include superior-breakpoint('lt-lg') {
+      padding: $input-padding-x-mob $input-padding-y-mob;
+    }
+  }
+  .form-label {
+    @extend .fw-semibold !optional;
+    margin-bottom: $form-label-margin-bottom-web;
+    @include superior-breakpoint('lt-lg') {
+      margin-bottom: $form-label-margin-bottom-mob;
+    }
+  }
+  .input-group {
+    .form-control {
+      border-right: none
+    }
+    .input-group-text {
+      background: none;
+      padding: $input-padding-x-web $input-padding-y-web;
+      padding-right: 0;
+      @include superior-breakpoint('lt-lg') {
+        padding: $input-padding-x-mob $input-padding-y-mob;
+        padding-right: 0;
+      }
+      & + .form-control {
+        border: 1px solid $gray !important;
+        border-left: none !important;
+        &:focus {
+          border: 1px solid $info !important;
+        }
+      }
+    }
+    .form-control + .input-group-text{
+      padding-right: $input-padding-x-web;
+      @include superior-breakpoint('lt-lg') {
+        padding-right: $input-padding-x-mob;
+      }
+    }
+
+  }
+
+  .form-control[type=number]::-webkit-inner-spin-button,
+  .form-control[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .form-control[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  .form-control {
+    &.disabled {
+      opacity: 0.7;
+      &:focus {
+        border: 1px solid $gray;
+      }
+    }
+  }
+
+  &.lg {
+
+    .form-control, .form-select, .form-label {
+      font-size: $input-font-size-web-lg;
+      @include superior-breakpoint('lt-lg') {
+        font-size: $input-font-size-mob-lg;
+      }
+    }
+    .form-control, .form-select {
+      padding: $input-padding-x-web-lg $input-padding-y-web-lg;
+      @include superior-breakpoint('lt-lg') {
+        padding: $input-padding-x-mob-lg $input-padding-y-mob-lg;
+      }
+    }
+    .form-label {
+      margin-bottom: $form-label-margin-bottom-web-lg;
+      @include superior-breakpoint('lt-lg') {
+        margin-bottom: $form-label-margin-bottom-mob-lg;
+      }
+    }
+
+    .input-group {
+      .input-group-text {
+        padding: $input-padding-x-web-lg $input-padding-y-web-lg;
+        padding-right: 0;
+        @include superior-breakpoint('lt-lg') {
+          padding: $input-padding-x-mob-lg $input-padding-y-mob-lg;
+          padding-right: 0;
+        }
+      }
+      .form-control + .input-group-text{
+        padding-right: $input-padding-x-web-lg;
+        @include superior-breakpoint('lt-lg') {
+          padding-right: $input-padding-x-mob-lg;
+        }
+      }
+    }
+
+  }
+
+  textarea {
+   &.form-control {
+    resize: none;
+    min-height: 100px;
+   }
+  }
+
+}
+
+
