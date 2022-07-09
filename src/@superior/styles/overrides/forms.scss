@@ -73,6 +73,7 @@
   .form-control {
     &.disabled {
       opacity: 0.7;
+      pointer-events: none;
       &:focus {
         border: 1px solid $gray;
       }

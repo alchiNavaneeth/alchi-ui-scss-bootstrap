@@ -8,6 +8,7 @@
       border: none;
       padding: 0;
       display: inline-block;
+      position: relative;
       &:not(:last-child) {
         margin: 0 36px 32px 0;
       }
@@ -15,6 +16,9 @@
         width: 160px;
         height: 160px;
         @include border-radius(8px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
         @include visual-breakpoint('lt-md') {
           width: 120px;
           height: 120px;
@@ -23,6 +27,27 @@
       h2 {
         color: $gray-600;
       }
+      .copy-box {
+        .tocopy {
+          color: $slate-300;
+          display: none;
+          padding: 4px 8px;
+          background-color: $slate-600;
+          @include border-radius(4px);
+          font-size: 14px;
+          span {
+            display: none;
+          }
+          &.show {
+            display: block;
+          }
+          .show {
+            display: block;
+          }
+        }
+
+      }
     }
   }
+
 }

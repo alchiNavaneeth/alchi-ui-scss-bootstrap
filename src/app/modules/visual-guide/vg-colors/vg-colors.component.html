@@ -10,35 +10,19 @@
       <div class="mt-showcase mt-4">
         <ul class="colors-group">
 
-          <li class="list-group-item">
-            <div class="btn bg-primary color-bg mb-3"></div>
-            <h1 class="mb-2">Primary</h1>
-            <h2>#00818E</h2>
+          <li class="list-group-item" *ngFor=" let color of brandColors; let i = index">
+            <div colorBg class="btn {{color.class}} color-bg mb-3">
+              <div class="copy-box">
+                <p class="fw-bold mb-0 tocopy">
+                  <span class="show">Click to copy</span>
+                  <span>Copied</span>
+                </p>
+              </div>
+            </div>
+            <h1 class="mb-2">{{color.name}}</h1>
+            <h2>{{color.hexa}}</h2>
           </li>
 
-          <li class="list-group-item">
-            <div class="btn bg-secondary color-bg mb-3"></div>
-            <h1 class="mb-2">Secondary</h1>
-            <h2>#F9B400</h2>
-          </li>
-
-          <li class="list-group-item">
-            <div class="btn bg-tertiary color-bg mb-3"></div>
-            <h1 class="mb-2">Tertiary</h1>
-            <h2>#80BFC4</h2>
-          </li>
-
-          <li class="list-group-item">
-            <div class="btn bg-primary-dark color-bg mb-3"></div>
-            <h1 class="mb-2">Primary Dark</h1>
-            <h2>#163359</h2>
-          </li>
-
-          <li class="list-group-item">
-            <div class="btn bg-light color-bg border border-gray mb-3"></div>
-            <h1 class="mb-2">Background</h1>
-            <h2>#F6F9FD</h2>
-          </li>
 
         </ul>
       </div>

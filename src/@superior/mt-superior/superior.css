@@ -9909,6 +9909,7 @@ textarea.form-control-lg {
 }
 .input-box .form-control.disabled {
   opacity: 0.7;
+  pointer-events: none;
 }
 .input-box .form-control.disabled:focus {
   border: 1px solid #CFD4D9;

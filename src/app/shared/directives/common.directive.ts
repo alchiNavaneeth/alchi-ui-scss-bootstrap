@@ -68,6 +68,66 @@ export class ClipboardDirective {
 }
 
 @Directive({
+  selector: '[colorBg]'
+})
+
+export class CopyColorDirective {
+
+  constructor(
+    private element: ElementRef,
+    private renderer: Renderer2) {
+
+  }
+
+  elem = this.element.nativeElement
+
+  @HostListener('mouseover', ['$event'])
+    onMouseOver(event:any) {
+
+      let selectElem = this.elem.children[0].children[0]
+      this.renderer.addClass(selectElem, 'show')
+
+   }
+
+   @HostListener('mouseleave', ['$event'])
+    onMouseOut(event:any) {
+
+      let selectElem = this.elem.children[0].children[0]
+      this.renderer.removeClass(selectElem, 'show')
+
+   }
+
+   @HostListener('mouseup', ['$event'])
+    onClick(event:any) {
+
+      event.stopPropagation();
+
+      let highLightEl = this.element.nativeElement.nextSibling.nextSibling;
+      let htmlText = highLightEl.innerHTML;
+      let text = htmlText.replace(/<\s*br[^>]?>/,'\n').replace(/(<([^>]+)>)/g, "").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+      navigator.clipboard.writeText(text);
+
+      let parentElem = this.elem.children[0].children[0].children
+      for(let i=0; i<parentElem.length; i++) {
+        this.renderer.removeClass(parentElem[i], 'show')
+        if (i == parentElem.length - 1) {
+          let secondElem = this.elem.children[0].children[0].children[1]
+          this.renderer.addClass(secondElem, 'show')
+        }
+      }
+
+      setTimeout(() => {
+        let firstElem = this.elem.children[0].children[0].children[0]
+        let secondElem = this.elem.children[0].children[0].children[1]
+        this.renderer.addClass(firstElem, 'show')
+        this.renderer.removeClass(secondElem, 'show')
+      }, 1000)
+
+   }
+
+}
+
+@Directive({
   selector: '.fi-icon-box'
 })
 
