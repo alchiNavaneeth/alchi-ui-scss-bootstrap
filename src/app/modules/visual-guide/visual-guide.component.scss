@@ -37,12 +37,16 @@
       width: 194px;
       margin-right: 24px;
       position: fixed;
+      overflow: scroll;
+      height: calc(100% - 204px);
       @include visual-breakpoint('lt-md') {
         position: static;
         width: calc(100% + 24px);
         position: relative;
         margin: 4px -12px 0 -12px;
         background-color: #f8f9fa;
+        overflow: visible;
+        height: auto;
       }
       .mt-links {
         @include visual-breakpoint('gt-sm') {

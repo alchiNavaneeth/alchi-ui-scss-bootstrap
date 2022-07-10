@@ -1,0 +1,39 @@
+<div class="content-block ui-components-alert-block bd-content">
+
+  <h1 class="bd-title" id="content">Alerts</h1>
+  <h4 class="fw-normal">Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</h4>
+
+  <div class="mt-5">
+    <div class="row">
+      <div class="col-md-12 col-lg-10 mt-showcase">
+        <ng-container *ngFor=" let alert of alertsList; let i = index ">
+          <div class="{{alert.class}} alert-dismissible fade show" role="alert">
+            {{alert.text}}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-lg-10">
+<div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"alert alert-info alert-dismissible fade show"</span> <span class="na">role</span><span class="o">=</span><span class="s">"alert"</span><span class="p">&gt;</span>
+  A simple primary alert
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"alert alert-success alert-dismissible fade show"</span> <span class="na">role</span><span class="o">=</span><span class="s">"alert"</span><span class="p">&gt;</span>
+  A simple success alert
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"alert alert-danger alert-dismissible fade show"</span> <span class="na">role</span><span class="o">=</span><span class="s">"alert"</span><span class="p">&gt;</span>
+  A simple error alert
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"alert alert-warning alert-dismissible fade show"</span> <span class="na">role</span><span class="o">=</span><span class="s">"alert"</span><span class="p">&gt;</span>
+  A simple warning alert
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+      </div>
+    </div>
+  </div>
+
+
+</div>

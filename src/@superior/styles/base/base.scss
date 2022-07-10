@@ -15,11 +15,11 @@
 
     @if $theme == 'superior-dark' {
       .#{$theme} {
-        @content($colors);
+        @content($colors, true);
       }
     }
     @else {
-      @content($colors)
+      @content($colors, false)
     }
 
   }
@@ -27,13 +27,18 @@
 };
 
 
-@include apply-superior using ($colors) {
+@include apply-superior using ($colors, $type) {
 
   $theme-colors: $colors;
+  $isdark: $type;
 
   $custom-colors: (
     "tertiary": $tertiary,
     "primary-dark": $primary-dark,
+    "info-light": $info-light,
+    "success-light": $success-light,
+    "danger-light": $danger-light,
+    "warning-light": $warning-light,
     "gray": $gray,
     "gray-dark": $gray-dark,
     "gray-light": $gray-light

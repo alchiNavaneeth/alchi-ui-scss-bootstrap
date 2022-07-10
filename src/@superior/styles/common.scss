@@ -47,13 +47,29 @@ $alert-border-scale:-70%; // this variable comes from bootstrap. it works even w
   }
 }
 
-@include apply-superior using ($colors) {
+@include apply-superior using ($colors, $type) {
 
   $dark: map-get($colors , dark);
+  $isdark: $type;
+
   * {
     color: $dark;
   }
   .primary-ff {
     font-family: 'Quicksand', sans-serif;
   }
+
+  @if $isdark  {
+    .text-success {
+      color: $success-light !important;
+    }
+    .text-warning {
+      color: $warning-light !important;
+    }
+    .text-danger {
+      color: $danger-light !important;
+    }
+  }
+
+
 }

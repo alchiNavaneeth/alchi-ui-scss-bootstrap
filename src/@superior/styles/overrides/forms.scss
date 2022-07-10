@@ -192,7 +192,9 @@
 }
 
 // theme changes
-@include apply-superior using ($colors) {
+@include apply-superior using ($colors, $type) {
+
+  $isdark: $type;
 
   .form-label {
     $custom-dark: map-get($colors , dark);

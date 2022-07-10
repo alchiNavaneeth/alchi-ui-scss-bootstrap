@@ -1,0 +1,20 @@
+
+.breadcrumb {
+  .breadcrumb-item {
+    @extend .primary-ff;
+    font-weight: 500;
+  }
+}
+
+// theme changes
+@include apply-superior using ($colors, $type) {
+
+  $dark: map-get($colors , dark);
+
+  .breadcrumb {
+    .breadcrumb-item.active {
+      color: $dark;
+    }
+  }
+
+}

@@ -1,0 +1,24 @@
+
+// theme changes
+@include apply-superior using ($colors, $type) {
+
+  $dark: map-get($colors , dark);
+
+  .accordion {
+    box-shadow: 0 2px 15px 0 rgba(#c6c6c6, 0.25) ;
+    .accordion-item {
+      border: 1px solid $gray-light;
+      .accordion-button {
+        color: $dark;
+        font-weight: 500;
+        &:not(.collapsed) {
+          @if $type == false {
+            background-color: map-get($colors , primary);
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+}
