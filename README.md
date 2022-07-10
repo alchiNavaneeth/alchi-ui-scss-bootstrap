@@ -8,7 +8,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## with complied css file
 
-Run `npm run start` for a dev server. Navigate to `http://localhost:4200/`. Every sass file will be watched and gets compiled to css file under @superior/mt-superior on run time
+Run `npm run sass` for a dev server. Navigate to `http://localhost:4200/`. Every sass file will be watched and gets compiled to css file under @superior/mt-superior on run time
 
 ## Code scaffolding
 
