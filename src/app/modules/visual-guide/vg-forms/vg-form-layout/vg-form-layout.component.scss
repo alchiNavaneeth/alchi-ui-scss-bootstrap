@@ -1,9 +1,10 @@
 @import "~src/scss/abstract/abstract";
 
 .forms-layout-block {
-  .input-container {
-    .title {
-      color: $slate-600;
+  .form-container {
+    padding: 50px;
+    @include visual-breakpoint('lt-lg') {
+      padding: 18px;
     }
   }
 }

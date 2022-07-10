@@ -1,4 +1,4 @@
-@import '../base/breakpoints';
+@import '../abstract/breakpoints';
 
 .input-box {
 
@@ -8,6 +8,7 @@
     font-size: $input-font-size-web;
     @include placeholder {
       color: $gray-dark;
+      font-weight: $font-weight-medium;
     }
     &:focus {
       border: 1px solid $info !important;
@@ -17,6 +18,7 @@
       font-size: $input-font-size-mob;
     }
   }
+
   .form-control, .form-select {
     border: 1px solid $gray;
     padding: $input-padding-x-web $input-padding-y-web;
@@ -24,6 +26,11 @@
       padding: $input-padding-x-mob $input-padding-y-mob;
     }
   }
+
+  .form-select {
+    color: $dark
+  }
+
   .form-label {
     @extend .fw-semibold !optional;
     margin-bottom: $form-label-margin-bottom-web;
@@ -31,6 +38,7 @@
       margin-bottom: $form-label-margin-bottom-mob;
     }
   }
+
   .input-group {
     .form-control {
       border-right: none
@@ -60,6 +68,7 @@
 
   }
 
+  //for number
   .form-control[type=number]::-webkit-inner-spin-button,
   .form-control[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -70,6 +79,7 @@
     -moz-appearance: textfield;
   }
 
+  // for disabled and alert
   .form-control {
     &.disabled {
       opacity: 0.7;
@@ -78,8 +88,27 @@
         border: 1px solid $gray;
       }
     }
+    &.alert {
+      margin-bottom: 0;
+    }
   }
 
+  span {
+    &.status {
+      @extend .primary-ff;
+      @extend .fw-semibold !optional;
+      display: inline-block;
+      color: $gray-dark;
+      font-size: $input-status-font-size-web;
+      margin-top: $input-status-margin-top-web;
+      @include superior-breakpoint('lt-lg') {
+        font-size: $input-status-font-size-mob;
+        margin-top: $input-status-margin-top-mob;
+      }
+    }
+  }
+
+  // for web and mobile large
   &.lg {
 
     .form-control, .form-select, .form-label {
@@ -118,15 +147,60 @@
       }
     }
 
+    span {
+      &.status {
+        @extend .primary-ff;
+        @extend .fw-semibold !optional;
+        display: inline-block;
+        font-size: $input-status-font-size-web-lg;
+        margin-top: $input-status-margin-top-web-lg;
+        @include superior-breakpoint('lt-lg') {
+          font-size: $input-status-font-size-mob-lg;
+          margin-top: $input-status-margin-top-mob-lg;
+        }
+      }
+    }
+
   }
 
   textarea {
-   &.form-control {
-    resize: none;
-    min-height: 100px;
-   }
+    &.form-control {
+      resize: none;
+      min-height: 100px;
+    }
   }
 
 }
 
+.btn {
+  color: white;
+  min-height: 52px;
+  @extend .primary-ff;
+  @extend .fw-semibold !optional;
+  font-size: $button-font-size;
+  border-radius: 4px;
+  &.btn-lg {
+    min-height: 57px;
+    font-size: $button-font-size-lg;
+  }
+  &:hover, &:focus, &:active {
+    color: white;
+  }
+  &:focus {
+    box-shadow: none !important;
+  }
+}
 
+// theme changes
+@include apply-superior using ($colors) {
+
+  .form-label {
+    $custom-dark: map-get($colors , dark);
+    color: $custom-dark;
+  }
+
+  .form-control, .form-select {
+    color: $dark;
+  }
+
+}

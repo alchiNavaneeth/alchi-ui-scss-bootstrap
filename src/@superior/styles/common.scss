@@ -1,26 +1,6 @@
 
-$theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
-);
+@import './abstract/abstract';
 
-//custom colors
-$custom-colors: (
-  "tertiary": $tertiary,
-  "primary-dark": $primary-dark,
-  "gray": $gray,
-  "gray-dark": $gray-dark,
-  "gray-light": $gray-light
-) !default;
-
-//merging all colors
-$theme-colors: map-merge($custom-colors, $theme-colors);
 
 //alerts themes
 $alert-border-scale:-70%; // this variable comes from bootstrap. it works even without declaring
@@ -64,5 +44,16 @@ $alert-border-scale:-70%; // this variable comes from bootstrap. it works even w
   color: $danger;
   &:focus {
     border: 1px solid $danger !important;
+  }
+}
+
+@include apply-superior using ($colors) {
+
+  $dark: map-get($colors , dark);
+  * {
+    color: $dark;
+  }
+  .primary-ff {
+    font-family: 'Quicksand', sans-serif;
   }
 }

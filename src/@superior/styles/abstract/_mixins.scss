@@ -10,7 +10,7 @@
   }
 }
 
-//for input alert box
+/* for input alert box
 @mixin alert-input-variant($background, $border, $color) {
   color: $color;
   background: $background;
@@ -19,7 +19,7 @@
   .alert-link {
     color: shade-color($color, 20%);
   }
-}
+} */
 
 @mixin ft-calc($pixels) {
   font-size: calc($pixels) + px;
@@ -30,7 +30,7 @@
   &:-moz-placeholder           {@content}
   &::-moz-placeholder          {@content}
   &:-ms-input-placeholder      {@content}
-}
+};
 
 @mixin superior-breakpoint($breakpoint) {
 
@@ -39,7 +39,7 @@
   @if ($mediaQuery != null) {
 
       @media #{$mediaQuery} {
-          @content
+          @content;
       }
   } @else {
 

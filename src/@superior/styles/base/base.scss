@@ -1,14 +1,51 @@
-@import '../../../../node_modules/bootstrap/scss/bootstrap';
+@import '../abstract/variables';
+
 @import "../../../../node_modules/bootstrap/scss/functions";
-
-@import "variables";
-@import "mixins";
-@import "breakpoints";
-@import "fonts";
-@import "theme";
-@import "utilities";
-@import "miscellaneous";
-
 @import "../../../../node_modules/bootstrap/scss/variables";
 @import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/utilities";
+@import "../../../../node_modules/bootstrap/scss/utilities/api";
+
+
+@import "miscellaneous";
+
+@mixin apply-superior {
+
+  @each $theme, $colors in $superior-theme {
+
+    @if $theme == 'superior-dark' {
+      .#{$theme} {
+        @content($colors);
+      }
+    }
+    @else {
+      @content($colors)
+    }
+
+  }
+
+};
+
+
+@include apply-superior using ($colors) {
+
+  $theme-colors: $colors;
+
+  $custom-colors: (
+    "tertiary": $tertiary,
+    "primary-dark": $primary-dark,
+    "gray": $gray,
+    "gray-dark": $gray-dark,
+    "gray-light": $gray-light
+  );
+
+  $theme-colors: map-merge($custom-colors, $theme-colors);
+
+  @import "utilities";
+  @import '../../../../node_modules/bootstrap/scss/bootstrap';
+
+}
+
+@import 'https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap';
+
 

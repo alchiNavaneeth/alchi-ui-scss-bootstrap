@@ -4,6 +4,7 @@ $font-h1:24;
 $font-h2:20;
 $font-base:16;
 $font-small:12;
+$font-big: 30px;
 
 //base colors
 $primary:#00818E;
@@ -18,6 +19,7 @@ $gray: #CFD4D9;
 $gray-dark: #999999;
 $gray-light: #E7EFF3;
 
+
 //custom colors
 $tertiary: #80BFC4;
 $primary-dark:#163359;
@@ -25,6 +27,28 @@ $info-light:#D3E0FC;
 $success-light:#D6E6DF;
 $danger-light:#F3D8DB;
 $warning-light:#FDF3D1;
+
+//colors which changes based on theme
+$superior-theme: (
+  'superior-dark' : (
+    'primary': white,
+    'secondary': $primary,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    'dark': $gray-dark,
+    'light': $primary-dark
+  ),
+  'superior-light' : (
+    'primary': $primary,
+    'secondary': $secondary,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    'dark': $dark,
+    'light':$light
+  )
+) !default;
 
 //font weight
 $font-weight-medium: 500;
@@ -40,7 +64,7 @@ $fs-7: 0.75rem;
 //mobile default
 $input-padding-y-mob: 10px;
 $input-padding-x-mob: 10px;
-$input-font-size-mob: 12px;
+$input-font-size-mob: 16px;
 
 //web default
 $input-padding-y-web: 12px;
@@ -71,3 +95,20 @@ $form-label-margin-bottom-mob-lg: 8px;
 
 //web large
 $form-label-margin-bottom-web-lg: 10px;
+
+//input status
+$input-status-font-size-web: 14px;
+$input-status-font-size-mob: 16px;
+
+$input-status-margin-top-web: 8px;
+$input-status-margin-top-mob: 8px;
+
+$input-status-font-size-web-lg: 20px;
+$input-status-font-size-mob-lg: 16px;
+
+$input-status-margin-top-web-lg: 10px;
+$input-status-margin-top-mob-lg: 8px;
+
+//button
+$button-font-size: 16px;
+$button-font-size-lg: 20px;

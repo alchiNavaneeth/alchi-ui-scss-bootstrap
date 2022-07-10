@@ -38,7 +38,17 @@
           @content
       }
   }
+};
+
+/* import superior scss */
+@mixin import-superior {
+  .mt-showcase {
+    & {
+      @content;
+    }
+  }
 }
+
 
 @mixin placeholder {
   &::-webkit-input-placeholder {@content}
