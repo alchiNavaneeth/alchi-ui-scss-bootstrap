@@ -5,20 +5,30 @@
 //alerts themes
 $alert-border-scale:-70%; // this variable comes from bootstrap. it works even without declaring
 
+//primary
+.badge-primary {
+  @include alert-variant($primary, shift-color($info, $alert-border-scale), white);
+}
+
+//secondary
+.badge-secondary {
+  @include alert-variant($secondary, shift-color($info, $alert-border-scale), white);
+}
+
 //Info
-.alert-info {
+.alert-info, .badge-info  {
   @include alert-variant($info-light, shift-color($info, $alert-border-scale), $info);
 }
 //Success
-.alert-success {
+.alert-success, .badge-success  {
   @include alert-variant($success-light, shift-color($success, $alert-border-scale), $success);
 }
 //Danger
-.alert-danger {
+.alert-danger, .badge-danger  {
   @include alert-variant($danger-light, shift-color($danger, $alert-border-scale), $danger);
 }
 //Warning
-.alert-warning {
+.alert-warning, .badge-warning  {
   @include alert-variant($warning-light, shift-color($warning, $alert-border-scale), $warning);
 }
 

@@ -172,25 +172,6 @@
 
 }
 
-.btn {
-  color: white;
-  min-height: 52px;
-  @extend .primary-ff;
-  @extend .fw-semibold !optional;
-  font-size: $button-font-size;
-  border-radius: 4px;
-  &.btn-lg {
-    min-height: 57px;
-    font-size: $button-font-size-lg;
-  }
-  &:hover, &:focus, &:active {
-    color: white;
-  }
-  &:focus {
-    box-shadow: none !important;
-  }
-}
-
 // theme changes
 @include apply-superior using ($colors, $type) {
 

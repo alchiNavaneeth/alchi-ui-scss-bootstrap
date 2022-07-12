@@ -27,7 +27,7 @@ $info-light:#D3E0FC;
 $success-light:#D6E6DF;
 $danger-light:#F3D8DB;
 $warning-light:#FDF3D1;
-
+$badge-red: #DC3545;
 //colors which changes based on theme
 $superior-theme: (
   'superior-dark' : (
@@ -37,7 +37,8 @@ $superior-theme: (
     "warning":    $warning,
     "danger":     $danger,
     'dark': $gray-dark,
-    'light': $primary-dark
+    'light': $primary-dark,
+    'red': $badge-red,
   ),
   'superior-light' : (
     'primary': $primary,
@@ -46,7 +47,8 @@ $superior-theme: (
     "warning":    $warning,
     "danger":     $danger,
     'dark': $dark,
-    'light':$light
+    'light':$light,
+    'red': $badge-red
   )
 ) !default;
 
@@ -110,6 +112,28 @@ $input-status-margin-top-web-lg: 10px;
 $input-status-margin-top-mob-lg: 8px;
 
 //button
-$button-font-size: 16px;
-$button-font-size-lg: 20px;
+$btn-font-size: 16px;
+$btn-font-size-lg: 20px;
+$btn-font-size-big: 20px;
+$btn-border-radius: 4px;
 
+$btn-padding-y: 2px;
+$btn-padding-x: 12px;
+$btn-padding-y-web-lg: 16px;
+$btn-padding-x-web-lg: 16px;
+
+//badge
+$badge-font-size: 8px;
+$badge-font-size-lg: 10px;
+$badge-border-radius: 18px;
+$rounded-pill-size: 6px;
+$rounded-pill-size-lg: 8px;
+
+//badge btn
+$badge-btn-font-size: 12px;
+$badge-btn-font-size-lg: 16px;
+
+$badge-btn-padding-y: 2px;
+$badge-btn-padding-x: 12px;
+$badge-btn-padding-y-web-lg: 4px;
+$badge-btn-padding-x-web-lg: 16px;

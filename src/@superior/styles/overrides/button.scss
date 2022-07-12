@@ -1,0 +1,87 @@
+.btn {
+  min-width: 60px;
+  @extend .primary-ff;
+  @extend .fw-semibold !optional;
+  font-size: $btn-font-size;
+  &.btn-lg {
+    min-width: 78px;
+    font-size: $btn-font-size-lg;
+    padding: $btn-padding-y-web-lg $btn-padding-x-web-lg;
+  }
+  &.btn-big {
+    min-height: 57px;
+    font-size: $btn-font-size-big;
+  }
+  &:hover, &:focus, &:active {
+    color: white;
+  }
+  &:focus {
+    box-shadow: none !important;
+  }
+  &.btn-secondary {
+    color: white;
+  }
+  &.btn-link {
+    text-decoration: none;
+    &:hover, &:focus {
+      color: inherit;
+    }
+  }
+}
+
+.badge-btn {
+  display: inline-block;
+  min-width: 60px;
+  @extend .primary-ff;
+  @extend .fw-semibold !optional;
+  font-size: $badge-btn-font-size;
+  padding: $badge-btn-padding-y $badge-btn-padding-x;
+  border-radius: $btn-border-radius;
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  &.badge-btn-lg {
+    min-width: 78px;
+    font-size: $badge-btn-font-size-lg;
+    padding: $badge-btn-padding-y-web-lg $badge-btn-padding-x-web-lg;
+  }
+  &.rounded {
+    border-radius: 24px !important;
+  }
+}
+
+.badge {
+  font-size: $badge-font-size;
+  border-radius: $badge-border-radius;
+  &.rounded-pill {
+    width: $rounded-pill-size !important;
+    height: $rounded-pill-size !important;
+    border-radius: $rounded-pill-size !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+    border: 1px solid white;
+  }
+  &.badge-lg {
+    font-size: $badge-font-size-lg;
+    &.rounded-pill {
+      width: $rounded-pill-size-lg !important;
+      height: $rounded-pill-size-lg !important;
+      border-radius: $rounded-pill-size-lg !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 !important;
+    }
+  }
+}
+
+.alert {
+  &.alert-btn {
+    margin-bottom: 0;
+    &.btn {
+      color: inherit;
+    }
+  }
+}

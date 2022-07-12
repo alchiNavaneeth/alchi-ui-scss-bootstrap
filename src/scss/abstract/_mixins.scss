@@ -22,6 +22,16 @@
   font-size: calc( $pixels / $ft-base ) + rem;
 }
 
+@mixin circle($r, $bg:null, $tc:null) {
+  width: $r;
+  height: $r;
+  display: inline-flex;
+  justify-content:center;
+  align-items:center;
+  background-color: $bg;
+  color: $tc;
+  @include border-radius($r);
+}
 
 @mixin visual-breakpoint($breakpoint) {
 
