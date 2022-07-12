@@ -9,6 +9,9 @@ import { VgUiAlertsComponent } from './vg-ui-alerts/vg-ui-alerts.component';
 import { VgUiBreadcrumbsComponent } from './vg-ui-breadcrumbs/vg-ui-breadcrumbs.component';
 import { VgUiBadgesComponent } from './vg-ui-badges/vg-ui-badges.component';
 import { VgUiButtonsComponent } from './vg-ui-buttons/vg-ui-buttons.component';
+import { VgUiButtonGroupsComponent } from './vg-ui-button-groups/vg-ui-button-groups.component';
+import { VgUiCardsComponent } from './vg-ui-cards/vg-ui-cards.component';
+import { VgUiAvatarComponent } from './vg-ui-avatar/vg-ui-avatar.component';
 
 
 @NgModule({
@@ -18,7 +21,10 @@ import { VgUiButtonsComponent } from './vg-ui-buttons/vg-ui-buttons.component';
     VgUiAlertsComponent,
     VgUiBreadcrumbsComponent,
     VgUiBadgesComponent,
-    VgUiButtonsComponent
+    VgUiButtonsComponent,
+    VgUiButtonGroupsComponent,
+    VgUiCardsComponent,
+    VgUiAvatarComponent
   ],
   imports: [
     CommonModule,

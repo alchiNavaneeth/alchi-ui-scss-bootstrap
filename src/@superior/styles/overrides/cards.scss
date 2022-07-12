@@ -1,0 +1,37 @@
+
+.card {
+  .card-header {
+    padding: $card-header-spacer-y $card-header-spacer-x;
+  }
+  .card-body {
+    padding: $card-spacer-y $card-spacer-x;
+    .card-text {
+      margin-bottom: $card-text-spacer-y;
+      @extend .fw-medium;
+    }
+  }
+}
+
+@include apply-superior using ($colors, $type) {
+
+  $dark: map-get($colors , dark);
+  $isdark: $type;
+
+  .card {
+    box-shadow: 0px 2px 15px rgba($gray, 0.25);
+    border: 1px solid $gray-light;
+    @if $isdark  {
+      .card-header {
+        background-color: $primary;
+        color: $dark
+      }
+    }
+    @else {
+      .card-header {
+        background-color: $primary-dark;
+        color: white;
+      }
+    }
+  }
+
+}

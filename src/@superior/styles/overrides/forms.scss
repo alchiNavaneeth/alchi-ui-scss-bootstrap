@@ -11,8 +11,7 @@
       font-weight: $font-weight-medium;
     }
     &:focus {
-      border: 1px solid $info !important;
-      box-shadow: none;
+      border: 1px solid $primary !important;
     }
     @include superior-breakpoint('lt-lg') {
       font-size: $input-font-size-mob;
@@ -46,21 +45,22 @@
     .input-group-text {
       background: none;
       padding: $input-padding-x-web $input-padding-y-web;
-      padding-right: 0;
+      border-right: 2px solid $gray;
       @include superior-breakpoint('lt-lg') {
         padding: $input-padding-x-mob $input-padding-y-mob;
-        padding-right: 0;
       }
       & + .form-control {
         border: 1px solid $gray !important;
         border-left: none !important;
         &:focus {
-          border: 1px solid $info !important;
+          border: 1px solid $primary !important;
         }
       }
     }
     .form-control + .input-group-text{
       padding-right: $input-padding-x-web;
+      border-left: 2px solid $gray;
+      border-right-width: 1px;
       @include superior-breakpoint('lt-lg') {
         padding-right: $input-padding-x-mob;
       }
@@ -133,10 +133,8 @@
     .input-group {
       .input-group-text {
         padding: $input-padding-x-web-lg $input-padding-y-web-lg;
-        padding-right: 0;
         @include superior-breakpoint('lt-lg') {
           padding: $input-padding-x-mob-lg $input-padding-y-mob-lg;
-          padding-right: 0;
         }
       }
       .form-control + .input-group-text{

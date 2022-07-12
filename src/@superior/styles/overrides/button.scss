@@ -3,17 +3,16 @@
   @extend .primary-ff;
   @extend .fw-semibold !optional;
   font-size: $btn-font-size;
+  padding: $btn-padding-y $btn-padding-x;
   &.btn-lg {
     min-width: 78px;
     font-size: $btn-font-size-lg;
     padding: $btn-padding-y-web-lg $btn-padding-x-web-lg;
   }
-  &.btn-big {
-    min-height: 57px;
-    font-size: $btn-font-size-big;
-  }
-  &:hover, &:focus, &:active {
-    color: white;
+  &.btn-sm {
+    min-width: 78px;
+    font-size: $btn-font-size-sm;
+    padding: $btn-padding-y-web-sm $btn-padding-x-web-sm;
   }
   &:focus {
     box-shadow: none !important;
@@ -82,6 +81,17 @@
     margin-bottom: 0;
     &.btn {
       color: inherit;
+    }
+  }
+}
+
+.btn-group {
+  .btn {
+    min-width: 180px;
+    font-size: $btn-group-font-size;
+    padding: $btn-group-padding-y $btn-group-padding-x;
+    &.btn-lg {
+      font-size: $btn-group-font-size-lg;
     }
   }
 }
