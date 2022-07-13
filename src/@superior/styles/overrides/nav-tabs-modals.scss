@@ -60,15 +60,42 @@
     }
   }
 
-  .popover.bs-popover-end {
+
+  .popover.bs-popover-end, .popover.bs-popover-start, .popover.bs-popover-top, .popover.bs-popover-bottom {
     .popover-body {
       color: $primary;
       @extend .fw-medium;
       @extend .primary-ff;
       font-size: 16px;
       box-shadow: 0 2px 15px 0 rgba($gray-medium, 0.25);
-      font-family: "Quicksand", sans-serif;
     }
   }
+
+  .tooltip.bs-tooltip-end, .tooltip.bs-tooltip-start, .tooltip.bs-tooltip-top, .tooltip.bs-tooltip-bottom {
+      .tooltip-inner {
+        background-color: $primary;
+        color: white;
+        @extend .fw-medium;
+        @extend .primary-ff;
+        padding: 10px 20px;
+      }
+  }
+
+  .tooltip.bs-tooltip-end .tooltip-arrow::before {
+    border-right-color: $primary;
+  }
+
+  .tooltip.bs-tooltip-start .tooltip-arrow::before {
+    border-left-color: $primary;
+  }
+
+  .tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: $primary;
+  }
+
+  .tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: $primary;
+  }
+
 
 }

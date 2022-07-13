@@ -22,6 +22,7 @@ import { VgUiSpinnersComponent } from './vg-ui-spinners/vg-ui-spinners.component
 import { VgUiProgressbarComponent } from './vg-ui-progressbar/vg-ui-progressbar.component';
 import { VgUiTogglesComponent } from './vg-ui-toggles/vg-ui-toggles.component';
 import { VgUiPopoverComponent } from './vg-ui-popover/vg-ui-popover.component';
+import { VgUiTooltipComponent } from './vg-ui-tooltip/vg-ui-tooltip.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { VgUiPopoverComponent } from './vg-ui-popover/vg-ui-popover.component';
     VgUiSpinnersComponent,
     VgUiProgressbarComponent,
     VgUiTogglesComponent,
-    VgUiPopoverComponent
+    VgUiPopoverComponent,
+    VgUiTooltipComponent
   ],
   imports: [
     CommonModule,

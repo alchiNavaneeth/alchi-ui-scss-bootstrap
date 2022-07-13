@@ -19,6 +19,7 @@ import { VgUiSpinnersComponent } from './vg-ui-spinners/vg-ui-spinners.component
 import { VgUiTableComponent } from './vg-ui-table/vg-ui-table.component';
 import { VgUiToastsComponent } from './vg-ui-toasts/vg-ui-toasts.component';
 import { VgUiTogglesComponent } from './vg-ui-toggles/vg-ui-toggles.component';
+import { VgUiTooltipComponent } from './vg-ui-tooltip/vg-ui-tooltip.component';
 
 const routes: Routes = [
   { path: "", component: VgUiComponentsComponent,
@@ -42,6 +43,7 @@ const routes: Routes = [
       { path: 'progress-bar', component: VgUiProgressbarComponent },
       { path: 'toggles', component: VgUiTogglesComponent },
       { path: 'popover', component: VgUiPopoverComponent },
+      { path: 'tooltip', component: VgUiTooltipComponent }
     ]
   }
 ];
