@@ -1,0 +1,26 @@
+
+// theme changes
+@include apply-superior using ($colors, $type) {
+
+  $dark: map-get($colors , dark);
+
+  .modal {
+    .modal-content {
+      box-shadow: 0 2px 15px 0 rgba($gray-medium, 0.25) ;
+      .modal-header {
+        padding: $modal-header-padding-y $modal-header-padding-x;
+        font-weight: $font-weight-medium;
+        border-bottom: 1px solid $gray-light;
+      }
+      .modal-body {
+        padding: $modal-header-padding-y $modal-header-padding-x;
+        font-weight: $font-weight-medium;
+      }
+      .modal-footer {
+        border-top: 1px solid $gray-light;
+        padding: $modal-header-padding-y $modal-header-padding-x;
+      }
+    }
+  }
+
+}

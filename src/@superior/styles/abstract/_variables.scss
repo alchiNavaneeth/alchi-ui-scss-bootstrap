@@ -29,6 +29,7 @@ $danger-light:#F3D8DB;
 $warning-light:#FDF3D1;
 $badge-red: #DC3545;
 $gray-medium: #c6c6c6;
+$lime-green: #16B54F;
 
 //colors which changes based on theme
 $superior-theme: (
@@ -41,7 +42,8 @@ $superior-theme: (
     'dark': $gray-dark,
     'light': $primary-dark,
     'red': $badge-red,
-    'gray': $gray-medium
+    'gray': $gray-medium,
+    'lime': $lime-green
   ),
   'superior-light' : (
     'primary': $primary,
@@ -52,7 +54,8 @@ $superior-theme: (
     'dark': $dark,
     'light':$light,
     'red': $badge-red,
-    'gray': $gray-medium
+    'gray': $gray-medium,
+    'lime': $lime-green
   )
 ) !default;
 
@@ -158,3 +161,26 @@ $card-title-spacer-y: 30px;
 $card-text-spacer-y: 30px;
 $card-header-spacer-x: 30px;
 $card-header-spacer-y: 15px;
+
+//list group
+$list-group-item-padding-y: 20px;
+$list-group-item-padding-x: 20px;
+$list-group-item-font-size: 20px;
+
+//modals
+$modal-header-padding-x: 16px;
+$modal-header-padding-y: 16px;
+
+//tables
+$table-cell-padding-y: 25px;
+$table-cell-padding-x: 20px;
+$table-border-color: $gray-light;
+$table-th-font-weight: $font-weight-medium;
+
+//pagination
+$pagination-hover-bg: $primary;
+$pagination-hover-color: white;
+
+//toasts
+$toast-padding-x: 16px;
+$toast-padding-y: 10px;

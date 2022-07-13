@@ -5,12 +5,12 @@
   $dark: map-get($colors , dark);
 
   .accordion {
-    box-shadow: 0 2px 15px 0 rgba(#c6c6c6, 0.25) ;
+    box-shadow: 0 2px 15px 0 rgba($gray-medium, 0.25);
     .accordion-item {
       border: 1px solid $gray-light;
       .accordion-button {
         color: $dark;
-        font-weight: 500;
+        @extend .fw-medium;
         &:not(.collapsed) {
           @if $type == false {
             background-color: map-get($colors , primary);
@@ -19,6 +19,48 @@
         }
       }
     }
+  }
+
+  .list-group {
+    box-shadow: 0 2px 15px 0 rgba($gray-medium, 0.25);
+    .list-group-item {
+      border: 1px solid $gray-light;
+      @extend .fw-medium;
+      font-size: $list-group-item-font-size;
+    }
+  }
+
+  .pagination {
+    .page-item {
+      font-weight: $font-weight-medium;
+    }
+  }
+
+  .toast {
+    box-shadow: 0 2px 15px 0 rgba($gray-medium, 0.25);
+    .toast-header {
+      border-bottom: 1px solid $gray-light;
+      .status {
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+      }
+    }
+    .toast-body {
+      @extend .fw-medium;
+    }
+  }
+
+  .toast-success {
+    @include toast-variant($success-light, shift-color($success, $alert-border-scale), $success)
+  }
+
+  .toast-warning {
+    @include toast-variant($warning-light, shift-color($warning, $alert-border-scale), $warning)
+  }
+
+  .toast-danger {
+    @include toast-variant($danger-light, shift-color($danger, $alert-border-scale), $danger)
   }
 
 }

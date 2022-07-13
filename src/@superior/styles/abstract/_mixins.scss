@@ -13,16 +13,21 @@
   }
 }
 
-/* for input alert box
-@mixin alert-input-variant($background, $border, $color) {
-  color: $color;
-  background: $background;
-  //border-color: $border;
-  border-color: transparent;
-  .alert-link {
-    color: shade-color($color, 20%);
+@mixin toast-variant($background, $border, $color) {
+  .toast-header, .toast-body {
+    background: rgba($background, 0.2);
   }
-} */
+  .toast-header {
+    border-bottom-color: rgba($border, 0.7);
+    .status {
+      background: $color;
+    }
+  }
+  .toast-body {
+    color: $color;
+  }
+}
+
 
 @mixin ft-calc($pixels) {
   font-size: calc($pixels) + px;

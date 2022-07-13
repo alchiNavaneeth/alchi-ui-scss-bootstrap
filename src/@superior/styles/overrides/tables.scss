@@ -1,0 +1,21 @@
+// theme changes
+@include apply-superior using ($colors, $type) {
+
+  $lime: map-get($colors , 'lime');
+
+  .table {
+    box-shadow: 0 2px 15px 0 rgba($gray-medium, 0.25);
+    &>:not(:last-child)>:last-child>* {
+      border-bottom-color: rgba($gray-medium, 0.25);
+      font-weight: $font-weight-semibold;
+    }
+    tbody {
+      tr {
+        td {
+          font-weight: $font-weight-medium;
+        }
+      }
+    }
+  }
+
+}

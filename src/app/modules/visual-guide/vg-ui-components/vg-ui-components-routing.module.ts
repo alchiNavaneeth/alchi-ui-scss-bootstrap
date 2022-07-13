@@ -9,6 +9,11 @@ import { VgUiButtonGroupsComponent } from './vg-ui-button-groups/vg-ui-button-gr
 import { VgUiButtonsComponent } from './vg-ui-buttons/vg-ui-buttons.component';
 import { VgUiCardsComponent } from './vg-ui-cards/vg-ui-cards.component';
 import { VgUiComponentsComponent } from './vg-ui-components.component';
+import { VgUiListGroupsComponent } from './vg-ui-list-groups/vg-ui-list-groups.component';
+import { VgUiModalsComponent } from './vg-ui-modals/vg-ui-modals.component';
+import { VgUiPaginationComponent } from './vg-ui-pagination/vg-ui-pagination.component';
+import { VgUiTableComponent } from './vg-ui-table/vg-ui-table.component';
+import { VgUiToastsComponent } from './vg-ui-toasts/vg-ui-toasts.component';
 
 const routes: Routes = [
   { path: "", component: VgUiComponentsComponent,
@@ -21,7 +26,12 @@ const routes: Routes = [
       { path: "badges", component: VgUiBadgesComponent },
       { path: "button-group", component: VgUiButtonGroupsComponent },
       { path: "cards", component: VgUiCardsComponent },
-      { path: "avatar", component: VgUiAvatarComponent }
+      { path: "avatar", component: VgUiAvatarComponent },
+      { path: 'list-group', component: VgUiListGroupsComponent },
+      { path: 'modals', component: VgUiModalsComponent },
+      { path: 'table', component: VgUiTableComponent },
+      { path: 'toasts', component: VgUiToastsComponent },
+      { path: 'pagination', component: VgUiPaginationComponent }
     ]
   }
 ];

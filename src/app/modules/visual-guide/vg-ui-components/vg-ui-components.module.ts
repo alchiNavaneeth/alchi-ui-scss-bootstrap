@@ -12,6 +12,11 @@ import { VgUiButtonsComponent } from './vg-ui-buttons/vg-ui-buttons.component';
 import { VgUiButtonGroupsComponent } from './vg-ui-button-groups/vg-ui-button-groups.component';
 import { VgUiCardsComponent } from './vg-ui-cards/vg-ui-cards.component';
 import { VgUiAvatarComponent } from './vg-ui-avatar/vg-ui-avatar.component';
+import { VgUiListGroupsComponent } from './vg-ui-list-groups/vg-ui-list-groups.component';
+import { VgUiModalsComponent } from './vg-ui-modals/vg-ui-modals.component';
+import { VgUiTableComponent } from './vg-ui-table/vg-ui-table.component';
+import { VgUiPaginationComponent } from './vg-ui-pagination/vg-ui-pagination.component';
+import { VgUiToastsComponent } from './vg-ui-toasts/vg-ui-toasts.component';
 
 
 @NgModule({
@@ -24,7 +29,12 @@ import { VgUiAvatarComponent } from './vg-ui-avatar/vg-ui-avatar.component';
     VgUiButtonsComponent,
     VgUiButtonGroupsComponent,
     VgUiCardsComponent,
-    VgUiAvatarComponent
+    VgUiAvatarComponent,
+    VgUiListGroupsComponent,
+    VgUiModalsComponent,
+    VgUiTableComponent,
+    VgUiPaginationComponent,
+    VgUiToastsComponent
   ],
   imports: [
     CommonModule,
