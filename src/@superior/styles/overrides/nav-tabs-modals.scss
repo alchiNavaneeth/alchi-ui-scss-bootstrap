@@ -1,0 +1,74 @@
+
+// theme changes
+@include apply-superior using ($colors, $type) {
+
+  $dark: map-get($colors , dark);
+
+  .nav {
+    .nav-item {
+      background-color: white;
+      border-radius: $nav-item-border-radius;
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+      .nav-link {
+        padding: $nav-link-spacer-y $nav-link-spacer-x;
+        @extend .fw-medium;
+        &:not(.disabled) {
+          color: $dark;
+        }
+        &.active {
+          color: $primary;
+        }
+      }
+    }
+    &.nav-pills {
+      .nav-link {
+        &.active {
+          color: white;
+        }
+      }
+    }
+    &.nav-vertical {
+      display: inline-block;
+      .nav-item {
+        margin-right: 0;
+        text-align: center;
+        &:not(:last-child) {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+
+  .modal {
+    .modal-content {
+      box-shadow: 0 2px 15px 0 rgba($gray-medium, 0.25) ;
+      .modal-header {
+        padding: $modal-header-padding-y $modal-header-padding-x;
+        font-weight: $font-weight-medium;
+        border-bottom: 1px solid $gray-light;
+      }
+      .modal-body {
+        padding: $modal-header-padding-y $modal-header-padding-x;
+        font-weight: $font-weight-medium;
+      }
+      .modal-footer {
+        border-top: 1px solid $gray-light;
+        padding: $modal-header-padding-y $modal-header-padding-x;
+      }
+    }
+  }
+
+  .popover.bs-popover-end {
+    .popover-body {
+      color: $primary;
+      @extend .fw-medium;
+      @extend .primary-ff;
+      font-size: 16px;
+      box-shadow: 0 2px 15px 0 rgba($gray-medium, 0.25);
+      font-family: "Quicksand", sans-serif;
+    }
+  }
+
+}

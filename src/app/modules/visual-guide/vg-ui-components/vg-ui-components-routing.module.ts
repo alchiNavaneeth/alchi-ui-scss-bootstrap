@@ -11,9 +11,14 @@ import { VgUiCardsComponent } from './vg-ui-cards/vg-ui-cards.component';
 import { VgUiComponentsComponent } from './vg-ui-components.component';
 import { VgUiListGroupsComponent } from './vg-ui-list-groups/vg-ui-list-groups.component';
 import { VgUiModalsComponent } from './vg-ui-modals/vg-ui-modals.component';
+import { VgUiNavsComponent } from './vg-ui-navs/vg-ui-navs.component';
 import { VgUiPaginationComponent } from './vg-ui-pagination/vg-ui-pagination.component';
+import { VgUiPopoverComponent } from './vg-ui-popover/vg-ui-popover.component';
+import { VgUiProgressbarComponent } from './vg-ui-progressbar/vg-ui-progressbar.component';
+import { VgUiSpinnersComponent } from './vg-ui-spinners/vg-ui-spinners.component';
 import { VgUiTableComponent } from './vg-ui-table/vg-ui-table.component';
 import { VgUiToastsComponent } from './vg-ui-toasts/vg-ui-toasts.component';
+import { VgUiTogglesComponent } from './vg-ui-toggles/vg-ui-toggles.component';
 
 const routes: Routes = [
   { path: "", component: VgUiComponentsComponent,
@@ -31,7 +36,12 @@ const routes: Routes = [
       { path: 'modals', component: VgUiModalsComponent },
       { path: 'table', component: VgUiTableComponent },
       { path: 'toasts', component: VgUiToastsComponent },
-      { path: 'pagination', component: VgUiPaginationComponent }
+      { path: 'pagination', component: VgUiPaginationComponent },
+      { path: 'navs-tabs', component: VgUiNavsComponent },
+      { path: 'spinners', component: VgUiSpinnersComponent },
+      { path: 'progress-bar', component: VgUiProgressbarComponent },
+      { path: 'toggles', component: VgUiTogglesComponent },
+      { path: 'popover', component: VgUiPopoverComponent },
     ]
   }
 ];

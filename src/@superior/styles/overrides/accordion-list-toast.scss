@@ -63,4 +63,24 @@
     @include toast-variant($danger-light, shift-color($danger, $alert-border-scale), $danger)
   }
 
+  .progress {
+    background-color: $gray-100;
+  }
+
+  .progress-info {
+    @include progress-variant($info-light, $info)
+  }
+
+  .progress-success {
+    @include progress-variant($success-light, $success)
+  }
+
+  .progress-warning {
+    @include progress-variant($warning-light, $warning)
+  }
+
+  .progress-danger {
+    @include progress-variant($danger-light, $danger)
+  }
+
 }

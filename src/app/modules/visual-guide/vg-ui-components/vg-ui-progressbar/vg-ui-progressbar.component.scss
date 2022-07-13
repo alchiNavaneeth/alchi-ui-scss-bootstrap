@@ -1,0 +1,8 @@
+
+.ui-components-progressbar-block {
+  .progress {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+}

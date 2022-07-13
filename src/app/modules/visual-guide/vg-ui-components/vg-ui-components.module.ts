@@ -17,6 +17,11 @@ import { VgUiModalsComponent } from './vg-ui-modals/vg-ui-modals.component';
 import { VgUiTableComponent } from './vg-ui-table/vg-ui-table.component';
 import { VgUiPaginationComponent } from './vg-ui-pagination/vg-ui-pagination.component';
 import { VgUiToastsComponent } from './vg-ui-toasts/vg-ui-toasts.component';
+import { VgUiNavsComponent } from './vg-ui-navs/vg-ui-navs.component';
+import { VgUiSpinnersComponent } from './vg-ui-spinners/vg-ui-spinners.component';
+import { VgUiProgressbarComponent } from './vg-ui-progressbar/vg-ui-progressbar.component';
+import { VgUiTogglesComponent } from './vg-ui-toggles/vg-ui-toggles.component';
+import { VgUiPopoverComponent } from './vg-ui-popover/vg-ui-popover.component';
 
 
 @NgModule({
@@ -34,7 +39,12 @@ import { VgUiToastsComponent } from './vg-ui-toasts/vg-ui-toasts.component';
     VgUiModalsComponent,
     VgUiTableComponent,
     VgUiPaginationComponent,
-    VgUiToastsComponent
+    VgUiToastsComponent,
+    VgUiNavsComponent,
+    VgUiSpinnersComponent,
+    VgUiProgressbarComponent,
+    VgUiTogglesComponent,
+    VgUiPopoverComponent
   ],
   imports: [
     CommonModule,

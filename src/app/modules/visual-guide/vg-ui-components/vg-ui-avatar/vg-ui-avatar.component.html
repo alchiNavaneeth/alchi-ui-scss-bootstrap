@@ -3,9 +3,36 @@
   <h1 class="bd-title" id="content">Avatar</h1>
 
   <div class="my-5">
-    <div class="content-container">
 
+    <div class="avatar-icons-wrapper">
+      <h4 class="title">Patients</h4>
+      <div class="icons-container">
+        <div class="avatar-icon-box" *ngFor=" let item of patientIconlist; let i = index " (click)="showIconDetails(item)">
+          <img src="assets/avatars/{{item}}.svg" alt="">
+        </div>
+      </div>
     </div>
+
+    <div class="avatar-icons-wrapper">
+      <h4 class="title">Clinicians</h4>
+      <div class="icons-container">
+        <div class="avatar-icon-box" *ngFor=" let item of cliniciansIconlist; let i = index " (click)="showIconDetails(item)">
+          <img src="assets/avatars/{{item}}.svg" alt="">
+        </div>
+      </div>
+    </div>
+
   </div>
 
+</div>
+
+
+<div class="avatar-icon-details-toaster">
+  <div class="avatar-toaster-container">
+    <h6 class="mb-3 text-white">{{selectedIcon.name}}</h6>
+    <div class="code-box default mb-3">
+      <p class="text-uppercase">Web Component code</p>
+        <pre class="code"><span class="s">&lt;</span><span class="d">div</span><span class="c">&nbsp;class</span><span class="s">=</span><span class="n">"avatar-{{selectedIcon}}"</span><span class="s">&gt;</span><span class="s">&lt;/</span><span class="d">div</span><span class="s">&gt;</span></pre>
+    </div>
+  </div>
 </div>

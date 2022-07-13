@@ -18,6 +18,7 @@ $dark: #434343;
 $gray: #CFD4D9;
 $gray-dark: #999999;
 $gray-light: #E7EFF3;
+$gray-100: #EEEEEE;
 
 
 //custom colors
@@ -184,3 +185,18 @@ $pagination-hover-color: white;
 //toasts
 $toast-padding-x: 16px;
 $toast-padding-y: 10px;
+
+//navs
+$nav-link-spacer-y: 16px;
+$nav-link-spacer-x: 16px;
+$nav-item-border-radius: 4px;
+
+//popover
+$popover-body-padding-y: 24px;
+$popover-body-padding-x: 16px;
+$popover-bg: white;
+$popover-border-radius: 4px;
+$popover-border-color: $gray-light;
+$popover-max-width: 250px;
+$popover-arrow-width: 20px;
+$popover-arrow-height: 12px;

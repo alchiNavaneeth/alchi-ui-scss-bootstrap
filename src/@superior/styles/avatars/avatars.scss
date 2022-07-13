@@ -1,0 +1,26 @@
+
+div[class^="avatar-patients"], div[class^="avatar-clinicians"]  {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+}
+
+$avatars: ('patients-she-mocha',
+'patients-she-pine',
+'patients-he-mocha',
+'patients-he-pine',
+'patients-they-mocha',
+'patients-they-pine',
+'clinicians-she-mocha',
+'clinicians-she-pine',
+'clinicians-he-mocha',
+'clinicians-he-pine',
+'clinicians-they-mocha',
+'clinicians-they-pine');
+
+@each $name in $avatars {
+  .avatar-#{$name} {
+    background: url('./svgs/#{$name}.svg') no-repeat;
+  }
+}
+

@@ -28,6 +28,14 @@
   }
 }
 
+@mixin progress-variant($background, $color) {
+  .progress-bar {
+    background-color: $background;
+    color: $color;
+    font-weight: 500;
+  }
+}
+
 
 @mixin ft-calc($pixels) {
   font-size: calc($pixels) + px;

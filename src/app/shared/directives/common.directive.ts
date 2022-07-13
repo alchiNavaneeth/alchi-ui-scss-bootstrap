@@ -171,3 +171,45 @@ export class FiIconBoxDirective {
    }
 
 }
+
+@Directive({
+  selector: '.avatar-icon-box'
+})
+
+export class AvatarIconBoxDirective {
+
+
+  constructor(private element: ElementRef) {
+
+  }
+
+
+  @HostListener("click", ["$event"])
+   onClick(event:any) {
+
+    let elem =  document.querySelector('.avatar-icon-details-toaster');
+    elem?.classList.add('show')
+    this.element.nativeElement.classList.add('active')
+
+   }
+
+   @HostListener('document:mouseup', ['$event'])
+    onDocumentClick(event:any) {
+
+
+      let parentElem =  document.querySelector('.avatar-icon-details-toaster');
+      let childelem =  document.querySelector('.avatar-toaster-container');
+
+      if (!childelem?.contains(event.target)) {
+       parentElem?.classList.remove('show')
+       this.element.nativeElement.classList.remove('active')
+      }
+
+   }
+
+   ngOnInit() {
+
+
+   }
+
+}

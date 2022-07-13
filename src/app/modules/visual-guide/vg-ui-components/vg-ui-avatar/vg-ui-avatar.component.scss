@@ -1,0 +1,32 @@
+@import "~src/scss/abstract/abstract";
+
+.ui-components-avatar-block {
+  .avatar-icons-wrapper {
+    .title {
+      margin: 60px 0 30px 0;
+      color: $slate-500;
+    }
+    .icons-container {
+      .avatar-icon-box {
+        @include border-radius(8px);
+        display: inline-block;
+        padding: 24px;
+        cursor: pointer;
+        img {
+          width: 100px;
+        }
+        &:not(:last-child) {
+          margin-right: 8px;
+        }
+        &:hover {
+          box-shadow: 0px 3px 14px 0px rgba($color: #414141, $alpha: 0.25);
+          transition: all 0.3s ease;
+        }
+        &.active {
+          background-color: $gray-200;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
