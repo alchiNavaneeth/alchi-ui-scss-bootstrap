@@ -15,6 +15,7 @@ import { VgUiNavsComponent } from './vg-ui-navs/vg-ui-navs.component';
 import { VgUiPaginationComponent } from './vg-ui-pagination/vg-ui-pagination.component';
 import { VgUiPopoverComponent } from './vg-ui-popover/vg-ui-popover.component';
 import { VgUiProgressbarComponent } from './vg-ui-progressbar/vg-ui-progressbar.component';
+import { VgUiRangeComponent } from './vg-ui-range/vg-ui-range.component';
 import { VgUiSpinnersComponent } from './vg-ui-spinners/vg-ui-spinners.component';
 import { VgUiTableComponent } from './vg-ui-table/vg-ui-table.component';
 import { VgUiToastsComponent } from './vg-ui-toasts/vg-ui-toasts.component';
@@ -43,7 +44,8 @@ const routes: Routes = [
       { path: 'progress-bar', component: VgUiProgressbarComponent },
       { path: 'toggles', component: VgUiTogglesComponent },
       { path: 'popover', component: VgUiPopoverComponent },
-      { path: 'tooltip', component: VgUiTooltipComponent }
+      { path: 'tooltip', component: VgUiTooltipComponent },
+      { path: 'range', component: VgUiRangeComponent }
     ]
   }
 ];

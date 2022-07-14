@@ -72,6 +72,7 @@ $alert-border-scale:-70%; // this variable comes from bootstrap. it works even w
   * {
     color: $dark;
     @extend .primary-ff;
+    @include ft-calc($font-base)
   }
   .primary-ff {
     font-family: 'Quicksand', sans-serif;

@@ -3,6 +3,7 @@
 $font-h1:24;
 $font-h2:20;
 $font-base:16;
+$font-normal:14;
 $font-small:12;
 $font-big: 30px;
 
@@ -200,3 +201,10 @@ $popover-border-color: $gray-light;
 $popover-max-width: 250px;
 $popover-arrow-width: 20px;
 $popover-arrow-height: 12px;
+
+//range
+$form-range-track-bg: $gray-100;
+$form-range-track-border-radius: 10px;
+$form-range-track-height: 16px;
+$form-range-thumb-width: 30px;
+$form-range-thumb-height: 30px;

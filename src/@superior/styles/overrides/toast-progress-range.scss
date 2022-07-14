@@ -1,40 +1,7 @@
 
-// theme changes
 @include apply-superior using ($colors, $type) {
 
   $dark: map-get($colors , dark);
-
-  .accordion {
-    box-shadow: 0 2px 15px 0 rgba($gray-medium, 0.25);
-    .accordion-item {
-      border: 1px solid $gray-light;
-      .accordion-button {
-        color: $dark;
-        @extend .fw-medium;
-        &:not(.collapsed) {
-          @if $type == false {
-            background-color: map-get($colors , primary);
-            color: white;
-          }
-        }
-      }
-    }
-  }
-
-  .list-group {
-    box-shadow: 0 2px 15px 0 rgba($gray-medium, 0.25);
-    .list-group-item {
-      border: 1px solid $gray-light;
-      @extend .fw-medium;
-      font-size: $list-group-item-font-size;
-    }
-  }
-
-  .pagination {
-    .page-item {
-      font-weight: $font-weight-medium;
-    }
-  }
 
   .toast {
     box-shadow: 0 2px 15px 0 rgba($gray-medium, 0.25);
@@ -81,6 +48,51 @@
 
   .progress-danger {
     @include progress-variant($danger-light, $danger)
+  }
+
+  //range progress slider
+/*.range-progress-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 16px;
+  border-radius: 4px;
+  background-color: $gray-100;
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: $primary;
+    overflow: visible;
+    cursor: pointer;
+  }
+}*/
+
+
+  input[type="range"] {
+    &.range-progress-slider {
+      color: #ef233c;
+      position: relative;
+	    background: #fff0;
+	    overflow: hidden;
+      --thumb-height: 1.125em;
+      --track-height: 0.125em;
+      --track-color: rgba(0, 0, 0, 0.2);
+      --brightness-hover: 180%;
+      --brightness-down: 80%;
+      --clip-edges: 0.125em;
+      &:active {
+        cursor: grabbing;
+      }
+      &::-webkit-slider-runnable-track, &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        transition: all ease 100ms;
+        position: relative;
+      }
+      &::-webkit-slider-thumb {
+
+      }
+    }
   }
 
 }

@@ -8,8 +8,6 @@
 
     <div class="content-container">
 
-      <h4 class="mt-5 mb-3" id="popoverLeft">Popover Left<a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="#" href="#popoverLeft" style="padding-left: 0.375em;"></a></h4>
-
       <div class="bd-example mt-showcase">
         <button type="button" class="btn btn-primary me-3 mb-3" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="right" data-bs-content="Here’ some amazing content for the Popover">Popover on right</button>
         <button type="button" class="btn btn-primary me-3 mb-3" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="left" data-bs-content="Here’ some amazing content for the Popover">Popover on left</button>
@@ -17,21 +15,25 @@
         <button type="button" class="btn btn-primary me-3 mb-3" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-content="Here’ some amazing content for the Popover">Popover on bottom</button>
       </div>
 
+      <div class="mb-3">
+        <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+        <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">popoverTriggerList</span> <span class="o">=</span> <span class="p">[].</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">'[data-bs-toggle="popover"]'</span><span class="p">))</span>
+<span class="kd">var</span> <span class="nx">popoverList</span> <span class="o">=</span> <span class="nx">popoverTriggerList</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">popoverTriggerEl</span><span class="p">)</span> <span class="p">{{'{'}}</span>
+  <span class="k">return</span> <span class="k">new</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Popover</span><span class="p">(</span><span class="nx">popoverTriggerEl</span><span class="p">)</span>
+<span class="p">{{'})'}}</span></code></pre></div>
+      </div>
+
       <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
       <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
-
 <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-primary"</span> <span class="na">data-bs-content</span><span class="o">=</span><span class="s">"Here’ some amazing content for the Popover"</span> <span class="na">data-bs-trigger</span><span class="o">=</span><span class="s">"focus"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"popover"</span> <span class="na">data-bs-placement</span><span class="o">=</span><span class="s">"right"</span><span class="p">&gt;</span>
   Popover on right
 <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-
 <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-primary"</span> <span class="na">data-bs-content</span><span class="o">=</span><span class="s">"Here’ some amazing content for the Popover"</span> <span class="na">data-bs-trigger</span><span class="o">=</span><span class="s">"focus"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"popover"</span> <span class="na">data-bs-placement</span><span class="o">=</span><span class="s">"left"</span><span class="p">&gt;</span>
   Popover on left
 <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-
 <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-primary"</span> <span class="na">data-bs-content</span><span class="o">=</span><span class="s">"Here’ some amazing content for the Popover"</span> <span class="na">data-bs-trigger</span><span class="o">=</span><span class="s">"focus"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"popover"</span> <span class="na">data-bs-placement</span><span class="o">=</span><span class="s">"top"</span><span class="p">&gt;</span>
   Popover on top
 <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-
 <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-primary"</span> <span class="na">data-bs-content</span><span class="o">=</span><span class="s">"Here’ some amazing content for the Popover"</span> <span class="na">data-bs-trigger</span><span class="o">=</span><span class="s">"focus"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"popover"</span> <span class="na">data-bs-placement</span><span class="o">=</span><span class="s">"bottom"</span><span class="p">&gt;</span>
   Popover on bottom
 <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
