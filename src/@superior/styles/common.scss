@@ -2,6 +2,10 @@
 @import './abstract/abstract';
 
 
+body {
+  line-height: normal !important;
+}
+
 //alerts themes
 $alert-border-scale:-70%; // this variable comes from bootstrap. it works even without declaring
 
@@ -72,10 +76,15 @@ $alert-border-scale:-70%; // this variable comes from bootstrap. it works even w
   * {
     color: $dark;
     @extend .primary-ff;
-    @include ft-calc($font-base)
+    @include ft-calc($font-base);
   }
+
   .primary-ff {
     font-family: 'Quicksand', sans-serif;
+  }
+
+  [class^=icon-fi] {
+    @include ft-calc($font-base);
   }
 
   @if $isdark  {

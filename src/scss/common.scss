@@ -277,3 +277,57 @@ display: none;
 .tooltip.bs-tooltip-bottom .tooltip-arrow::before {
   border-bottom-color: #00818E;
 }
+
+.datepicker {
+  box-shadow: 0 2px 15px 0 rgba($gray-medium, 0.25);
+  border: 1px solid $gray-light;
+  font-family: "Quicksand", sans-serif;
+  .datepicker-days {
+    position: relative;
+    top: -10px;
+    .table-condensed {
+      thead {
+        tr:nth-child(2) {
+          th {
+            background-color: #00818E;
+            color: white;
+            border-radius: 0;
+            font-size: 16px;
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+  th, td {
+    width: 36px;
+    height: 36px;
+    color: #00818E;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  td {
+    &.old, &.new {
+      color: tint(#00818E, 60%) !important;
+    }
+    &:hover {
+      background-color: tint(#00818E, 92%) !important;
+    }
+    &.active {
+      background: #00818E;
+      background: linear-gradient(180deg, #00818E 0%, darken(#00818E, 15%) 100%) !important;
+    }
+  }
+  th {
+    &.dow {
+      color: $text-dark;
+      font-weight: 500;
+      border-bottom: 1px solid $gray-light;
+    }
+  }
+  &.datepicker-dropdown:before,
+  &.datepicker-dropdown:after {
+    border-bottom-color: $primary;
+  }
+}

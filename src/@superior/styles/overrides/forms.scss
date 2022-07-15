@@ -173,6 +173,7 @@
 // theme changes
 @include apply-superior using ($colors, $type) {
 
+  $dark: map-get($colors , dark);
   $isdark: $type;
 
   .form-label {
@@ -184,12 +185,72 @@
     color: $dark;
   }
 
+  .datepicker {
+    th {
+      &.dow {
+        color: $dark;
+      }
+    }
+  }
+
 }
 
 //form-check
-
 .form-check {
   .form-check-label {
     font-weight: $font-weight-medium;
+  }
+}
+
+.datepicker {
+  box-shadow: 0 2px 15px 0 rgba($gray-medium, 0.25);
+  border: 1px solid $gray-light;
+  @extend .primary-ff;
+  .datepicker-days {
+    position: relative;
+    top: -10px;
+    .table-condensed {
+      thead {
+        tr:nth-child(2) {
+          th {
+            background-color: $primary;
+            color: white;
+            border-radius: 0;
+            font-size: 16px;
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+  th, td {
+    width: 36px;
+    height: 36px;
+    color: $primary;
+    font-size: 14px;
+    font-weight: $font-weight-medium;
+  }
+  td {
+    &.old, &.new {
+      color: tint($primary, 60%) !important;
+    }
+    &:hover {
+      background-color: tint($primary, 92%) !important;
+    }
+    &.active {
+      background: $primary;
+      background: linear-gradient(180deg, $primary 0%, darken($primary, 15%) 100%) !important;
+    }
+  }
+  th {
+    &.dow {
+      font-weight: $font-weight-medium;
+      border-bottom: 1px solid $gray-light;
+    }
+  }
+  &.datepicker-dropdown:before,
+  &.datepicker-dropdown:after {
+    border-bottom-color: $primary;
   }
 }

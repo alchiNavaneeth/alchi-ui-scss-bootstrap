@@ -1,10 +1,10 @@
 
 //font size
-$font-h1:24;
-$font-h2:20;
-$font-base:16;
-$font-normal:14;
-$font-small:12;
+$font-h1:24px;
+$font-h2:20px;
+$font-base:16px;
+$font-normal:14px;
+$font-small:12px;
 $font-big: 30px;
 
 //base colors
@@ -36,7 +36,7 @@ $lime-green: #16B54F;
 //colors which changes based on theme
 $superior-theme: (
   'superior-dark' : (
-    'primary': white,
+    'primary': $secondary,
     'secondary': $primary,
     "info":       $info,
     "warning":    $warning,
@@ -208,3 +208,4 @@ $form-range-track-border-radius: 10px;
 $form-range-track-height: 16px;
 $form-range-thumb-width: 30px;
 $form-range-thumb-height: 30px;
+

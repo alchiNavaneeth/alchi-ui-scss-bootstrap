@@ -3,7 +3,6 @@
 @mixin alert-variant($background, $border, $color) {
   color: $color;
   background: $background;
-  //border-color: $border;
   border-color: transparent;
   .alert-link {
     color: shade-color($color, 20%);
@@ -33,12 +32,13 @@
     background-color: $background;
     color: $color;
     font-weight: 500;
+    font-size: 12px;
   }
 }
 
 
 @mixin ft-calc($pixels) {
-  font-size: calc($pixels) + px;
+  font-size: $pixels;
 }
 
 @mixin placeholder {

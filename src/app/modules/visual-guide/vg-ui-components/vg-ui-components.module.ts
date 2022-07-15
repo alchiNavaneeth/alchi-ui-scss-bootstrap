@@ -24,6 +24,8 @@ import { VgUiTogglesComponent } from './vg-ui-toggles/vg-ui-toggles.component';
 import { VgUiPopoverComponent } from './vg-ui-popover/vg-ui-popover.component';
 import { VgUiTooltipComponent } from './vg-ui-tooltip/vg-ui-tooltip.component';
 import { VgUiRangeComponent } from './vg-ui-range/vg-ui-range.component';
+import { VgUiScrollbarComponent } from './vg-ui-scrollbar/vg-ui-scrollbar.component';
+import { VgUiDatepickerComponent } from './vg-ui-datepicker/vg-ui-datepicker.component';
 
 
 @NgModule({
@@ -48,7 +50,9 @@ import { VgUiRangeComponent } from './vg-ui-range/vg-ui-range.component';
     VgUiTogglesComponent,
     VgUiPopoverComponent,
     VgUiTooltipComponent,
-    VgUiRangeComponent
+    VgUiRangeComponent,
+    VgUiScrollbarComponent,
+    VgUiDatepickerComponent
   ],
   imports: [
     CommonModule,
