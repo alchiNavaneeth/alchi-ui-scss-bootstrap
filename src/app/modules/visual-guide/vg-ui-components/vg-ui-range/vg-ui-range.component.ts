@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var $:any;
 
 @Component({
   selector: 'app-vg-ui-range',
@@ -10,6 +11,19 @@ export class VgUiRangeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    let range:any = document.getElementById('rangeProgressSlider');
+    let setValue = ()=>{
+        let newValue = Number( (range?.value - range?.min) * 100 / (range?.max - range?.min) );
+        let newPosition = 15 - (newValue * 0.3);
+        document.documentElement.style.setProperty("--range-progress", `calc(${newValue}% + (${newPosition}px))`);
+    };
+
+    document.addEventListener("DOMContentLoaded", setValue);
+    range?.addEventListener('input', setValue);
+
+    setValue();
+
   }
 
 }
