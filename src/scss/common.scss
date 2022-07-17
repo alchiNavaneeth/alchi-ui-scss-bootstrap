@@ -14,32 +14,42 @@ a {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../@superior/styles/icons/fonts/icomoon.eot?nntxzf');
+  src:  url('../@superior/styles/icons/fonts/icomoon.eot?nntxzf#iefix') format('embedded-opentype'),
+    url('../@superior/styles/icons/fonts/icomoon.ttf?nntxzf') format('truetype'),
+    url('../@superior/styles/icons/fonts/icomoon.woff?nntxzf') format('woff'),
+    url('../@superior/styles/icons/fonts/icomoon.svg?nntxzf#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
 .main-container {
-  min-height: calc(100vh - 90px);
-  .content-wrapper {
-    padding:90px 0 20px 0;
-    @include visual-breakpoint('lt-md') {
-      padding-top: 0;
-    }
+  min-height: calc(100vh - 180px);
+  margin: 90px 0 0 0;
+  @include visual-breakpoint('lt-md') {
+    margin: 0;
+    min-height: auto;
   }
-  > router-outlet + * {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: inherit;
-
-    > div {
-        width: 100%;
-        .content-block {
-          > .table {
-            max-width: 100%;
-            margin-bottom: 1.5rem;
-            font-size: 14px;
-          }
-        }
-
+  .content-wrapper {
+    min-height: inherit;
+    padding:0 0 20px 0;
+    > router-outlet + *  {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-height: inherit;
     }
-
+    .content-block {
+      > .table {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+        font-size: 14px;
+      }
+    }
   }
 }
 
@@ -331,3 +341,4 @@ display: none;
     border-bottom-color: $primary;
   }
 }
+
