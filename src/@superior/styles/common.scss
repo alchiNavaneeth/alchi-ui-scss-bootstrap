@@ -68,6 +68,10 @@ $alert-border-scale:-70%; // this variable comes from bootstrap. it works even w
   object-fit: cover;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 @include apply-superior using ($colors, $type) {
 
   $dark: map-get($colors , dark);

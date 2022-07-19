@@ -1,0 +1,145 @@
+
+//icon groups
+.btn-group {
+  &.icon-group {
+    .btn {
+      min-width: auto;
+      padding: 8px 15px;
+    }
+    [class^="icon-"], [class*=" icon-"] {
+      @include ft-calc($font-base);
+      &::before {
+        color: inherit;
+      }
+    }
+    &.filled {
+      .btn {
+        border: 1px solid white !important;
+      }
+      [class^="icon-"], [class*=" icon-"] {
+        &::before {
+          color: white;
+        }
+      }
+    }
+    &.lg {
+      .btn {
+        padding: 16px 20px;
+      }
+      [class^="icon-"], [class*=" icon-"] {
+        @include ft-calc($font-h2)
+      }
+    }
+  }
+}
+
+//notification
+.notification-card {
+  display: flex;
+  flex-direction: row;
+  .card-item {
+    display: flex;
+    padding: 16px;
+    .title {
+      margin: 0 0 6px 0;
+    }
+    &.right {
+      padding: 30px 36px;
+      border-left: 1px solid $gray-light;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+
+@include apply-superior using ($colors, $type) {
+
+  $dark: map-get($colors , dark);
+
+  //chat
+  .chat-bubble {
+    .chat-container {
+      max-width: 263px;
+    }
+    .message {
+      padding: 16px;
+      color: white;
+      @extend .fw-medium;
+      margin: 0 0 8px 0;
+      @include border-radius(6px);
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      p {
+        @extend .fw-medium;
+        color: $dark;
+        @include ft-calc($font-normal);
+      }
+    }
+    &.sent {
+      display: flex;
+      .message {
+        background-color: map-get($colors , primary);
+        border-bottom-left-radius: 0;
+      }
+      .profile {
+        p {
+          padding-left: 6px;
+        }
+      }
+    }
+    &.received {
+      display: flex;
+      justify-content: end;
+      .message {
+        text-align: right;
+        background-color: map-get($colors , secondary);
+        border-bottom-right-radius: 0;
+      }
+      .profile {
+        justify-content: end;
+        p {
+          padding-right: 6px;
+        }
+      }
+    }
+  }
+
+  //stepper
+  .steppers {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      @include circle(36px);
+      border: 1px solid $gray;
+      @extend .fw-medium;
+      @include ft-calc($font-h2);
+      color: map-get($colors, primary);
+      cursor: pointer;
+      background-color: map-get($colors , light);
+      &[class^="icon-"], &[class*=" icon-"] {
+        @include ft-calc($font-base);
+        &:before {
+          color: map-get($colors, primary);
+        }
+      }
+      &:not(:last-child) {
+        margin-right: 24px;
+      }
+      &.active {
+        background-color: map-get($colors , primary);
+        color: white;
+        border: 1px solid map-get($colors , primary);
+        &[class^="icon-"], &[class*=" icon-"] {
+          &:before {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+}

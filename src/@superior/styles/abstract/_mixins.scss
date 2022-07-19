@@ -36,9 +36,19 @@
   }
 }
 
-
 @mixin ft-calc($pixels) {
   font-size: $pixels;
+}
+
+@mixin circle($r, $bg:null, $tc:null) {
+  width: $r;
+  height: $r;
+  display: inline-flex;
+  justify-content:center;
+  align-items:center;
+  background-color: $bg;
+  color: $tc;
+  @include border-radius($r);
 }
 
 @mixin placeholder {

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 declare var $:any;
 
+
 @Component({
   selector: 'app-vg-ui-range',
   templateUrl: './vg-ui-range.component.html',
@@ -9,6 +10,16 @@ declare var $:any;
 export class VgUiRangeComponent implements OnInit {
 
   constructor() { }
+
+  loadScript(url: string) {
+    const body = <HTMLDivElement> document.body;
+    const script = document.createElement('script');
+    script.innerHTML = '';
+    script.src = url;
+    script.async = false;
+    script.defer = true;
+    body.appendChild(script);
+  }
 
   ngOnInit(): void {
 
@@ -24,6 +35,9 @@ export class VgUiRangeComponent implements OnInit {
     range?.addEventListener('input', setValue);
 
     setValue();
+
+    this.loadScript('../../../../assets/js/superior.js');
+
 
   }
 

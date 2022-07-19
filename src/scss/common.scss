@@ -237,10 +237,13 @@ display: none;
 }
 
 /* common */
-.no-pointer {
+.pointer {
   cursor: pointer;
 }
 
+.clear {
+  clear: both
+}
 
 //importing custom theme to showcase
 .mt-showcase {

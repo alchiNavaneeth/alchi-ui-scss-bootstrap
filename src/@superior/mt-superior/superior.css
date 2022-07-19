@@ -13545,7 +13545,7 @@ a > .superior-dark code {
 .superior-dark .fst-normal {
   font-style: normal !important;
 }
-.superior-dark .fw-medium, .superior-dark .toast .toast-body, .toast .superior-dark .toast-body, .superior-dark .tooltip.bs-tooltip-end .tooltip-inner, .tooltip.bs-tooltip-end .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-auto[data-popper-placement^=right] .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=right] .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-start .tooltip-inner, .tooltip.bs-tooltip-start .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-auto[data-popper-placement^=left] .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=left] .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-top .tooltip-inner, .tooltip.bs-tooltip-top .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-auto[data-popper-placement^=top] .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=top] .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-bottom .tooltip-inner, .tooltip.bs-tooltip-bottom .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=bottom] .superior-dark .tooltip-inner, .superior-dark .popover.bs-popover-end .popover-body, .popover.bs-popover-end .superior-dark .popover-body, .superior-dark .popover.bs-popover-auto[data-popper-placement^=right] .popover-body, .popover.bs-popover-auto[data-popper-placement^=right] .superior-dark .popover-body, .superior-dark .popover.bs-popover-start .popover-body, .popover.bs-popover-start .superior-dark .popover-body, .superior-dark .popover.bs-popover-auto[data-popper-placement^=left] .popover-body, .popover.bs-popover-auto[data-popper-placement^=left] .superior-dark .popover-body, .superior-dark .popover.bs-popover-top .popover-body, .popover.bs-popover-top .superior-dark .popover-body, .superior-dark .popover.bs-popover-auto[data-popper-placement^=top] .popover-body, .popover.bs-popover-auto[data-popper-placement^=top] .superior-dark .popover-body, .superior-dark .popover.bs-popover-bottom .popover-body, .popover.bs-popover-bottom .superior-dark .popover-body, .superior-dark .popover.bs-popover-auto[data-popper-placement^=bottom] .popover-body, .popover.bs-popover-auto[data-popper-placement^=bottom] .superior-dark .popover-body, .superior-dark .nav .nav-item .nav-link, .nav .nav-item .superior-dark .nav-link, .superior-dark .card .card-body .card-text, .card .card-body .superior-dark .card-text, .list-group .superior-dark .list-group-item, .superior-dark .accordion .accordion-item .accordion-button, .accordion .accordion-item .superior-dark .accordion-button, .superior-dark .list-group .list-group-item {
+.superior-dark .fw-medium, .steppers .superior-dark li, .superior-dark .chat-bubble .profile p, .chat-bubble .profile .superior-dark p, .superior-dark .chat-bubble .message, .chat-bubble .superior-dark .message, .superior-dark .steppers li, .superior-dark .toast .toast-body, .toast .superior-dark .toast-body, .superior-dark .tooltip.bs-tooltip-end .tooltip-inner, .tooltip.bs-tooltip-end .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-auto[data-popper-placement^=right] .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=right] .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-start .tooltip-inner, .tooltip.bs-tooltip-start .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-auto[data-popper-placement^=left] .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=left] .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-top .tooltip-inner, .tooltip.bs-tooltip-top .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-auto[data-popper-placement^=top] .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=top] .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-bottom .tooltip-inner, .tooltip.bs-tooltip-bottom .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=bottom] .superior-dark .tooltip-inner, .superior-dark .popover.bs-popover-end .popover-body, .popover.bs-popover-end .superior-dark .popover-body, .superior-dark .popover.bs-popover-auto[data-popper-placement^=right] .popover-body, .popover.bs-popover-auto[data-popper-placement^=right] .superior-dark .popover-body, .superior-dark .popover.bs-popover-start .popover-body, .popover.bs-popover-start .superior-dark .popover-body, .superior-dark .popover.bs-popover-auto[data-popper-placement^=left] .popover-body, .popover.bs-popover-auto[data-popper-placement^=left] .superior-dark .popover-body, .superior-dark .popover.bs-popover-top .popover-body, .popover.bs-popover-top .superior-dark .popover-body, .superior-dark .popover.bs-popover-auto[data-popper-placement^=top] .popover-body, .popover.bs-popover-auto[data-popper-placement^=top] .superior-dark .popover-body, .superior-dark .popover.bs-popover-bottom .popover-body, .popover.bs-popover-bottom .superior-dark .popover-body, .superior-dark .popover.bs-popover-auto[data-popper-placement^=bottom] .popover-body, .popover.bs-popover-auto[data-popper-placement^=bottom] .superior-dark .popover-body, .superior-dark .nav .nav-item .nav-link, .nav .nav-item .superior-dark .nav-link, .superior-dark .card .card-body .card-text, .card .card-body .superior-dark .card-text, .list-group .superior-dark .list-group-item, .superior-dark .accordion .accordion-item .accordion-button, .accordion .accordion-item .superior-dark .accordion-button, .superior-dark .list-group .list-group-item {
   font-weight: 500 !important;
 }
 .superior-dark .fw-semibold, .superior-dark .badge-btn, .superior-dark .btn, .superior-dark .input-box span.status, .input-box .superior-dark span.status, .superior-dark .input-box .form-label, .input-box .superior-dark .form-label {
@@ -24075,7 +24075,7 @@ textarea.form-control-lg {
   font-style: normal !important;
 }
 
-.fw-medium, .toast .toast-body, .superior-dark .toast .toast-body, .tooltip.bs-tooltip-end .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=right] .tooltip-inner, .tooltip.bs-tooltip-start .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=left] .tooltip-inner, .tooltip.bs-tooltip-top .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=top] .tooltip-inner, .tooltip.bs-tooltip-bottom .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-inner, .popover.bs-popover-end .popover-body, .popover.bs-popover-auto[data-popper-placement^=right] .popover-body, .popover.bs-popover-start .popover-body, .popover.bs-popover-auto[data-popper-placement^=left] .popover-body, .popover.bs-popover-top .popover-body, .popover.bs-popover-auto[data-popper-placement^=top] .popover-body, .popover.bs-popover-bottom .popover-body, .popover.bs-popover-auto[data-popper-placement^=bottom] .popover-body, .nav .nav-item .nav-link, .superior-dark .tooltip.bs-tooltip-end .tooltip-inner, .superior-dark .tooltip.bs-tooltip-start .tooltip-inner, .superior-dark .tooltip.bs-tooltip-top .tooltip-inner, .superior-dark .tooltip.bs-tooltip-bottom .tooltip-inner, .superior-dark .popover.bs-popover-end .popover-body, .superior-dark .popover.bs-popover-start .popover-body, .superior-dark .popover.bs-popover-top .popover-body, .superior-dark .popover.bs-popover-bottom .popover-body, .superior-dark .nav .nav-item .nav-link, .card .card-body .card-text, .list-group .list-group-item, .accordion .accordion-item .accordion-button, .superior-dark .list-group .list-group-item, .superior-dark .accordion .accordion-item .accordion-button {
+.fw-medium, .steppers li, .chat-bubble .profile p, .chat-bubble .message, .superior-dark .steppers li, .superior-dark .chat-bubble .profile p, .superior-dark .chat-bubble .message, .toast .toast-body, .superior-dark .toast .toast-body, .tooltip.bs-tooltip-end .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=right] .tooltip-inner, .tooltip.bs-tooltip-start .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=left] .tooltip-inner, .tooltip.bs-tooltip-top .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=top] .tooltip-inner, .tooltip.bs-tooltip-bottom .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-inner, .popover.bs-popover-end .popover-body, .popover.bs-popover-auto[data-popper-placement^=right] .popover-body, .popover.bs-popover-start .popover-body, .popover.bs-popover-auto[data-popper-placement^=left] .popover-body, .popover.bs-popover-top .popover-body, .popover.bs-popover-auto[data-popper-placement^=top] .popover-body, .popover.bs-popover-bottom .popover-body, .popover.bs-popover-auto[data-popper-placement^=bottom] .popover-body, .nav .nav-item .nav-link, .superior-dark .tooltip.bs-tooltip-end .tooltip-inner, .superior-dark .tooltip.bs-tooltip-start .tooltip-inner, .superior-dark .tooltip.bs-tooltip-top .tooltip-inner, .superior-dark .tooltip.bs-tooltip-bottom .tooltip-inner, .superior-dark .popover.bs-popover-end .popover-body, .superior-dark .popover.bs-popover-start .popover-body, .superior-dark .popover.bs-popover-top .popover-body, .superior-dark .popover.bs-popover-bottom .popover-body, .superior-dark .nav .nav-item .nav-link, .card .card-body .card-text, .list-group .list-group-item, .accordion .accordion-item .accordion-button, .superior-dark .list-group .list-group-item, .superior-dark .accordion .accordion-item .accordion-button {
   font-weight: 500 !important;
 }
 
@@ -27016,6 +27016,10 @@ body {
   object-fit: cover;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .superior-dark * {
   color: #999999;
   font-size: 16px;
@@ -27294,12 +27298,12 @@ body {
 
 .form-range.progress-range::-webkit-slider-thumb {
   -webkit-appearance: none;
-  background: url("/assets/images/range-progress-thumb-icon.png") center center;
+  background: url("/assets/images/range-progress-thumb-icon-01.png") center center;
   box-shadow: 0 6px 17px 0 rgba(133, 133, 133, 0.25);
 }
 .form-range.progress-range::-moz-range-thumb {
   -moz-appearance: none;
-  background: url("/assets/images/range-progress-thumb-icon.png") center center;
+  background: url("/assets/images/range-progress-thumb-icon-01.png") center center;
   box-shadow: 0 6px 17px 0 rgba(133, 133, 133, 0.25);
 }
 .form-range.progress-range::-webkit-slider-runnable-track {
@@ -27921,6 +27925,280 @@ body {
 .scroller.horizontal .wrapper .desp {
   width: 600px;
   flex-shrink: 0;
+}
+
+.btn-group.icon-group .btn {
+  min-width: auto;
+  padding: 8px 15px;
+}
+.btn-group.icon-group [class^=icon-], .btn-group.icon-group [class*=" icon-"] {
+  font-size: 16px;
+}
+.btn-group.icon-group [class^=icon-]::before, .btn-group.icon-group [class*=" icon-"]::before {
+  color: inherit;
+}
+.btn-group.icon-group.filled .btn {
+  border: 1px solid white !important;
+}
+.btn-group.icon-group.filled [class^=icon-]::before, .btn-group.icon-group.filled [class*=" icon-"]::before {
+  color: white;
+}
+.btn-group.icon-group.lg .btn {
+  padding: 16px 20px;
+}
+.btn-group.icon-group.lg [class^=icon-], .btn-group.icon-group.lg [class*=" icon-"] {
+  font-size: 20px;
+}
+
+.notification-card {
+  display: flex;
+  flex-direction: row;
+}
+.notification-card .card-item {
+  display: flex;
+  padding: 16px;
+}
+.notification-card .card-item .title {
+  margin: 0 0 6px 0;
+}
+.notification-card .card-item.right {
+  padding: 30px 36px;
+  border-left: 1px solid #E7EFF3;
+  display: flex;
+  align-items: center;
+}
+
+.superior-dark .chat-bubble .chat-container {
+  max-width: 263px;
+}
+.superior-dark .chat-bubble .message {
+  padding: 16px;
+  color: white;
+  margin: 0 0 8px 0;
+  border-radius: 6px;
+}
+.superior-dark .chat-bubble .profile {
+  display: flex;
+  align-items: center;
+}
+.superior-dark .chat-bubble .profile p {
+  color: #999999;
+  font-size: 14px;
+}
+.superior-dark .chat-bubble.sent {
+  display: flex;
+}
+.superior-dark .chat-bubble.sent .message {
+  background-color: #F9B400;
+  border-bottom-left-radius: 0;
+}
+.superior-dark .chat-bubble.sent .profile p {
+  padding-left: 6px;
+}
+.superior-dark .chat-bubble.received {
+  display: flex;
+  justify-content: end;
+}
+.superior-dark .chat-bubble.received .message {
+  text-align: right;
+  background-color: #00818E;
+  border-bottom-right-radius: 0;
+}
+.superior-dark .chat-bubble.received .profile {
+  justify-content: end;
+}
+.superior-dark .chat-bubble.received .profile p {
+  padding-right: 6px;
+}
+.superior-dark .steppers {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.superior-dark .steppers li {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 36px;
+  border: 1px solid #CFD4D9;
+  font-size: 20px;
+  color: #F9B400;
+  cursor: pointer;
+  background-color: #163359;
+}
+.superior-dark .steppers li[class^=icon-], .superior-dark .steppers li[class*=" icon-"] {
+  font-size: 16px;
+}
+.superior-dark .steppers li[class^=icon-]:before, .superior-dark .steppers li[class*=" icon-"]:before {
+  color: #F9B400;
+}
+.superior-dark .steppers li:not(:last-child) {
+  margin-right: 24px;
+}
+.superior-dark .steppers li.active {
+  background-color: #F9B400;
+  color: white;
+  border: 1px solid #F9B400;
+}
+.superior-dark .steppers li.active[class^=icon-]:before, .superior-dark .steppers li.active[class*=" icon-"]:before {
+  color: white;
+}
+
+.chat-bubble .chat-container {
+  max-width: 263px;
+}
+.chat-bubble .message {
+  padding: 16px;
+  color: white;
+  margin: 0 0 8px 0;
+  border-radius: 6px;
+}
+.chat-bubble .profile {
+  display: flex;
+  align-items: center;
+}
+.chat-bubble .profile p {
+  color: #434343;
+  font-size: 14px;
+}
+.chat-bubble.sent {
+  display: flex;
+}
+.chat-bubble.sent .message {
+  background-color: #00818E;
+  border-bottom-left-radius: 0;
+}
+.chat-bubble.sent .profile p {
+  padding-left: 6px;
+}
+.chat-bubble.received {
+  display: flex;
+  justify-content: end;
+}
+.chat-bubble.received .message {
+  text-align: right;
+  background-color: #F9B400;
+  border-bottom-right-radius: 0;
+}
+.chat-bubble.received .profile {
+  justify-content: end;
+}
+.chat-bubble.received .profile p {
+  padding-right: 6px;
+}
+
+.steppers {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.steppers li {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 36px;
+  border: 1px solid #CFD4D9;
+  font-size: 20px;
+  color: #00818E;
+  cursor: pointer;
+  background-color: #F6F9FD;
+}
+.steppers li[class^=icon-], .steppers li[class*=" icon-"] {
+  font-size: 16px;
+}
+.steppers li[class^=icon-]:before, .steppers li[class*=" icon-"]:before {
+  color: #00818E;
+}
+.steppers li:not(:last-child) {
+  margin-right: 24px;
+}
+.steppers li.active {
+  background-color: #00818E;
+  color: white;
+  border: 1px solid #00818E;
+}
+.steppers li.active[class^=icon-]:before, .steppers li.active[class*=" icon-"]:before {
+  color: white;
+}
+
+.multiRange.type1 .multiRange__range {
+  transition: 50ms;
+}
+.multiRange.type1 .multiRange__range:nth-child(2) {
+  color: #E15F65;
+}
+.multiRange.type1 .multiRange__range .multiRange__handle {
+  box-shadow: none;
+  background: #E15F65;
+}
+.multiRange.type1 .multiRange__range .multiRange__handle__value {
+  background: #E15F65;
+}
+.multiRange.type1 .multiRange__range .multiRange__handle__value::after {
+  border-color: #E15F65 transparent transparent;
+}
+
+body.multiRange-grabbing {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.multiRange {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.multiRange__rangeWrap {
+  height: 16px;
+  background: #E7EFF3;
+  position: relative;
+  z-index: 5;
+}
+
+.multiRange__range {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background: currentColor;
+  border-radius: 4px;
+}
+.multiRange__range:nth-child(1) {
+  color: #E15F65;
+}
+.multiRange__range:nth-child(2) {
+  color: #F2C673;
+}
+.multiRange__range:nth-child(3) {
+  color: #63AF76;
+}
+.multiRange__range:nth-child(4) {
+  color: #F2C673;
+}
+.multiRange__range:nth-child(5) {
+  color: #E15F65;
+}
+.multiRange__range:first-child > .multiRange__handle {
+  display: none;
+}
+.multiRange__range .multiRange__handle {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  top: -18px;
+  left: -26px;
+  cursor: -webkit-grab;
+  cursor: grab;
+  transition: 0.2s;
+  background: url("/assets/images/range-progress-thumb-icon-01.png") no-repeat center center;
+}
+.multiRange__range .multiRange__handle:active {
+  cursor: inherit;
 }
 
 /*# sourceMappingURL=superior.css.map */
