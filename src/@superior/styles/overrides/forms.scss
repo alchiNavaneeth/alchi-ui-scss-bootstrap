@@ -260,12 +260,12 @@
   &.progress-range {
     &::-webkit-slider-thumb{
       -webkit-appearance: none;
-      background: url('/assets/images/range-progress-thumb-icon-01.png') center center;
+      background: url('/assets/images/range-progress-thumb-icon.png') center center;
       box-shadow: 0 6px 17px 0 rgba($gray-600, 0.25);
     }
     &::-moz-range-thumb {
       -moz-appearance: none;
-      background: url('/assets/images/range-progress-thumb-icon-01.png') center center;
+      background: url('/assets/images/range-progress-thumb-icon.png') center center;
       box-shadow: 0 6px 17px 0 rgba($gray-600, 0.25);
     }
     &::-webkit-slider-runnable-track {

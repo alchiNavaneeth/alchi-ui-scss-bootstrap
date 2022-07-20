@@ -7,6 +7,7 @@ import { VgUiBadgesComponent } from './vg-ui-badges/vg-ui-badges.component';
 import { VgUiBreadcrumbsComponent } from './vg-ui-breadcrumbs/vg-ui-breadcrumbs.component';
 import { VgUiButtonGroupsComponent } from './vg-ui-button-groups/vg-ui-button-groups.component';
 import { VgUiButtonsComponent } from './vg-ui-buttons/vg-ui-buttons.component';
+import { VgUiCalendarComponent } from './vg-ui-calendar/vg-ui-calendar.component';
 import { VgUiCardsComponent } from './vg-ui-cards/vg-ui-cards.component';
 import { VgUiComponentsComponent } from './vg-ui-components.component';
 import { VgUiDatepickerComponent } from './vg-ui-datepicker/vg-ui-datepicker.component';
@@ -49,7 +50,8 @@ const routes: Routes = [
       { path: 'tooltip', component: VgUiTooltipComponent },
       { path: 'range', component: VgUiRangeComponent },
       { path: 'scrollbar', component: VgUiScrollbarComponent },
-      { path: 'datepicker', component: VgUiDatepickerComponent }
+      { path: 'datepicker', component: VgUiDatepickerComponent },
+      { path: 'calendar', component: VgUiCalendarComponent }
     ]
   }
 ];

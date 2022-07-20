@@ -21,6 +21,7 @@ $gray-dark: #999999;
 $gray-light: #E7EFF3;
 $gray-100: #EEEEEE;
 $gray-600: #858585;
+$gray-700: #375b8a;
 
 
 //custom colors
@@ -53,7 +54,8 @@ $superior-theme: (
     'light': $primary-dark,
     'red': $badge-red,
     'gray': $gray-medium,
-    'lime': $lime-green
+    'lime': $lime-green,
+    'border': $gray-700
   ),
   'superior-light' : (
     'primary': $primary,
@@ -65,7 +67,8 @@ $superior-theme: (
     'light':$light,
     'red': $badge-red,
     'gray': $gray-medium,
-    'lime': $lime-green
+    'lime': $lime-green,
+    'border': $gray-light
   )
 ) !default;
 

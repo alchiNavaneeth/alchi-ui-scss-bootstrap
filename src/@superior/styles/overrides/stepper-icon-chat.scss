@@ -109,34 +109,40 @@
 
   //stepper
   .steppers {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    li {
+    .nav-link {
       @include circle(36px);
-      border: 1px solid $gray;
       @extend .fw-medium;
       @include ft-calc($font-h2);
-      color: map-get($colors, primary);
       cursor: pointer;
-      background-color: map-get($colors , light);
-      &[class^="icon-"], &[class*=" icon-"] {
-        @include ft-calc($font-base);
-        &:before {
-          color: map-get($colors, primary);
-        }
+      &:not(.disabled) {
+        color: map-get($colors, primary) !important;
       }
-      &:not(:last-child) {
-        margin-right: 24px;
+      &:not(.active) {
+        background-color: map-get($colors , light);
+        border: 1px solid map-get($colors , 'gray');
       }
       &.active {
-        background-color: map-get($colors , primary);
-        color: white;
+        color: white !important;
         border: 1px solid map-get($colors , primary);
-        &[class^="icon-"], &[class*=" icon-"] {
+      }
+      &[class^="icon-"], &[class*=" icon-"] {
+        @include ft-calc($font-base);
+        &:not(.disabled) {
+          &:before {
+            color: map-get($colors, primary);
+          }
+        }
+        &.active {
           &:before {
             color: white;
           }
+        }
+      }
+    }
+    &.vertical {
+      .nav-link {
+        &:not(:last-child) {
+          margin-bottom: 16px;
         }
       }
     }

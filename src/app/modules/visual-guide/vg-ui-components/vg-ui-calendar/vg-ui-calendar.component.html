@@ -1,0 +1,100 @@
+<div class="content-block ui-components-calendar-block bd-content">
+
+  <h1 class="bd-title" id="content">Calendar</h1>
+
+  <div class="my-5">
+
+    <div class="content-container">
+
+      <div class="mt-showcase">
+          <div id='calendar'></div>
+      </div>
+
+    </div>
+
+    <div class="mt-4">
+      <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+      <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"calendar"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      </code></pre></div>
+    </div>
+
+    <div class="mt-4">
+      <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+      <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js">
+<span class="kd">var</span> calendarEl = document.getElementById(<span class="s1">'calendar'</span>);
+<span class="kd">var</span> calendar = <span class="kd">new FullCalendar.Calendar</span>(calendarEl, <span>{{'{'}}</span>
+  headerToolbar: <span>{{'{'}}</span>
+    left: <span class="s1">'prevYear,prev,next,nextYear today'</span>,
+    center: <span class="s1">'title'</span>,
+    right: <span class="s1">'dayGridMonth,dayGridWeek,dayGridDay'</span>
+  },
+  initialDate: <span class="s1">'2020-09-12'</span>,
+  navLinks: <span class="s1">true</span>, // can click day/week names to navigate views
+  editable: <span class="s1">true</span>,
+  dayMaxEvents: <span class="s1">true</span>, // allow "more" link when too many events
+  events: [
+    <span>{{'{'}}</span>
+      title: <span class="s1">'All Day Event',</span>
+      start: <span class="s1">'2020-09-01'</span>
+    <span>{{'}'}}</span>,
+    <span>{{'{'}}</span>
+      title: <span class="s1">'Long Event',</span>
+      start: <span class="s1">'2020-09-07',</span>
+      end: <span class="s1">'2020-09-10'</span>
+      <span>{{'}'}}</span>,
+    <span>{{'{'}}</span>
+      groupId: <span class="s1">999,</span>
+      title: <span class="s1">'Repeating Event',</span>
+      start: <span class="s1">'2020-09-09T16:00:00'</span>
+      <span>{{'}'}}</span>,
+    <span>{{'{'}}</span>
+      groupId: <span class="s1">999,</span>
+      title: <span class="s1">'Repeating Event',</span>
+      start: <span class="s1">'2020-09-16T16:00:00'</span>
+      <span>{{'}'}}</span>,
+    <span>{{'{'}}</span>
+      title: <span class="s1">'Conference',</span>
+      start: <span class="s1">'2020-09-11',</span>
+      end: <span class="s1">'2020-09-13'</span>
+      <span>{{'}'}}</span>,
+    <span>{{'{'}}</span>
+      title: <span class="s1">'Meeting',</span>
+      start: <span class="s1">'2020-09-12T10:30:00',</span>
+      end: <span class="s1">'2020-09-12T12:30:00'</span>
+      <span>{{'}'}}</span>,
+    <span>{{'{'}}</span>
+      title: <span class="s1">'Lunch',</span>
+      start: <span class="s1">'2020-09-12T12:00:00'</span>
+      <span>{{'}'}}</span>,
+    <span>{{'{'}}</span>
+      title: <span class="s1">'Meeting',</span>
+      start: <span class="s1">'2020-09-12T14:30:00'</span>
+      <span>{{'}'}}</span>,
+    <span>{{'{'}}</span>
+      title: <span class="s1">'Happy Hour',</span>
+      start: <span class="s1">'2020-09-12T17:30:00'</span>
+      <span>{{'}'}}</span>,
+    <span>{{'{'}}</span>
+      title: <span class="s1">'Dinner',</span>
+      start: <span class="s1">'2020-09-12T20:00:00'</span>
+      <span>{{'}'}}</span>,
+    <span>{{'{'}}</span>
+      title: <span class="s1">'Birthday Party',</span>
+      start: <span class="s1">'2020-09-13T07:00:00'</span>
+      <span>{{'}'}}</span>,
+    <span>{{'{'}}</span>
+      title: <span class="s1">'Click for Google',</span>
+      url: <span class="s1">'http://google.com/',</span>
+      start: <span class="s1">'2020-09-28'</span>
+      <span>{{'}'}}</span>,
+  ]
+  <span>{{'}'}}</span>,);
+calendar.render();
+
+      </code></pre></div>
+    </div>
+
+  </div>
+
+</div>

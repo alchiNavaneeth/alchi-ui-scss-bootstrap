@@ -26,6 +26,7 @@ import { VgUiTooltipComponent } from './vg-ui-tooltip/vg-ui-tooltip.component';
 import { VgUiRangeComponent } from './vg-ui-range/vg-ui-range.component';
 import { VgUiScrollbarComponent } from './vg-ui-scrollbar/vg-ui-scrollbar.component';
 import { VgUiDatepickerComponent } from './vg-ui-datepicker/vg-ui-datepicker.component';
+import { VgUiCalendarComponent } from './vg-ui-calendar/vg-ui-calendar.component';
 
 
 @NgModule({
@@ -52,7 +53,8 @@ import { VgUiDatepickerComponent } from './vg-ui-datepicker/vg-ui-datepicker.com
     VgUiTooltipComponent,
     VgUiRangeComponent,
     VgUiScrollbarComponent,
-    VgUiDatepickerComponent
+    VgUiDatepickerComponent,
+    VgUiCalendarComponent
   ],
   imports: [
     CommonModule,

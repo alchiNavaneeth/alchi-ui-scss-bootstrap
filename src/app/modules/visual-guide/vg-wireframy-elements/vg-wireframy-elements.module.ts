@@ -8,6 +8,7 @@ import { VgWireSteppersComponent } from './vg-wire-steppers/vg-wire-steppers.com
 import { VgWireIcongroupsComponent } from './vg-wire-icongroups/vg-wire-icongroups.component';
 import { VgWireNotificationComponent } from './vg-wire-notification/vg-wire-notification.component';
 import { VgWireChatComponent } from './vg-wire-chat/vg-wire-chat.component';
+import { VgWiNavigationBarsComponent } from './vg-wi-navigation-bars/vg-wi-navigation-bars.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { VgWireChatComponent } from './vg-wire-chat/vg-wire-chat.component';
     VgWireSteppersComponent,
     VgWireIcongroupsComponent,
     VgWireNotificationComponent,
-    VgWireChatComponent
+    VgWireChatComponent,
+    VgWiNavigationBarsComponent
   ],
   imports: [
     CommonModule,

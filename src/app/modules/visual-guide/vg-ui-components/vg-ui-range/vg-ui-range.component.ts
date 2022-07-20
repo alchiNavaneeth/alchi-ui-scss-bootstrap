@@ -36,7 +36,7 @@ export class VgUiRangeComponent implements OnInit {
 
     setValue();
 
-    this.loadScript('../../../../assets/js/superior.js');
+    this.loadScript('../../../../assets/js/range-group.js');
 
 
   }

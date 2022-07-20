@@ -1,6 +1,18 @@
 @import "~src/scss/abstract/abstract";
 @import "~src/@superior/styles/base/base";
 
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../@superior/styles/icons/fonts/icomoon.eot?nntxzf');
+  src:  url('../@superior/styles/icons/fonts/icomoon.eot?nntxzf#iefix') format('embedded-opentype'),
+    url('../@superior/styles/icons/fonts/icomoon.ttf?nntxzf') format('truetype'),
+    url('../@superior/styles/icons/fonts/icomoon.woff?nntxzf') format('woff'),
+    url('../@superior/styles/icons/fonts/icomoon.svg?nntxzf#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
 html {
 	font-size: $ft-base + 6 + px;
 }
@@ -12,18 +24,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-@font-face {
-  font-family: 'icomoon';
-  src:  url('../@superior/styles/icons/fonts/icomoon.eot?nntxzf');
-  src:  url('../@superior/styles/icons/fonts/icomoon.eot?nntxzf#iefix') format('embedded-opentype'),
-    url('../@superior/styles/icons/fonts/icomoon.ttf?nntxzf') format('truetype'),
-    url('../@superior/styles/icons/fonts/icomoon.woff?nntxzf') format('woff'),
-    url('../@superior/styles/icons/fonts/icomoon.svg?nntxzf#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
 }
 
 .main-container {

@@ -32,12 +32,14 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/css/fullcalendar.css",
               "src/assets/css/bootstrap-datepicker.min.css",
               "src/scss/styles.scss"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "src/assets/js/fullcalendar.js",
               "src/assets/js/bootstrap-datepicker.min.js"
             ]
           },
