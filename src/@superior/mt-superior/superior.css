@@ -26290,6 +26290,13 @@ a:hover {
   color: white;
 }
 
+.superior-dark .navbar-nav .nav-item .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 20px;
+}
+.superior-dark .navbar-nav .nav-item .nav-link:not(:last-child) {
+  padding: 0 30px 0 0;
+}
 .superior-dark .nav .nav-item {
   background-color: white;
   border-radius: 4px;
@@ -26356,6 +26363,14 @@ a:hover {
 }
 .superior-dark .tooltip.bs-tooltip-bottom .tooltip-arrow::before, .superior-dark .tooltip.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before {
   border-bottom-color: #00818E;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 20px;
+}
+.navbar-nav .nav-item .nav-link:not(:last-child) {
+  padding: 0 30px 0 0;
 }
 
 .nav .nav-item {

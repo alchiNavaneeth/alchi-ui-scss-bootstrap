@@ -1,0 +1,9 @@
+
+.img-placeholder {
+  width: 120px;
+  height: 120px;
+  &.img-placeholder-square {
+    background: url('/assets/images/img-placeholder-square.svg') no-repeat;
+ }
+}
+

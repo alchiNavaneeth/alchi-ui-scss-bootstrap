@@ -9,6 +9,8 @@ import { VgWireIcongroupsComponent } from './vg-wire-icongroups/vg-wire-icongrou
 import { VgWireNotificationComponent } from './vg-wire-notification/vg-wire-notification.component';
 import { VgWireChatComponent } from './vg-wire-chat/vg-wire-chat.component';
 import { VgWiNavigationBarsComponent } from './vg-wi-navigation-bars/vg-wi-navigation-bars.component';
+import { VgWireSideNavigationBarsComponent } from './vg-wire-side-navigation-bars/vg-wire-side-navigation-bars.component';
+import { VgWirePlaceholdersComponent } from './vg-wire-placeholders/vg-wire-placeholders.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { VgWiNavigationBarsComponent } from './vg-wi-navigation-bars/vg-wi-navig
     VgWireIcongroupsComponent,
     VgWireNotificationComponent,
     VgWireChatComponent,
-    VgWiNavigationBarsComponent
+    VgWiNavigationBarsComponent,
+    VgWireSideNavigationBarsComponent,
+    VgWirePlaceholdersComponent
   ],
   imports: [
     CommonModule,

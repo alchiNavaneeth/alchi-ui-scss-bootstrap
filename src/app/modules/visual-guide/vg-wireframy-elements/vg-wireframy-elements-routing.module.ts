@@ -4,6 +4,8 @@ import { VgWiNavigationBarsComponent } from './vg-wi-navigation-bars/vg-wi-navig
 import { VgWireChatComponent } from './vg-wire-chat/vg-wire-chat.component';
 import { VgWireIcongroupsComponent } from './vg-wire-icongroups/vg-wire-icongroups.component';
 import { VgWireNotificationComponent } from './vg-wire-notification/vg-wire-notification.component';
+import { VgWirePlaceholdersComponent } from './vg-wire-placeholders/vg-wire-placeholders.component';
+import { VgWireSideNavigationBarsComponent } from './vg-wire-side-navigation-bars/vg-wire-side-navigation-bars.component';
 import { VgWireSteppersComponent } from './vg-wire-steppers/vg-wire-steppers.component';
 import { VgWireframyElementsComponent } from './vg-wireframy-elements.component';
 
@@ -14,7 +16,9 @@ const routes: Routes = [
       { path: "icon-groups", component: VgWireIcongroupsComponent },
       { path: "notification", component: VgWireNotificationComponent },
       { path: "chat-bubble", component: VgWireChatComponent },
-      { path: "navigation-bars", component: VgWiNavigationBarsComponent }
+      { path: "navigation-bars", component: VgWiNavigationBarsComponent },
+      { path: "side-navigation-bars", component: VgWireSideNavigationBarsComponent },
+      { path: "placeholders", component: VgWirePlaceholdersComponent }
     ]
   }
 ];

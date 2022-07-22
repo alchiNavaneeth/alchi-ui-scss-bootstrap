@@ -1,0 +1,121 @@
+
+@include apply-superior using ($colors, $type) {
+
+  $bg: map-get($colors , 'light');
+
+  .sidebar {
+    width: 120px;
+    padding: 0 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    @if $type == false {
+      color: $primary;
+      background-color: white;
+    }
+    @else {
+      color: white;
+      background-color: $bg;
+    }
+    .logo {
+      display: block;
+      margin: 30px 0;
+      text-align: center;
+      img { width: 79px; }
+    }
+    .menus {
+      .menu-item {
+        @extend .fw-semibold;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .15s ease;
+        padding: 15px 0;
+        position: relative;
+        @if $type == false {
+          color: $primary;
+        }
+        @else {
+          color: white;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: 5px;
+          left: -25px;
+          transition: all .15s ease;
+          @if $type == false { background-color:$secondary; }
+          @else { background-color:$tertiary; }
+        }
+        span {
+          color: inherit;
+          display: none;
+          &[class^=icon-fi] {
+            display: block;
+            @include ft-calc($font-big);
+            &:before {
+              color: inherit;
+            }
+          }
+        }
+        &:hover {
+          transition: all .15s ease;
+          &:before {
+            left: -20px;
+            transition: all .15s ease;
+          }
+          @if $type == false {
+            color: $secondary;
+          }
+          @else {
+            color: $tertiary;
+          }
+          span {
+            &[class^=icon-fi] {
+              &:before {
+                color: inherit;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.sidebar-expanded-lg {
+      width: 200px;
+      .logo {
+        margin: 42px 0;
+        img { width: 130px; }
+      }
+      .menus {
+        .menu-item {
+          justify-content: initial;
+          span {
+            display: block;
+            &[class^=icon-fi] {
+              margin-right: 16px;
+            }
+          }
+          &:not(:last-child) {
+            &:after {
+              @if $type == false {
+                content: "";
+                width: calc(100% + 40px);
+                height: 2px;
+                background-color: $gray-100;
+                position: absolute;
+                bottom: 0;
+                left: -20px;
+              }
+              @else {
+                content: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
