@@ -9067,8 +9067,8 @@ a > .superior-dark code {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .superior-dark .navbar > .container,
 .superior-dark .navbar > .container-fluid,
@@ -12223,10 +12223,10 @@ a > .superior-dark code {
 .superior-dark .fst-normal {
   font-style: normal !important;
 }
-.superior-dark .fw-medium, .fc-daygrid-event .superior-dark .fc-event-time, .fc-daygrid-event .superior-dark .fc-event-title, .superior-dark .fc a[data-navlink], .fc .superior-dark a[data-navlink], .superior-dark .fc-daygrid-event .fc-event-time, .superior-dark .fc-daygrid-event .fc-event-title, .superior-dark .steppers .nav-link, .steppers .superior-dark .nav-link, .superior-dark .chat-bubble .profile p, .chat-bubble .profile .superior-dark p, .superior-dark .chat-bubble .message, .chat-bubble .superior-dark .message, .superior-dark .toast .toast-body, .toast .superior-dark .toast-body, .superior-dark .tooltip.bs-tooltip-end .tooltip-inner, .tooltip.bs-tooltip-end .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-auto[data-popper-placement^=right] .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=right] .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-start .tooltip-inner, .tooltip.bs-tooltip-start .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-auto[data-popper-placement^=left] .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=left] .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-top .tooltip-inner, .tooltip.bs-tooltip-top .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-auto[data-popper-placement^=top] .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=top] .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-bottom .tooltip-inner, .tooltip.bs-tooltip-bottom .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=bottom] .superior-dark .tooltip-inner, .superior-dark .popover.bs-popover-end .popover-body, .popover.bs-popover-end .superior-dark .popover-body, .superior-dark .popover.bs-popover-auto[data-popper-placement^=right] .popover-body, .popover.bs-popover-auto[data-popper-placement^=right] .superior-dark .popover-body, .superior-dark .popover.bs-popover-start .popover-body, .popover.bs-popover-start .superior-dark .popover-body, .superior-dark .popover.bs-popover-auto[data-popper-placement^=left] .popover-body, .popover.bs-popover-auto[data-popper-placement^=left] .superior-dark .popover-body, .superior-dark .popover.bs-popover-top .popover-body, .popover.bs-popover-top .superior-dark .popover-body, .superior-dark .popover.bs-popover-auto[data-popper-placement^=top] .popover-body, .popover.bs-popover-auto[data-popper-placement^=top] .superior-dark .popover-body, .superior-dark .popover.bs-popover-bottom .popover-body, .popover.bs-popover-bottom .superior-dark .popover-body, .superior-dark .popover.bs-popover-auto[data-popper-placement^=bottom] .popover-body, .popover.bs-popover-auto[data-popper-placement^=bottom] .superior-dark .popover-body, .superior-dark .nav .nav-item .nav-link, .nav .nav-item .superior-dark .nav-link, .superior-dark .card .card-body .card-text, .card .card-body .superior-dark .card-text, .list-group .superior-dark .list-group-item, .superior-dark .accordion .accordion-item .accordion-button, .accordion .accordion-item .superior-dark .accordion-button, .superior-dark .list-group .list-group-item {
+.superior-dark .fw-medium, .superior-dark .avatar-lettered, .fc-daygrid-event .superior-dark .fc-event-time, .fc-daygrid-event .superior-dark .fc-event-title, .superior-dark .fc a[data-navlink], .fc .superior-dark a[data-navlink], .superior-dark .fc-daygrid-event .fc-event-time, .superior-dark .fc-daygrid-event .fc-event-title, .superior-dark .steppers .nav-link, .steppers .superior-dark .nav-link, .superior-dark .chat-bubble .profile p, .chat-bubble .profile .superior-dark p, .superior-dark .chat-bubble .message, .chat-bubble .superior-dark .message, .superior-dark .toast .toast-body, .toast .superior-dark .toast-body, .superior-dark .tooltip.bs-tooltip-end .tooltip-inner, .tooltip.bs-tooltip-end .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-auto[data-popper-placement^=right] .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=right] .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-start .tooltip-inner, .tooltip.bs-tooltip-start .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-auto[data-popper-placement^=left] .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=left] .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-top .tooltip-inner, .tooltip.bs-tooltip-top .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-auto[data-popper-placement^=top] .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=top] .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-bottom .tooltip-inner, .tooltip.bs-tooltip-bottom .superior-dark .tooltip-inner, .superior-dark .tooltip.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=bottom] .superior-dark .tooltip-inner, .superior-dark .popover.bs-popover-end .popover-body, .popover.bs-popover-end .superior-dark .popover-body, .superior-dark .popover.bs-popover-auto[data-popper-placement^=right] .popover-body, .popover.bs-popover-auto[data-popper-placement^=right] .superior-dark .popover-body, .superior-dark .popover.bs-popover-start .popover-body, .popover.bs-popover-start .superior-dark .popover-body, .superior-dark .popover.bs-popover-auto[data-popper-placement^=left] .popover-body, .popover.bs-popover-auto[data-popper-placement^=left] .superior-dark .popover-body, .superior-dark .popover.bs-popover-top .popover-body, .popover.bs-popover-top .superior-dark .popover-body, .superior-dark .popover.bs-popover-auto[data-popper-placement^=top] .popover-body, .popover.bs-popover-auto[data-popper-placement^=top] .superior-dark .popover-body, .superior-dark .popover.bs-popover-bottom .popover-body, .popover.bs-popover-bottom .superior-dark .popover-body, .superior-dark .popover.bs-popover-auto[data-popper-placement^=bottom] .popover-body, .popover.bs-popover-auto[data-popper-placement^=bottom] .superior-dark .popover-body, .superior-dark .nav .nav-item .nav-link, .nav .nav-item .superior-dark .nav-link, .superior-dark .navbar .navbar-nav .nav-link, .navbar .navbar-nav .superior-dark .nav-link, .superior-dark .card .card-body .card-text, .card .card-body .superior-dark .card-text, .list-group .superior-dark .list-group-item, .superior-dark .accordion .accordion-item .accordion-button, .accordion .accordion-item .superior-dark .accordion-button, .superior-dark .list-group .list-group-item {
   font-weight: 500 !important;
 }
-.superior-dark .fw-semibold, .fc-scrollgrid-sync-inner .superior-dark .fc-col-header-cell-cushion, .superior-dark .fc-scrollgrid-sync-inner .fc-col-header-cell-cushion, .superior-dark .badge-btn, .superior-dark .btn, .superior-dark .input-box span.status, .input-box .superior-dark span.status, .superior-dark .input-box .form-label, .input-box .superior-dark .form-label {
+.superior-dark .fw-semibold, .superior-dark .sidebar .menus .menu-item, .sidebar .menus .superior-dark .menu-item, .fc-scrollgrid-sync-inner .superior-dark .fc-col-header-cell-cushion, .superior-dark .fc-scrollgrid-sync-inner .fc-col-header-cell-cushion, .superior-dark .badge-btn, .superior-dark .btn, .superior-dark .input-box span.status, .input-box .superior-dark span.status, .superior-dark .input-box .form-label, .input-box .superior-dark .form-label {
   font-weight: 600 !important;
 }
 .superior-dark .lh-1 {
@@ -19260,8 +19260,8 @@ textarea.form-control-lg {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -22846,11 +22846,11 @@ textarea.form-control-lg {
   font-style: normal !important;
 }
 
-.fw-medium, .fc-daygrid-event .fc-event-time, .fc-daygrid-event .fc-event-title, .fc a[data-navlink], .superior-dark .fc-daygrid-event .fc-event-time, .superior-dark .fc-daygrid-event .fc-event-title, .superior-dark .fc a[data-navlink], .steppers .nav-link, .chat-bubble .profile p, .chat-bubble .message, .superior-dark .steppers .nav-link, .superior-dark .chat-bubble .profile p, .superior-dark .chat-bubble .message, .toast .toast-body, .superior-dark .toast .toast-body, .tooltip.bs-tooltip-end .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=right] .tooltip-inner, .tooltip.bs-tooltip-start .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=left] .tooltip-inner, .tooltip.bs-tooltip-top .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=top] .tooltip-inner, .tooltip.bs-tooltip-bottom .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-inner, .popover.bs-popover-end .popover-body, .popover.bs-popover-auto[data-popper-placement^=right] .popover-body, .popover.bs-popover-start .popover-body, .popover.bs-popover-auto[data-popper-placement^=left] .popover-body, .popover.bs-popover-top .popover-body, .popover.bs-popover-auto[data-popper-placement^=top] .popover-body, .popover.bs-popover-bottom .popover-body, .popover.bs-popover-auto[data-popper-placement^=bottom] .popover-body, .nav .nav-item .nav-link, .superior-dark .tooltip.bs-tooltip-end .tooltip-inner, .superior-dark .tooltip.bs-tooltip-start .tooltip-inner, .superior-dark .tooltip.bs-tooltip-top .tooltip-inner, .superior-dark .tooltip.bs-tooltip-bottom .tooltip-inner, .superior-dark .popover.bs-popover-end .popover-body, .superior-dark .popover.bs-popover-start .popover-body, .superior-dark .popover.bs-popover-top .popover-body, .superior-dark .popover.bs-popover-bottom .popover-body, .superior-dark .nav .nav-item .nav-link, .card .card-body .card-text, .list-group .list-group-item, .accordion .accordion-item .accordion-button, .superior-dark .list-group .list-group-item, .superior-dark .accordion .accordion-item .accordion-button {
+.fw-medium, .avatar-lettered, .fc-daygrid-event .fc-event-time, .fc-daygrid-event .fc-event-title, .fc a[data-navlink], .superior-dark .fc-daygrid-event .fc-event-time, .superior-dark .fc-daygrid-event .fc-event-title, .superior-dark .fc a[data-navlink], .steppers .nav-link, .chat-bubble .profile p, .chat-bubble .message, .superior-dark .steppers .nav-link, .superior-dark .chat-bubble .profile p, .superior-dark .chat-bubble .message, .toast .toast-body, .superior-dark .toast .toast-body, .tooltip.bs-tooltip-end .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=right] .tooltip-inner, .tooltip.bs-tooltip-start .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=left] .tooltip-inner, .tooltip.bs-tooltip-top .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=top] .tooltip-inner, .tooltip.bs-tooltip-bottom .tooltip-inner, .tooltip.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-inner, .popover.bs-popover-end .popover-body, .popover.bs-popover-auto[data-popper-placement^=right] .popover-body, .popover.bs-popover-start .popover-body, .popover.bs-popover-auto[data-popper-placement^=left] .popover-body, .popover.bs-popover-top .popover-body, .popover.bs-popover-auto[data-popper-placement^=top] .popover-body, .popover.bs-popover-bottom .popover-body, .popover.bs-popover-auto[data-popper-placement^=bottom] .popover-body, .nav .nav-item .nav-link, .navbar .navbar-nav .nav-link, .superior-dark .tooltip.bs-tooltip-end .tooltip-inner, .superior-dark .tooltip.bs-tooltip-start .tooltip-inner, .superior-dark .tooltip.bs-tooltip-top .tooltip-inner, .superior-dark .tooltip.bs-tooltip-bottom .tooltip-inner, .superior-dark .popover.bs-popover-end .popover-body, .superior-dark .popover.bs-popover-start .popover-body, .superior-dark .popover.bs-popover-top .popover-body, .superior-dark .popover.bs-popover-bottom .popover-body, .superior-dark .nav .nav-item .nav-link, .superior-dark .navbar .navbar-nav .nav-link, .card .card-body .card-text, .list-group .list-group-item, .accordion .accordion-item .accordion-button, .superior-dark .list-group .list-group-item, .superior-dark .accordion .accordion-item .accordion-button {
   font-weight: 500 !important;
 }
 
-.fw-semibold, .fc-scrollgrid-sync-inner .fc-col-header-cell-cushion, .superior-dark .fc-scrollgrid-sync-inner .fc-col-header-cell-cushion, .badge-btn, .btn, .input-box.lg span.status, .input-box span.status, .input-box .form-label {
+.fw-semibold, .sidebar .menus .menu-item, .superior-dark .sidebar .menus .menu-item, .fc-scrollgrid-sync-inner .fc-col-header-cell-cushion, .superior-dark .fc-scrollgrid-sync-inner .fc-col-header-cell-cushion, .badge-btn, .btn, .input-box.lg span.status, .input-box span.status, .input-box .form-label {
   font-weight: 600 !important;
 }
 
@@ -26290,12 +26290,63 @@ a:hover {
   color: white;
 }
 
-.superior-dark .navbar-nav .nav-item .nav-link {
-  color: rgba(255, 255, 255, 0.5);
+.superior-dark .navbar .navbar-nav .nav-link {
   line-height: 20px;
+  margin: 0 30px 0 0 !important;
+  padding: 0 !important;
+  color: rgba(255, 255, 255, 0.5);
 }
-.superior-dark .navbar-nav .nav-item .nav-link:not(:last-child) {
-  padding: 0 30px 0 0;
+.superior-dark .navbar .navbar-nav .nav-link:hover {
+  color: white;
+}
+@media (max-width: 991px) {
+  .superior-dark .navbar .navbar-nav {
+    display: inline-flex;
+    margin: 20px 0 0 0;
+  }
+  .superior-dark .navbar .navbar-nav .nav-item {
+    padding: 8px 0;
+  }
+  .superior-dark .navbar .navbar-nav .nav-item:last-child {
+    padding-bottom: 0;
+  }
+  .superior-dark .navbar .navbar-nav .nav-item .nav-link {
+    margin: 0 !important;
+    display: inline-block;
+  }
+}
+@media (max-width: 991px) {
+  .superior-dark .navbar .navbar-toggler {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    position: relative;
+    cursor: pointer;
+    padding: 10px 28px 15px 0px;
+    margin-left: auto;
+  }
+  .superior-dark .navbar .navbar-toggler .navbar-toggler-icon, .superior-dark .navbar .navbar-toggler .navbar-toggler-icon:before, .superior-dark .navbar .navbar-toggler .navbar-toggler-icon:after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    right: 0;
+  }
+  .superior-dark .navbar .navbar-toggler .navbar-toggler-icon:before {
+    top: -9px;
+  }
+  .superior-dark .navbar .navbar-toggler .navbar-toggler-icon:after {
+    bottom: -9px;
+  }
+}
+.superior-dark .navbar .dropdown .nav-link, .superior-dark .navbar .dropdown .nav-link:hover {
+  color: white;
+}
+.superior-dark .navbar .dropdown .profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
 }
 .superior-dark .nav .nav-item {
   background-color: white;
@@ -26365,12 +26416,63 @@ a:hover {
   border-bottom-color: #00818E;
 }
 
-.navbar-nav .nav-item .nav-link {
-  color: rgba(255, 255, 255, 0.5);
+.navbar .navbar-nav .nav-link {
   line-height: 20px;
+  margin: 0 30px 0 0 !important;
+  padding: 0 !important;
+  color: rgba(0, 129, 142, 0.5);
 }
-.navbar-nav .nav-item .nav-link:not(:last-child) {
-  padding: 0 30px 0 0;
+.navbar .navbar-nav .nav-link:hover {
+  color: #00818E;
+}
+@media (max-width: 991px) {
+  .navbar .navbar-nav {
+    display: inline-flex;
+    margin: 20px 0 0 0;
+  }
+  .navbar .navbar-nav .nav-item {
+    padding: 8px 0;
+  }
+  .navbar .navbar-nav .nav-item:last-child {
+    padding-bottom: 0;
+  }
+  .navbar .navbar-nav .nav-item .nav-link {
+    margin: 0 !important;
+    display: inline-block;
+  }
+}
+@media (max-width: 991px) {
+  .navbar .navbar-toggler {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    position: relative;
+    cursor: pointer;
+    padding: 10px 28px 15px 0px;
+    margin-left: auto;
+  }
+  .navbar .navbar-toggler .navbar-toggler-icon, .navbar .navbar-toggler .navbar-toggler-icon:before, .navbar .navbar-toggler .navbar-toggler-icon:after {
+    content: "";
+    background-color: #00818E;
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    right: 0;
+  }
+  .navbar .navbar-toggler .navbar-toggler-icon:before {
+    top: -9px;
+  }
+  .navbar .navbar-toggler .navbar-toggler-icon:after {
+    bottom: -9px;
+  }
+}
+.navbar .dropdown .nav-link, .navbar .dropdown .nav-link:hover {
+  color: #00818E;
+}
+.navbar .dropdown .profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
 }
 
 .nav .nav-item {
@@ -27096,13 +27198,13 @@ a:hover {
 }
 .superior-dark .fc .fc-button-primary {
   color: #fff;
-  background-color: #2C3E50;
-  border-color: #2C3E50;
+  background-color: #00818E;
+  border-color: #00818E;
 }
 .superior-dark .fc .fc-button-primary:hover {
   color: #fff;
-  background-color: #1e2b37;
-  border-color: #1a252f;
+  background-color: #80BFC4;
+  border-color: #80BFC4;
 }
 .superior-dark .fc .fc-button-primary:disabled {
   color: #fff;
@@ -27114,16 +27216,16 @@ a:hover {
 }
 .superior-dark .fc .fc-button-primary:not(:disabled):active {
   color: #fff;
-  background-color: #1a252f;
-  border-color: #151e27;
+  background-color: #80BFC4;
+  border-color: #80BFC4;
 }
 .superior-dark .fc .fc-button-primary:not(:disabled):active:focus {
   box-shadow: 0 0 0 0.2rem rgba(76, 91, 106, 0.5);
 }
 .superior-dark .fc .fc-button-primary:not(:disabled).fc-button-active {
   color: #fff;
-  background-color: #1a252f;
-  border-color: #151e27;
+  background-color: #80BFC4;
+  border-color: #80BFC4;
 }
 .superior-dark .fc .fc-button-primary:not(:disabled).fc-button-active:focus {
   box-shadow: 0 0 0 0.2rem rgba(76, 91, 106, 0.5);
@@ -28395,13 +28497,13 @@ a:hover {
 }
 .fc .fc-button-primary {
   color: #fff;
-  background-color: #2C3E50;
-  border-color: #2C3E50;
+  background-color: #00818E;
+  border-color: #00818E;
 }
 .fc .fc-button-primary:hover {
   color: #fff;
-  background-color: #1e2b37;
-  border-color: #1a252f;
+  background-color: #80BFC4;
+  border-color: #80BFC4;
 }
 .fc .fc-button-primary:disabled {
   color: #fff;
@@ -28413,16 +28515,16 @@ a:hover {
 }
 .fc .fc-button-primary:not(:disabled):active {
   color: #fff;
-  background-color: #1a252f;
-  border-color: #151e27;
+  background-color: #80BFC4;
+  border-color: #80BFC4;
 }
 .fc .fc-button-primary:not(:disabled):active:focus {
   box-shadow: 0 0 0 0.2rem rgba(76, 91, 106, 0.5);
 }
 .fc .fc-button-primary:not(:disabled).fc-button-active {
   color: #fff;
-  background-color: #1a252f;
-  border-color: #151e27;
+  background-color: #80BFC4;
+  border-color: #80BFC4;
 }
 .fc .fc-button-primary:not(:disabled).fc-button-active:focus {
   box-shadow: 0 0 0 0.2rem rgba(76, 91, 106, 0.5);
@@ -29639,6 +29741,306 @@ a.fc-event:hover {
 
 .fc-daygrid-dot-event {
   padding: 4px;
+}
+
+.superior-dark .sidebar {
+  width: 120px;
+  padding: 0 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: white;
+  background-color: #163359;
+}
+.superior-dark .sidebar .logo {
+  display: block;
+  margin: 30px 0;
+  text-align: center;
+}
+.superior-dark .sidebar .logo img {
+  width: 79px;
+}
+.superior-dark .sidebar .menus .menu-item {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+  padding: 15px 0;
+  position: relative;
+  color: white;
+}
+.superior-dark .sidebar .menus .menu-item:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  left: -25px;
+  transition: all 0.15s ease;
+  background-color: #80BFC4;
+}
+.superior-dark .sidebar .menus .menu-item span {
+  color: inherit;
+  display: none;
+}
+.superior-dark .sidebar .menus .menu-item span[class^=icon-fi] {
+  display: block;
+  font-size: 30px;
+}
+.superior-dark .sidebar .menus .menu-item span[class^=icon-fi]:before {
+  color: inherit;
+}
+.superior-dark .sidebar .menus .menu-item:hover {
+  transition: all 0.15s ease;
+  color: #80BFC4;
+}
+.superior-dark .sidebar .menus .menu-item:hover:before {
+  left: -20px;
+  transition: all 0.15s ease;
+}
+.superior-dark .sidebar .menus .menu-item:hover span[class^=icon-fi]:before {
+  color: inherit;
+}
+.superior-dark .sidebar.sidebar-expanded-lg {
+  width: 200px;
+}
+.superior-dark .sidebar.sidebar-expanded-lg .logo {
+  margin: 42px 0;
+}
+.superior-dark .sidebar.sidebar-expanded-lg .logo img {
+  width: 130px;
+}
+.superior-dark .sidebar.sidebar-expanded-lg .menus .menu-item {
+  justify-content: initial;
+}
+.superior-dark .sidebar.sidebar-expanded-lg .menus .menu-item span {
+  display: block;
+}
+.superior-dark .sidebar.sidebar-expanded-lg .menus .menu-item span[class^=icon-fi] {
+  margin-right: 16px;
+}
+.superior-dark .sidebar.sidebar-expanded-lg .menus .menu-item:after {
+  content: none;
+}
+
+.sidebar {
+  width: 120px;
+  padding: 0 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #00818E;
+  background-color: white;
+}
+.sidebar .logo {
+  display: block;
+  margin: 30px 0;
+  text-align: center;
+}
+.sidebar .logo img {
+  width: 79px;
+}
+.sidebar .menus .menu-item {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+  padding: 15px 0;
+  position: relative;
+  color: #00818E;
+}
+.sidebar .menus .menu-item:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  left: -25px;
+  transition: all 0.15s ease;
+  background-color: #F9B400;
+}
+.sidebar .menus .menu-item span {
+  color: inherit;
+  display: none;
+}
+.sidebar .menus .menu-item span[class^=icon-fi] {
+  display: block;
+  font-size: 30px;
+}
+.sidebar .menus .menu-item span[class^=icon-fi]:before {
+  color: inherit;
+}
+.sidebar .menus .menu-item:hover {
+  transition: all 0.15s ease;
+  color: #F9B400;
+}
+.sidebar .menus .menu-item:hover:before {
+  left: -20px;
+  transition: all 0.15s ease;
+}
+.sidebar .menus .menu-item:hover span[class^=icon-fi]:before {
+  color: inherit;
+}
+.sidebar.sidebar-expanded-lg {
+  width: 200px;
+}
+.sidebar.sidebar-expanded-lg .logo {
+  margin: 42px 0;
+}
+.sidebar.sidebar-expanded-lg .logo img {
+  width: 130px;
+}
+.sidebar.sidebar-expanded-lg .menus .menu-item {
+  justify-content: initial;
+}
+.sidebar.sidebar-expanded-lg .menus .menu-item span {
+  display: block;
+}
+.sidebar.sidebar-expanded-lg .menus .menu-item span[class^=icon-fi] {
+  margin-right: 16px;
+}
+.sidebar.sidebar-expanded-lg .menus .menu-item:after {
+  content: "";
+  width: calc(100% + 40px);
+  height: 2px;
+  background-color: #EEEEEE;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+}
+
+.avatar-stacked {
+  display: flex;
+}
+.avatar-stacked [class^=avatar-] {
+  position: relative;
+}
+.avatar-stacked :nth-child(20) {
+  z-index: -1;
+  left: -570px;
+}
+.avatar-stacked :nth-child(19) {
+  z-index: -2;
+  left: -540px;
+}
+.avatar-stacked :nth-child(18) {
+  z-index: -3;
+  left: -510px;
+}
+.avatar-stacked :nth-child(17) {
+  z-index: -4;
+  left: -480px;
+}
+.avatar-stacked :nth-child(16) {
+  z-index: -5;
+  left: -450px;
+}
+.avatar-stacked :nth-child(15) {
+  z-index: -6;
+  left: -420px;
+}
+.avatar-stacked :nth-child(14) {
+  z-index: -7;
+  left: -390px;
+}
+.avatar-stacked :nth-child(13) {
+  z-index: -8;
+  left: -360px;
+}
+.avatar-stacked :nth-child(12) {
+  z-index: -9;
+  left: -330px;
+}
+.avatar-stacked :nth-child(11) {
+  z-index: -10;
+  left: -300px;
+}
+.avatar-stacked :nth-child(10) {
+  z-index: -11;
+  left: -270px;
+}
+.avatar-stacked :nth-child(9) {
+  z-index: -12;
+  left: -240px;
+}
+.avatar-stacked :nth-child(8) {
+  z-index: -13;
+  left: -210px;
+}
+.avatar-stacked :nth-child(7) {
+  z-index: -14;
+  left: -180px;
+}
+.avatar-stacked :nth-child(6) {
+  z-index: -15;
+  left: -150px;
+}
+.avatar-stacked :nth-child(5) {
+  z-index: -16;
+  left: -120px;
+}
+.avatar-stacked :nth-child(4) {
+  z-index: -17;
+  left: -90px;
+}
+.avatar-stacked :nth-child(3) {
+  z-index: -18;
+  left: -60px;
+}
+.avatar-stacked :nth-child(2) {
+  z-index: -19;
+  left: -30px;
+}
+.avatar-stacked :nth-child(1) {
+  z-index: -20;
+  left: -0px;
+}
+
+.avatar-lettered {
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  border: 3px solid #CFD4D9;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #00818E;
+  background-color: #F6F9FD;
+}
+
+.video-wrapper {
+  width: 480px;
+  height: 360px;
+}
+
+.text-placeholder {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: #E7EFF3;
+  background: linear-gradient(to right, #E7EFF3 12%, #d6e4eb 24%, #E7EFF3 40%);
+  background-size: 900px 104px;
+  height: 24px;
+  position: relative;
+}
+.text-placeholder.multiline {
+  height: 12px;
+}
+.text-placeholder.multiline:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -900px 0;
+  }
+  100% {
+    background-position: 900px 0;
+  }
 }
 
 /*# sourceMappingURL=superior.css.map */

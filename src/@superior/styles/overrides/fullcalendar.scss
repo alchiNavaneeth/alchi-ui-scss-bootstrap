@@ -141,12 +141,12 @@
 	}
 	.fc-button-primary {
 		color: $color_1;
-		background-color: $background-color_2;
-		border-color: $border-color_1;
+		background-color: $primary;
+		border-color: $primary;
 		&:hover {
 			color: $color_1;
-			background-color: $background-color_4;
-			border-color: $border-color_3;
+			background-color: $tertiary;
+		  border-color: $tertiary;
 		}
 		&:disabled {
 			color: $color_1;
@@ -159,8 +159,8 @@
 		&:not(:disabled) {
 			&:active {
 				color: $color_1;
-				background-color: $background-color_6;
-				border-color: $border-color_5;
+				background-color: $tertiary;
+		    border-color: $tertiary;
 				&:focus {
 					box-shadow: 0 0 0 0.2rem rgba(76, 91, 106, 0.5);
 				}
@@ -168,8 +168,8 @@
 		}
 		&:not(:disabled).fc-button-active {
 			color: $color_1;
-			background-color: $background-color_6;
-			border-color: $border-color_5;
+			background-color: $tertiary;
+			border-color: $tertiary;
 			&:focus {
 				box-shadow: 0 0 0 0.2rem rgba(76, 91, 106, 0.5);
 			}
