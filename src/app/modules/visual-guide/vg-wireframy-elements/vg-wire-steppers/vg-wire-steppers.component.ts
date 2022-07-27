@@ -11,19 +11,9 @@ export class VgWireSteppersComponent implements OnInit {
 
   ngOnInit(): void {
 
-    let stepper:any = document.querySelectorAll('.steppers .step-item');
-
-    for (let i = 0; i < stepper.length; i++) {
-      stepper[i].addEventListener('click', setActive);
-    }
-
-    function setActive(e:any) {
-      for (var i = 0; i < stepper.length; i++) {
-        stepper[i].classList.remove('active');
-      }
-      e.target.classList.add('active');
-    }
-
+    $('.stepper .step-item').on('click', function() {
+      $(this).addClass('active')
+    })
 
   }
 

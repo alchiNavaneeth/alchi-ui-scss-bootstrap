@@ -108,22 +108,26 @@
   }
 
   //stepper
-  .steppers {
-    .nav-link {
+  .stepper {
+    .step-item {
       @include circle(36px);
       @extend .fw-medium;
       @include ft-calc($font-h2);
       cursor: pointer;
       &:not(.disabled) {
-        color: map-get($colors, primary) !important;
+        color: $tertiary !important;
       }
       &:not(.active) {
         background-color: map-get($colors , light);
         border: 1px solid map-get($colors , 'gray');
       }
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
       &.active {
         color: white !important;
         border: 1px solid map-get($colors , primary);
+        background-color: map-get($colors , primary);
       }
       &[class^="icon-"], &[class*=" icon-"] {
         @include ft-calc($font-base);

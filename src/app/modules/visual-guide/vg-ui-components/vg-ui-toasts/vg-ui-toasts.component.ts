@@ -12,19 +12,19 @@ export class VgUiToastsComponent implements OnInit {
 
   ngOnInit(): void {
 
-    $(".toast-btn-primary").click(function(){
+    $('.toast-btn-primary').on('click', function() {
       $('.toast-primary').toast('show');
     })
 
-    $(".toast-btn-success").click(function(){
+    $('.toast-btn-success').on('click', function() {
       $('.toast-success').toast('show');
     })
 
-    $(".toast-btn-warning").click(function(){
+    $('.toast-btn-warning').on('click', function() {
       $('.toast-warning').toast('show');
     })
 
-    $(".toast-btn-danger").click(function(){
+    $('.toast-btn-danger').on('click', function() {
       $('.toast-danger').toast('show');
     })
 
