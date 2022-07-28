@@ -2,8 +2,6 @@
 //theme
 @include apply-superior using ($colors, $type) {
 
-
-
   /* mainly changed */
   $dark: map-get($colors , dark); // default text color
   $background-color_9: map-get($range-group-colors , 'red'); // event bg color
