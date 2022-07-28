@@ -32,7 +32,6 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/assets/css/fullcalendar.css",
               "src/assets/css/bootstrap-datepicker.min.css",
               "src/scss/styles.scss"
             ],
