@@ -241,12 +241,3 @@
       }
   }
   })(this);
-
-
-  var elem = document.querySelector('.range-group')
-  var pos = elem.getAttribute('pos').split(',').map(Number)
-
-  var range = new MultiRange(elem, {
-      ranges : pos,
-      step   : 0
-  });

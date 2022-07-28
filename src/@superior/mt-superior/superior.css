@@ -26934,8 +26934,6 @@ a:hover {
   border-radius: 36px;
   font-size: 20px;
   cursor: pointer;
-}
-.superior-dark .stepper .step-item:not(.disabled) {
   color: #80BFC4 !important;
 }
 .superior-dark .stepper .step-item:not(.active) {
@@ -26949,6 +26947,7 @@ a:hover {
   color: white !important;
   border: 1px solid #F9B400;
   background-color: #F9B400;
+  pointer-events: visible;
 }
 .superior-dark .stepper .step-item[class^=icon-], .superior-dark .stepper .step-item[class*=" icon-"] {
   font-size: 16px;
@@ -26958,9 +26957,6 @@ a:hover {
 }
 .superior-dark .stepper .step-item[class^=icon-].active:before, .superior-dark .stepper .step-item[class*=" icon-"].active:before {
   color: white;
-}
-.superior-dark .stepper.vertical .nav-link:not(:last-child) {
-  margin-bottom: 16px;
 }
 
 .chat-bubble .chat-container {
@@ -27015,8 +27011,6 @@ a:hover {
   border-radius: 36px;
   font-size: 20px;
   cursor: pointer;
-}
-.stepper .step-item:not(.disabled) {
   color: #80BFC4 !important;
 }
 .stepper .step-item:not(.active) {
@@ -27030,6 +27024,7 @@ a:hover {
   color: white !important;
   border: 1px solid #00818E;
   background-color: #00818E;
+  pointer-events: visible;
 }
 .stepper .step-item[class^=icon-], .stepper .step-item[class*=" icon-"] {
   font-size: 16px;
@@ -27040,8 +27035,31 @@ a:hover {
 .stepper .step-item[class^=icon-].active:before, .stepper .step-item[class*=" icon-"].active:before {
   color: white;
 }
-.stepper.vertical .nav-link:not(:last-child) {
+
+.stepper-wrapper .stepper .step-item {
+  pointer-events: none;
+}
+.stepper-wrapper .tabs .tab {
+  margin: 16px 0;
+}
+.stepper-wrapper .tabs .tab .button-wrapper {
+  margin: 30px 0 0 0;
+}
+.stepper-wrapper.vertical {
+  display: flex;
+}
+.stepper-wrapper.vertical .stepper {
+  display: flex;
+  flex-direction: column;
+}
+.stepper-wrapper.vertical .stepper .step-item:not(:last-child) {
   margin-bottom: 16px;
+}
+.stepper-wrapper.vertical .tabs {
+  margin: 0 0 0 20px;
+}
+.stepper-wrapper.vertical .tabs .tab {
+  margin: 0;
 }
 
 .multiRange-grabbing {

@@ -114,9 +114,7 @@
       @extend .fw-medium;
       @include ft-calc($font-h2);
       cursor: pointer;
-      &:not(.disabled) {
-        color: $tertiary !important;
-      }
+      color: $tertiary !important;
       &:not(.active) {
         background-color: map-get($colors , light);
         border: 1px solid map-get($colors , 'gray');
@@ -128,6 +126,7 @@
         color: white !important;
         border: 1px solid map-get($colors , primary);
         background-color: map-get($colors , primary);
+        pointer-events: visible;
       }
       &[class^="icon-"], &[class*=" icon-"] {
         @include ft-calc($font-base);
@@ -143,13 +142,41 @@
         }
       }
     }
-    &.vertical {
-      .nav-link {
+  }
+
+}
+
+//horizontal and vertical stepper
+.stepper-wrapper {
+  .stepper {
+    .step-item {
+      pointer-events: none;
+    }
+  }
+  .tabs {
+    .tab {
+       margin: 16px 0;
+      .button-wrapper {
+        margin: 30px 0 0 0;
+      }
+    }
+  }
+  &.vertical {
+    display: flex;
+    .stepper {
+      display: flex;
+      flex-direction: column;
+      .step-item {
         &:not(:last-child) {
           margin-bottom: 16px;
         }
       }
     }
+    .tabs {
+      margin: 0 0 0 20px;
+      .tab {
+        margin: 0;
+      }
+    }
   }
-
 }
