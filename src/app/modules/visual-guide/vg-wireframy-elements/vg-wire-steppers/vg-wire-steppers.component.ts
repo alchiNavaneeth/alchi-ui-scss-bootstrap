@@ -30,8 +30,8 @@ export class VgWireSteppersComponent implements OnInit {
 
         $(self).find('.tabs .tab').hide()
 
-        $(self).find('.stepper .step-item').eq(index).addClass('active')
-        $(self).find('.stepper .step-item').eq(index+1).removeClass('active')
+        $(self).find('.stepper .step-box').eq(index).addClass('active')
+        $(self).find('.stepper .step-box').eq(index+1).removeClass('active')
         $(self).find('.tabs .tab').eq(index).show()
 
       }

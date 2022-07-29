@@ -57,6 +57,7 @@
 
   $dark: map-get($colors , dark);
 
+
   //chat
   .chat-bubble {
     .chat-container {
@@ -144,13 +145,36 @@
     }
   }
 
-}
 
 //horizontal and vertical stepper
 .stepper-wrapper {
   .stepper {
-    .step-item {
-      pointer-events: none;
+    display: flex;
+    text-align: center;
+    .step-box {
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+      .step-item {
+        pointer-events: none;
+        margin-right: 0;
+      }
+      .title {
+        margin: 10px 0 0 0;
+        text-align: center;
+        color: $gray-dark;
+      }
+      &.active {
+        .step-item {
+          color: white !important;
+          border: 1px solid map-get($colors , primary);
+          background-color: map-get($colors , primary);
+          pointer-events: visible;
+        }
+        .title {
+          color: map-get($colors , primary)
+        }
+      }
     }
   }
   .tabs {
@@ -164,11 +188,16 @@
   &.vertical {
     display: flex;
     .stepper {
-      display: flex;
       flex-direction: column;
-      .step-item {
-        &:not(:last-child) {
-          margin-bottom: 16px;
+      .step-box {
+        display: flex;
+        align-items: center;
+        margin: 0 16px 25px 0;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .title {
+          margin: 0 0 0 12px;
         }
       }
     }
@@ -180,3 +209,6 @@
     }
   }
 }
+
+}
+
